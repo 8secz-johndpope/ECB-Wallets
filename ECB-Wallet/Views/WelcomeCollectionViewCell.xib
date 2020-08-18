@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sfprodisplay_regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="WelcomeCollectionViewCell" customModule="ECB_Wallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="843"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="843"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFz-ML-6VO">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="843"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-ov-NjW">
+                                <rect key="frame" x="0.0" y="0.0" width="432" height="739.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-su-RXB">
+                                        <rect key="frame" x="0.0" y="0.0" width="432" height="390"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="390" id="Xgg-nl-rwl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, ECB Wallets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsL-RO-WJh">
+                                        <rect key="frame" x="30" y="390" width="168" height="73"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="73" id="BCh-Hd-Yru"/>
+                                            <constraint firstAttribute="width" constant="168" id="g1M-ZL-57b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="28"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.0078431372550000003" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-oY-ccq">
+                                        <rect key="frame" x="30" y="476" width="62" height="6"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.27843137254901962" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="Urk-qU-d1h"/>
+                                            <constraint firstAttribute="width" constant="62" id="fn1-8t-mz4"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-Ck-Kyn">
+                                        <rect key="frame" x="30" y="489.99999999999994" width="315" height="229.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="315" id="Gwf-lI-v6g"/>
+                                        </constraints>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. /// Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ond-oY-ccq" firstAttribute="top" secondItem="KsL-RO-WJh" secondAttribute="bottom" constant="13" id="4nw-r5-nWC"/>
+                                    <constraint firstAttribute="bottom" secondItem="dBu-Ck-Kyn" secondAttribute="bottom" constant="20" id="55N-Op-qoP"/>
+                                    <constraint firstItem="KsL-RO-WJh" firstAttribute="top" secondItem="QkO-su-RXB" secondAttribute="bottom" id="Gsd-PM-Hbs"/>
+                                    <constraint firstItem="dBu-Ck-Kyn" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" constant="30" id="KbC-M5-ynA"/>
+                                    <constraint firstAttribute="trailing" secondItem="QkO-su-RXB" secondAttribute="trailing" id="Tp8-Wb-we9"/>
+                                    <constraint firstItem="dBu-Ck-Kyn" firstAttribute="top" secondItem="Ond-oY-ccq" secondAttribute="bottom" constant="8" id="WzR-K7-4C5"/>
+                                    <constraint firstItem="QkO-su-RXB" firstAttribute="top" secondItem="QIL-ov-NjW" secondAttribute="top" id="X5P-qa-wGb"/>
+                                    <constraint firstItem="KsL-RO-WJh" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" constant="30" id="XFo-md-Vls"/>
+                                    <constraint firstItem="QkO-su-RXB" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" id="uJL-Hq-D3u"/>
+                                    <constraint firstItem="Ond-oY-ccq" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" constant="30" id="zZ1-Bx-Mhg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QIL-ov-NjW" secondAttribute="trailing" id="Eo2-sU-Tc3"/>
+                            <constraint firstItem="QIL-ov-NjW" firstAttribute="leading" secondItem="vFz-ML-6VO" secondAttribute="leading" id="FHQ-Xz-5yw"/>
+                            <constraint firstAttribute="bottom" secondItem="QIL-ov-NjW" secondAttribute="bottom" id="SWx-sp-K91"/>
+                            <constraint firstItem="QIL-ov-NjW" firstAttribute="top" secondItem="vFz-ML-6VO" secondAttribute="top" id="wO6-XI-wwC"/>
+                        </constraints>
+                        <viewLayoutGuide key="contentLayoutGuide" id="aU9-3o-Lw4"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="pWv-Af-QjP"/>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QIL-ov-NjW" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="TVQ-DP-SPE"/>
+                <constraint firstItem="vFz-ML-6VO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tbz-Qc-dae"/>
+                <constraint firstAttribute="bottom" secondItem="vFz-ML-6VO" secondAttribute="bottom" id="bSi-TI-jfr"/>
+                <constraint firstAttribute="trailing" secondItem="vFz-ML-6VO" secondAttribute="trailing" id="pdz-25-Xck"/>
+                <constraint firstItem="vFz-ML-6VO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uBA-n8-C1H"/>
+                <constraint firstItem="QIL-ov-NjW" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" priority="250" id="vVl-Ha-aTo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="432" height="843"/>
+            <connections>
+                <outlet property="contentLabel" destination="dBu-Ck-Kyn" id="Aj4-Jf-X2A"/>
+                <outlet property="imageView" destination="QkO-su-RXB" id="MbP-LP-Bbm"/>
+                <outlet property="scrollView" destination="vFz-ML-6VO" id="WBI-ON-uaK"/>
+                <outlet property="titleLabel" destination="KsL-RO-WJh" id="Ein-aF-ylL"/>
+            </connections>
+            <point key="canvasLocation" x="425.60000000000002" y="417.11822660098522"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mask Group 36" width="375" height="450"/>
+    </resources>
+</document>
