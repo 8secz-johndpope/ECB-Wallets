@@ -451,23 +451,20 @@
                                                 <rect key="frame" x="25" y="269.66666666666674" width="325" height="639"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hY9-2u-rQX">
-                                                        <rect key="frame" x="43.333333333333329" y="587" width="238.66666666666669" height="32"/>
+                                                        <rect key="frame" x="39.000000000000014" y="587" width="247.33333333333337" height="32"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-33-1Ns">
-                                                                <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="32"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-33-1Ns">
+                                                                <rect key="frame" x="0.0" y="0.0" width="185.33333333333334" height="32"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBi-0D-jQQ">
-                                                                <rect key="frame" x="178.66666666666669" y="0.0" width="60" height="32"/>
+                                                                <rect key="frame" x="193.33333333333331" y="0.0" width="54" height="32"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                                                <state key="normal" title="SIGN UP">
+                                                                <state key="normal" title="SIGN IN">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
-                                                                <connections>
-                                                                    <action selector="signUpButtonWasPressed:" destination="jId-LF-5qi" eventType="touchUpInside" id="1hf-P4-eIt"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -694,9 +691,12 @@
                                                             <constraint firstAttribute="height" constant="50" id="1Ho-B8-6fc"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
-                                                        <state key="normal" title="Sign In" backgroundImage="signIn">
+                                                        <state key="normal" title="Sign Up" backgroundImage="signIn">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signUpButtonWasPressed:" destination="ERp-Cb-IU6" eventType="touchUpInside" id="Oiy-h8-CBs"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -729,6 +729,16 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-Je-l0i">
+                                                <rect key="frame" x="35" y="222.66666666666669" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="U3I-nX-Ull"/>
+                                                    <constraint firstAttribute="width" constant="60" id="gNb-6A-6tQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                <color key="textColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfK-vL-5oO">
                                                 <rect key="frame" x="25" y="181" width="54" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -740,10 +750,12 @@
                                         <color key="backgroundColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="9p8-n9-nGi" firstAttribute="centerY" secondItem="bOW-qK-IbX" secondAttribute="centerY" id="5Sw-Vx-c7x"/>
+                                            <constraint firstItem="YRs-c5-AQM" firstAttribute="leading" secondItem="fcy-Je-l0i" secondAttribute="trailing" constant="-80" id="5ke-tq-YDN"/>
                                             <constraint firstItem="0hd-5V-yZ0" firstAttribute="top" secondItem="YRs-c5-AQM" secondAttribute="bottom" id="AcY-v8-iTD"/>
                                             <constraint firstItem="uVT-ek-unw" firstAttribute="bottom" secondItem="bOW-qK-IbX" secondAttribute="bottom" id="ClW-q6-3hZ"/>
                                             <constraint firstItem="uVT-ek-unw" firstAttribute="leading" secondItem="Wpl-dj-Lzz" secondAttribute="leading" constant="25" id="F0O-3j-JNY"/>
                                             <constraint firstAttribute="trailing" secondItem="0hd-5V-yZ0" secondAttribute="trailing" constant="15" id="GDC-Ff-ZrM"/>
+                                            <constraint firstItem="fcy-Je-l0i" firstAttribute="centerY" secondItem="YRs-c5-AQM" secondAttribute="centerY" id="JNh-TW-b3w"/>
                                             <constraint firstItem="bOW-qK-IbX" firstAttribute="height" secondItem="Wpl-dj-Lzz" secondAttribute="height" multiplier="0.25" id="TPT-vJ-Opd"/>
                                             <constraint firstAttribute="trailing" secondItem="w75-Np-k1d" secondAttribute="trailing" constant="25" id="aul-zx-9sp"/>
                                             <constraint firstItem="bOW-qK-IbX" firstAttribute="top" secondItem="Wpl-dj-Lzz" secondAttribute="top" constant="30" id="bn5-Y5-aiA"/>
@@ -788,6 +800,7 @@
                         <outlet property="phoneCodeLabel" destination="6L5-OR-1K3" id="0Vo-ED-CmQ"/>
                         <outlet property="phoneCodeTextField" destination="hNw-KK-aIo" id="DWv-Ek-YUU"/>
                         <outlet property="repeatPasswordTextField" destination="mAW-yO-yLl" id="vOY-Cf-Pyi"/>
+                        <outlet property="scrollView" destination="3bA-WK-caw" id="ttI-we-H1h"/>
                         <outlet property="userNameTextField" destination="eh2-ML-hs8" id="b8E-rG-Vo0"/>
                     </connections>
                 </viewController>
