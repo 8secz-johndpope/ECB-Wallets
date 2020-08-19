@@ -42,6 +42,7 @@ class SignUpViewController: UIViewController {
     @IBAction func termAndConditionButtonWasPressed(_ sender: Any) {
     }
     @IBAction func signUpButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToVerifyAccountView", sender: nil)
     }
     @IBAction func signInbuttonWasPressed(_ sender: Any) {
     }

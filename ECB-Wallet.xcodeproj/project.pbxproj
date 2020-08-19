@@ -30,6 +30,8 @@
 		539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */; };
 		539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */; };
 		539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C324ECFADB006A8EF5 /* SignUpViewController.swift */; };
+		539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */; };
+		539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C724ED1316006A8EF5 /* BoundFourCornersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setBorderAndRoundCornerButton.swift; sourceTree = "<group>"; };
 		539512C324ECFADB006A8EF5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
+		539512C724ED1316006A8EF5 /* BoundFourCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundFourCornersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 				537BF8BB24EBAE2100B49C7D /* ChangeColorImageView.swift */,
 				537BF8BD24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift */,
 				539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */,
+				539512C724ED1316006A8EF5 /* BoundFourCornersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				537BF8B524EB893A00B49C7D /* StartViewController.swift */,
 				537BF8B724EBA73300B49C7D /* SignInViewController.swift */,
 				539512C324ECFADB006A8EF5 /* SignUpViewController.swift */,
+				539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */,
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
@@ -247,6 +254,7 @@
 				538B116F24EA5FF1000B65D1 /* SceneDelegate.swift in Sources */,
 				537BF8B424EB779500B49C7D /* Page.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
+				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,
 				537BF8BE24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift in Sources */,
 			);
