@@ -88,7 +88,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="398"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMU-z1-2fO">
-                                <rect key="frame" x="104.33333333333333" y="457" width="166.33333333333337" height="25.666666666666686"/>
+                                <rect key="frame" x="108" y="457" width="159" height="25.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1000" y="121"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="5Rr-uo-EYq">
             <objects>
-                <viewController id="jId-LF-5qi" sceneMemberID="viewController">
+                <viewController id="jId-LF-5qi" customClass="SignInViewController" customModule="ECB_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LHT-y6-ySO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,25 +166,25 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0V-bs-g5A">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="704.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageSignIn" translatesAutoresizingMaskIntoConstraints="NO" id="QiY-za-Bcw">
-                                                <rect key="frame" x="205" y="29.999999999999986" width="200" height="227.66666666666663"/>
+                                                <rect key="frame" x="205" y="29.999999999999986" width="200" height="197.66666666666663"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="BKE-mj-eQv"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 299" translatesAutoresizingMaskIntoConstraints="NO" id="Amm-cY-znl" customClass="ChangeColorImageView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="227.66666666666669" width="180" height="50"/>
+                                                <rect key="frame" x="25" y="197.66666666666666" width="180" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Kqn-On-ssL"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageSignIn2" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-wB-sSh">
-                                                <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                                                <rect key="frame" x="0.0" y="352.33333333333337" width="375" height="352.33333333333337"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ECB WALLET" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFI-pQ-pBp">
-                                                <rect key="frame" x="15" y="115.66666666666666" width="135" height="56"/>
+                                                <rect key="frame" x="15" y="100.66666666666666" width="135" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="135" id="Gmh-BF-f03"/>
                                                     <constraint firstAttribute="height" constant="56" id="e3j-rJ-ouI"/>
@@ -194,7 +194,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-Tf-jbG" customClass="RoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="277.66666666666669" width="325" height="407.00000000000006"/>
+                                                <rect key="frame" x="25" y="247.66666666666669" width="325" height="407.00000000000006"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7IM-qs-0Ka">
                                                         <rect key="frame" x="43.333333333333329" y="356.99999999999994" width="238.66666666666669" height="32"/>
@@ -211,6 +211,9 @@
                                                                 <state key="normal" title="SIGN UP">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="signUpButtonWasPressed:" destination="jId-LF-5qi" eventType="touchUpInside" id="SUd-x3-rm2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -228,7 +231,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 299" translatesAutoresizingMaskIntoConstraints="NO" id="Wjg-1k-Rd7" customClass="ChangeColorImageView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="215.66666666666669" width="157" height="50"/>
+                                                <rect key="frame" x="15" y="185.66666666666666" width="157" height="50"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,7 +239,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hps-Xx-56D" customClass="RoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="265.66666666666669" width="345" height="353.00000000000006"/>
+                                                <rect key="frame" x="15" y="235.66666666666669" width="345" height="353.00000000000006"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5LW-MJ-05W">
                                                         <rect key="frame" x="20" y="30" width="305" height="192.66666666666666"/>
@@ -301,6 +304,9 @@
                                                         <state key="normal" title="Forgot Password">
                                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forgetPasswordButtonWasPressed:" destination="jId-LF-5qi" eventType="touchUpInside" id="JOC-tp-gDi"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vow-VG-LNG">
                                                         <rect key="frame" x="32.666666666666657" y="252.66666666666669" width="280" height="50"/>
@@ -311,6 +317,9 @@
                                                         <state key="normal" title="Sign In" backgroundImage="signIn">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signInButtonWasPressed:" destination="jId-LF-5qi" eventType="touchUpInside" id="k0Q-4R-Sgs"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,7 +341,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQq-pv-BUT">
-                                                <rect key="frame" x="55" y="230.66666666666669" width="54" height="20"/>
+                                                <rect key="frame" x="55" y="200.66666666666666" width="54" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="54" id="312-9x-ahc"/>
                                                     <constraint firstAttribute="height" constant="20" id="7t3-cY-3zJ"/>
@@ -352,6 +361,7 @@
                                             <constraint firstItem="Amm-cY-znl" firstAttribute="leading" secondItem="m0V-bs-g5A" secondAttribute="leading" constant="25" id="Hqf-8y-gqp"/>
                                             <constraint firstItem="Amm-cY-znl" firstAttribute="bottom" secondItem="QiY-za-Bcw" secondAttribute="bottom" constant="20" id="IA0-ET-lCF"/>
                                             <constraint firstItem="DbD-wB-sSh" firstAttribute="height" secondItem="m0V-bs-g5A" secondAttribute="height" multiplier="0.5" id="KNK-l7-fQl"/>
+                                            <constraint firstAttribute="bottom" secondItem="gOT-Tf-jbG" secondAttribute="bottom" constant="50" id="Ntu-rl-6HE"/>
                                             <constraint firstItem="Wjg-1k-Rd7" firstAttribute="leading" secondItem="RQq-pv-BUT" secondAttribute="trailing" constant="-94" id="WQa-aC-ymH"/>
                                             <constraint firstItem="QiY-za-Bcw" firstAttribute="top" secondItem="m0V-bs-g5A" secondAttribute="top" constant="30" id="emx-WL-EPT"/>
                                             <constraint firstAttribute="trailing" secondItem="hps-Xx-56D" secondAttribute="trailing" constant="15" id="exh-W3-qsT"/>
@@ -387,11 +397,16 @@
                             <constraint firstAttribute="bottom" secondItem="q0C-j1-XPw" secondAttribute="bottom" id="Dti-dj-i4Y"/>
                             <constraint firstItem="m0V-bs-g5A" firstAttribute="width" secondItem="LHT-y6-ySO" secondAttribute="width" id="Zhe-ZJ-00w"/>
                             <constraint firstItem="q0C-j1-XPw" firstAttribute="leading" secondItem="Eqg-rr-ki7" secondAttribute="leading" id="kaf-jb-tRZ"/>
-                            <constraint firstItem="m0V-bs-g5A" firstAttribute="height" secondItem="LHT-y6-ySO" secondAttribute="height" id="zhI-NR-RIx"/>
+                            <constraint firstItem="m0V-bs-g5A" firstAttribute="height" secondItem="LHT-y6-ySO" secondAttribute="height" priority="250" id="zhI-NR-RIx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Eqg-rr-ki7"/>
                     </view>
                     <navigationItem key="navigationItem" id="bJr-hw-48g"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Ac6-Tt-5Lx" id="wU7-ZK-j3K"/>
+                        <outlet property="passwordTextField" destination="wo7-4N-6eU" id="OfD-QX-P9A"/>
+                        <outlet property="scrollView" destination="q0C-j1-XPw" id="OOF-ai-zmX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8Q-y6-9ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

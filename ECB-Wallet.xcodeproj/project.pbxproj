@@ -27,6 +27,7 @@
 		538B118C24EA64B3000B65D1 /* stencil.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 538B118524EA627B000B65D1 /* stencil.TTF */; };
 		538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B118E24EA8403000B65D1 /* WelcomeCollectionViewCell.swift */; };
 		538B119124EA8403000B65D1 /* WelcomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */; };
+		539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		538B118624EA627B000B65D1 /* sfprodisplay_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfprodisplay_medium.ttf; sourceTree = "<group>"; };
 		538B118E24EA8403000B65D1 /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		538B116B24EA5FF1000B65D1 /* ECB-Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				539512BE24ECBB87006A8EF5 /* Extensions */,
 				537BF8B224EB776F00B49C7D /* Models */,
 				538B119224EA8962000B65D1 /* Controllers */,
 				538B118D24EA693E000B65D1 /* Views */,
@@ -139,6 +142,14 @@
 				537BF8B724EBA73300B49C7D /* SignInViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		539512BE24ECBB87006A8EF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */,
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
