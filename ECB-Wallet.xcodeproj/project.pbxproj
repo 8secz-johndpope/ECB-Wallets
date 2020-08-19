@@ -32,6 +32,7 @@
 		539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C324ECFADB006A8EF5 /* SignUpViewController.swift */; };
 		539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */; };
 		539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C724ED1316006A8EF5 /* BoundFourCornersView.swift */; };
+		539512CA24ED246E006A8EF5 /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C924ED246E006A8EF5 /* FinishSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		539512C324ECFADB006A8EF5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
 		539512C724ED1316006A8EF5 /* BoundFourCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundFourCornersView.swift; sourceTree = "<group>"; };
+		539512C924ED246E006A8EF5 /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				537BF8B724EBA73300B49C7D /* SignInViewController.swift */,
 				539512C324ECFADB006A8EF5 /* SignUpViewController.swift */,
 				539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */,
+				539512C924ED246E006A8EF5 /* FinishSignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */,
+				539512CA24ED246E006A8EF5 /* FinishSignUpViewController.swift in Sources */,
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,

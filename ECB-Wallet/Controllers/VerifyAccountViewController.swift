@@ -34,8 +34,10 @@ class VerifyAccountViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func confirmButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
     }
     @IBAction func resendOPTButtonWasPressed(_ sender: Any) {
+        print("Resend OTP")
     }
     
 }

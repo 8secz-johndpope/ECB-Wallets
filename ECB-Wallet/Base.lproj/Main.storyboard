@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 34" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-Qc-Nnf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 34" translatesAutoresizingMaskIntoConstraints="NO" id="sjN-Qc-Nnf">
                                 <rect key="frame" x="0.0" y="44" width="375" height="398"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMU-z1-2fO">
@@ -425,10 +425,10 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wpl-dj-Lzz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="958.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="932"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ECB WALLET" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9p8-n9-nGi">
-                                                <rect key="frame" x="15" y="126" width="135" height="48"/>
+                                                <rect key="frame" x="15" y="102.66666666666666" width="135" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="135" id="bYT-2L-lfo"/>
                                                     <constraint firstAttribute="height" constant="48" id="r2p-Hf-eDy"/>
@@ -442,13 +442,13 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1442" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-qK-IbX">
-                                                <rect key="frame" x="195" y="29.999999999999986" width="180" height="239.66666666666663"/>
+                                                <rect key="frame" x="195" y="10" width="180" height="233"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="180" id="CS4-P3-eF6"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w75-Np-k1d" customClass="RoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="269.66666666666674" width="325" height="639"/>
+                                                <rect key="frame" x="25" y="243" width="325" height="639"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hY9-2u-rQX">
                                                         <rect key="frame" x="39.000000000000014" y="587" width="247.33333333333337" height="32"/>
@@ -485,14 +485,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 299" translatesAutoresizingMaskIntoConstraints="NO" id="uVT-ek-unw" customClass="ChangeColorImageView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="219.66666666666669" width="157" height="50"/>
+                                                <rect key="frame" x="25" y="193" width="157" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="157" id="JtN-qj-nVG"/>
                                                     <constraint firstAttribute="height" constant="50" id="v5t-sK-6zU"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hd-5V-yZ0" customClass="RoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="257.66666666666674" width="345" height="585"/>
+                                                <rect key="frame" x="15" y="231" width="345" height="585"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-8x-Roz">
                                                         <rect key="frame" x="20" y="30" width="305" height="421.66666666666669"/>
@@ -528,7 +528,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25x-Ja-N9X" customClass="SetBorderAndRoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="112.66666666666663" width="305" height="50"/>
+                                                                <rect key="frame" x="0.0" y="112.66666666666669" width="305" height="50"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wba-PX-vHB">
                                                                         <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
@@ -546,13 +546,13 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz3-g9-hJU">
-                                                                <rect key="frame" x="0.0" y="172.66666666666663" width="94.666666666666671" height="16.333333333333343"/>
+                                                                <rect key="frame" x="0.0" y="172.66666666666669" width="94.666666666666671" height="16.333333333333343"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                 <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpo-HK-lHk" customClass="SetBorderAndRoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="198.99999999999994" width="305" height="50"/>
+                                                                <rect key="frame" x="0.0" y="199" width="305" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUm-cU-qJh">
                                                                         <rect key="frame" x="5" y="0.0" width="42" height="50"/>
@@ -595,13 +595,13 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frU-70-F33">
-                                                                <rect key="frame" x="0.0" y="258.99999999999994" width="62" height="16.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="259" width="62" height="16.333333333333314"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                 <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-oB-O5R" customClass="SetBorderAndRoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="285.33333333333331" width="305" height="50"/>
+                                                                <rect key="frame" x="0.0" y="285.33333333333337" width="305" height="50"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z8F-kq-JTb">
                                                                         <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
@@ -619,13 +619,13 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-9X-VCj">
-                                                                <rect key="frame" x="0.0" y="345.33333333333331" width="111" height="16.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="345.33333333333337" width="111" height="16.333333333333314"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                 <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STK-1h-Ijs" customClass="SetBorderAndRoundCornerView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="371.66666666666669" width="305" height="50"/>
+                                                                <rect key="frame" x="0.0" y="371.66666666666663" width="305" height="50"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-yO-yLl">
                                                                         <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
@@ -656,7 +656,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WIY-1K-dCs">
-                                                        <rect key="frame" x="20" y="474.99999999999994" width="270.33333333333331" height="30"/>
+                                                        <rect key="frame" x="20" y="475" width="270.33333333333331" height="30"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5I-MC-K4L" customClass="setBorderAndRoundCornerButton" customModule="ECB_Wallet" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -719,7 +719,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 299" translatesAutoresizingMaskIntoConstraints="NO" id="YRs-c5-AQM" customClass="ChangeColorImageView" customModule="ECB_Wallet" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="207.66666666666666" width="138" height="49.999999999999972"/>
+                                                <rect key="frame" x="15" y="181" width="138" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="aQz-Rq-HXv"/>
                                                 </constraints>
@@ -730,18 +730,11 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-Je-l0i">
-                                                <rect key="frame" x="35" y="222.66666666666669" width="60" height="20"/>
+                                                <rect key="frame" x="35" y="196" width="60" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="U3I-nX-Ull"/>
                                                     <constraint firstAttribute="width" constant="60" id="gNb-6A-6tQ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                                <color key="textColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfK-vL-5oO">
-                                                <rect key="frame" x="25" y="181" width="54" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                                 <color key="textColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -758,7 +751,7 @@
                                             <constraint firstItem="fcy-Je-l0i" firstAttribute="centerY" secondItem="YRs-c5-AQM" secondAttribute="centerY" id="JNh-TW-b3w"/>
                                             <constraint firstItem="bOW-qK-IbX" firstAttribute="height" secondItem="Wpl-dj-Lzz" secondAttribute="height" multiplier="0.25" id="TPT-vJ-Opd"/>
                                             <constraint firstAttribute="trailing" secondItem="w75-Np-k1d" secondAttribute="trailing" constant="25" id="aul-zx-9sp"/>
-                                            <constraint firstItem="bOW-qK-IbX" firstAttribute="top" secondItem="Wpl-dj-Lzz" secondAttribute="top" constant="30" id="bn5-Y5-aiA"/>
+                                            <constraint firstItem="bOW-qK-IbX" firstAttribute="top" secondItem="Wpl-dj-Lzz" secondAttribute="top" constant="10" id="bn5-Y5-aiA"/>
                                             <constraint firstAttribute="trailing" secondItem="bOW-qK-IbX" secondAttribute="trailing" id="d8e-Hf-VSd"/>
                                             <constraint firstItem="YRs-c5-AQM" firstAttribute="width" secondItem="uVT-ek-unw" secondAttribute="width" multiplier="0.88" id="dDD-nn-uq5"/>
                                             <constraint firstItem="w75-Np-k1d" firstAttribute="top" secondItem="bOW-qK-IbX" secondAttribute="bottom" id="eiy-MP-j0H"/>
@@ -1022,16 +1015,87 @@
                         <outlet property="OTPTextField6" destination="1ym-rJ-8Mi" id="qKF-7l-36C"/>
                         <outlet property="OTPTextfield4" destination="vCs-xK-gEo" id="B3Y-jw-3QD"/>
                         <outlet property="expriedLabel" destination="eSi-zw-K9Y" id="RUX-J6-ZwW"/>
+                        <segue destination="SNA-I1-cSa" kind="presentation" identifier="goToFinishSignUpVC" modalPresentationStyle="fullScreen" id="kzo-P8-O2p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1Y-fK-qDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2588" y="869.70443349753702"/>
         </scene>
+        <!--Finish Sign Up View Controller-->
+        <scene sceneID="2xf-3b-255">
+            <objects>
+                <viewController id="SNA-I1-cSa" customClass="FinishSignUpViewController" customModule="ECB_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ega-JP-mkw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1848" translatesAutoresizingMaskIntoConstraints="NO" id="SPu-VS-ERA">
+                                <rect key="frame" x="0.0" y="128.99999999999997" width="375" height="292.33333333333326"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2En-9a-4vX">
+                                <rect key="frame" x="12" y="477.33333333333331" width="351" height="38.333333333333314"/>
+                                <string key="text">You have successfully registered.
+Please login to continue using our services.</string>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iek-xC-1U6">
+                                <rect key="frame" x="47" y="569.66666666666663" width="281" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GCu-C1-hqT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="Sign In" backgroundImage="signIn">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonWasPressed:" destination="SNA-I1-cSa" eventType="touchUpInside" id="70J-fu-YPW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87t-4J-X7C">
+                                <rect key="frame" x="144.66666666666666" y="436.33333333333331" width="86" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="87t-4J-X7C" firstAttribute="centerX" secondItem="kdl-dw-8ZL" secondAttribute="centerX" id="30p-ZA-0Pk"/>
+                            <constraint firstItem="87t-4J-X7C" firstAttribute="top" secondItem="SPu-VS-ERA" secondAttribute="bottom" constant="15" id="84R-om-ZCn"/>
+                            <constraint firstItem="iek-xC-1U6" firstAttribute="top" secondItem="2En-9a-4vX" secondAttribute="bottom" constant="54" id="D0n-3k-N7C"/>
+                            <constraint firstItem="kdl-dw-8ZL" firstAttribute="trailing" secondItem="2En-9a-4vX" secondAttribute="trailing" constant="12" id="Iad-2j-VIL"/>
+                            <constraint firstItem="2En-9a-4vX" firstAttribute="leading" secondItem="kdl-dw-8ZL" secondAttribute="leading" constant="12" id="Jel-JO-ajy"/>
+                            <constraint firstItem="SPu-VS-ERA" firstAttribute="top" secondItem="kdl-dw-8ZL" secondAttribute="top" constant="85" id="Wwk-W4-zZT"/>
+                            <constraint firstItem="SPu-VS-ERA" firstAttribute="trailing" secondItem="kdl-dw-8ZL" secondAttribute="trailing" id="eTs-lR-jR7"/>
+                            <constraint firstItem="2En-9a-4vX" firstAttribute="centerX" secondItem="kdl-dw-8ZL" secondAttribute="centerX" id="nP7-8f-DL3"/>
+                            <constraint firstItem="SPu-VS-ERA" firstAttribute="height" secondItem="ega-JP-mkw" secondAttribute="height" multiplier="0.36" id="nSY-KY-e2V"/>
+                            <constraint firstItem="iek-xC-1U6" firstAttribute="leading" secondItem="kdl-dw-8ZL" secondAttribute="leading" constant="47" id="sZA-pw-Tzp"/>
+                            <constraint firstItem="kdl-dw-8ZL" firstAttribute="trailing" secondItem="iek-xC-1U6" secondAttribute="trailing" constant="47" id="sdd-FE-gdq"/>
+                            <constraint firstItem="2En-9a-4vX" firstAttribute="top" secondItem="87t-4J-X7C" secondAttribute="bottom" constant="20" id="vQq-Fl-W4e"/>
+                            <constraint firstItem="SPu-VS-ERA" firstAttribute="leading" secondItem="kdl-dw-8ZL" secondAttribute="leading" id="w4S-dA-dCf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kdl-dw-8ZL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0og-8b-dzq"/>
+                    <connections>
+                        <segue destination="jId-LF-5qi" kind="presentation" identifier="goToSignInVC" modalPresentationStyle="fullScreen" id="LzM-hW-Wz2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhD-xG-Rw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3334" y="870"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LzM-hW-Wz2"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Group 1442" width="184" height="203"/>
         <image name="Group 1679" width="56.333332061767578" height="19"/>
+        <image name="Group 1848" width="353" height="263.33334350585938"/>
         <image name="Mask Group 23" width="42" height="30"/>
         <image name="Mask Group 34" width="375.33334350585938" height="451.33334350585938"/>
         <image name="Path 299" width="157" height="50"/>
