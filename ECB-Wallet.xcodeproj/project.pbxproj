@@ -28,6 +28,8 @@
 		538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B118E24EA8403000B65D1 /* WelcomeCollectionViewCell.swift */; };
 		538B119124EA8403000B65D1 /* WelcomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */; };
 		539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */; };
+		539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */; };
+		539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C324ECFADB006A8EF5 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		538B118E24EA8403000B65D1 /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setBorderAndRoundCornerButton.swift; sourceTree = "<group>"; };
+		539512C324ECFADB006A8EF5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				537BF8B924EBA82B00B49C7D /* RoundCornerView.swift */,
 				537BF8BB24EBAE2100B49C7D /* ChangeColorImageView.swift */,
 				537BF8BD24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift */,
+				539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				538B117024EA5FF1000B65D1 /* WelcomeController.swift */,
 				537BF8B524EB893A00B49C7D /* StartViewController.swift */,
 				537BF8B724EBA73300B49C7D /* SignInViewController.swift */,
+				539512C324ECFADB006A8EF5 /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,12 +240,14 @@
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
+				539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */,
 				538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */,
 				538B116D24EA5FF1000B65D1 /* AppDelegate.swift in Sources */,
 				537BF8BA24EBA82B00B49C7D /* RoundCornerView.swift in Sources */,
 				538B116F24EA5FF1000B65D1 /* SceneDelegate.swift in Sources */,
 				537BF8B424EB779500B49C7D /* Page.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
+				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,
 				537BF8BE24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

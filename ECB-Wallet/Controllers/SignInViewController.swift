@@ -23,6 +23,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         // set textField delegate
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        passwordTextField.isSecureTextEntry = true
         //
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
         self.view.addGestureRecognizer(tap)
