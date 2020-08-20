@@ -9,13 +9,17 @@
 import UIKit
 
 class FinishSignUpViewController: UIViewController {
-
+    //MARK: Models
+    var content:String?
+    //MARK: - UI Element
+    @IBOutlet weak var titleLabel: UILabel!
+    //MARK: - UI VIewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard let labelContent = content else {return}
+        titleLabel.text = labelContent
     }
-    
+    //MARK: - UI Events
     @IBAction func signInButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "goToSignInVC", sender: nil)
     }

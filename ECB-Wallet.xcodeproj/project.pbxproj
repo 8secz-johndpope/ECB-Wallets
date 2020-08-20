@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530510D724EE0F18002CDA2E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530510D624EE0F18002CDA2E /* ForgotPasswordViewController.swift */; };
+		530510D924EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530510D824EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift */; };
+		530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530510DA24EE25E4002CDA2E /* CreateNewPasswordViewController.swift */; };
 		537BF8B424EB779500B49C7D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B324EB779500B49C7D /* Page.swift */; };
 		537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B524EB893A00B49C7D /* StartViewController.swift */; };
 		537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B724EBA73300B49C7D /* SignInViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530510D624EE0F18002CDA2E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		530510D824EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		530510DA24EE25E4002CDA2E /* CreateNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewController.swift; sourceTree = "<group>"; };
 		537BF8B324EB779500B49C7D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		537BF8B524EB893A00B49C7D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		537BF8B724EBA73300B49C7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				539512C324ECFADB006A8EF5 /* SignUpViewController.swift */,
 				539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */,
 				539512C924ED246E006A8EF5 /* FinishSignUpViewController.swift */,
+				530510D624EE0F18002CDA2E /* ForgotPasswordViewController.swift */,
+				530510D824EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift */,
+				530510DA24EE25E4002CDA2E /* CreateNewPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -253,10 +262,13 @@
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
 				539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */,
 				538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */,
+				530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */,
 				538B116D24EA5FF1000B65D1 /* AppDelegate.swift in Sources */,
 				537BF8BA24EBA82B00B49C7D /* RoundCornerView.swift in Sources */,
 				538B116F24EA5FF1000B65D1 /* SceneDelegate.swift in Sources */,
+				530510D724EE0F18002CDA2E /* ForgotPasswordViewController.swift in Sources */,
 				537BF8B424EB779500B49C7D /* Page.swift in Sources */,
+				530510D924EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,
