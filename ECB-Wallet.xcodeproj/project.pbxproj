@@ -44,6 +44,8 @@
 		53ACB20724EF75B800BCC6B4 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */; };
 		53ACB20824EF75B800BCC6B4 /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */; };
 		53ACB20A24EF765D00BCC6B4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20924EF765D00BCC6B4 /* DashboardViewController.swift */; };
+		53ACB20D24EF828600BCC6B4 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */; };
+		53ACB20E24EF828600BCC6B4 /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
 		53ACB20924EF765D00BCC6B4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				53ACB20324EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift */,
 				53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */,
 				53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */,
+				53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */,
+				53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */,
 				538B118B24EA64B0000B65D1 /* sfprodisplay_regular.ttf in Resources */,
 				538B118A24EA64AE000B65D1 /* sfprodisplay_regular_italic.ttf in Resources */,
+				53ACB20E24EF828600BCC6B4 /* DashboardTableViewCell.xib in Resources */,
 				538B117424EA5FF1000B65D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +310,7 @@
 				5305110324EE6D7A002CDA2E /* TabBarViewController.swift in Sources */,
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
+				53ACB20D24EF828600BCC6B4 /* DashboardTableViewCell.swift in Sources */,
 				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,
 				537BF8BE24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift in Sources */,
 			);

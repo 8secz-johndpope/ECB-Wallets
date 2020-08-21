@@ -97,6 +97,13 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="136" height="172"/>
+            <connections>
+                <outlet property="imageView" destination="991-la-SD4" id="nxE-lr-KKe"/>
+                <outlet property="nameCurrencyLabel" destination="JUo-DJ-dds" id="vLv-R2-qMV"/>
+                <outlet property="unitCurrency" destination="ppU-Gt-Mi1" id="Orz-iu-5V3"/>
+                <outlet property="valueCurrencyLabel" destination="r85-cF-e5q" id="3wb-uD-0g5"/>
+                <outlet property="valueUSDLabel" destination="4A4-Lq-3pP" id="UQ3-US-1GB"/>
+            </connections>
             <point key="canvasLocation" x="194.20289855072465" y="154.35267857142856"/>
         </collectionViewCell>
     </objects>

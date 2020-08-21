@@ -9,8 +9,14 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
-
+    //MARK: - UI Elements
+    @IBOutlet weak var valueCurrencyLable: UILabel!
+    @IBOutlet weak var unitCurrencyLabel: UILabel!
+    @IBOutlet weak var valueUSDLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var heightPurpleView: NSLayoutConstraint!
+    //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +30,36 @@ class DashboardViewController: UIViewController {
         collectionView.register(nibCollectionCell, forCellWithReuseIdentifier: "DashboardCollectionViewCell")
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        //Register Cell for tableView
+        let nibTableCell = UINib(nibName: "DashboardTableViewCell", bundle: nil)
+        tableView.register(nibTableCell, forCellReuseIdentifier: "DashboardTableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        //Get height of tableView and set height constaint for purpleView
+        var tableViewHeight: CGFloat {
+            tableView.layoutIfNeeded()
+
+            return tableView.contentSize.height
+        }
+        print(tableViewHeight)
+        heightPurpleView.constant = tableViewHeight
     }
+    //MARK: - UI Event
+    @IBAction func refreshButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func sendButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func recieveButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func buyButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func withdrawButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func allWalletsButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func allTransactionButtonWasPressed(_ sender: Any) {
+    }
+    
     
 
 }
@@ -40,5 +74,18 @@ extension DashboardViewController:UICollectionViewDelegate, UICollectionViewData
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 150, height: 145)
+    }
+}
+//MARK: - UITableView delegate &Datasource
+extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardTableViewCell", for: indexPath) as! DashboardTableViewCell
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
     }
 }
