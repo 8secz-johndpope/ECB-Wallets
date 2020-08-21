@@ -41,7 +41,6 @@ class DashboardViewController: UIViewController {
 
             return tableView.contentSize.height
         }
-        print(tableViewHeight)
         heightPurpleView.constant = tableViewHeight
     }
     //MARK: - UI Event
