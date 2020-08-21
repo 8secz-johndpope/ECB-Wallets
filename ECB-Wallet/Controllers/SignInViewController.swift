@@ -31,6 +31,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     //MARK: - UI events
     @IBAction func signInButtonWasPressed(_ sender: Any) {
         print("Sign In")
+        self.performSegue(withIdentifier: "goToDashBoardVC", sender: nil)
     }
     @IBAction func forgetPasswordButtonWasPressed(_ sender: Any) {
         print("forget password")
