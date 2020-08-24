@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SendViewController: UIViewController {
+class SendViewController: UIViewController,listWalletDelegate {
     //MARK: - UI Elements
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -29,9 +29,16 @@ class SendViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
+    //MARK: - ListWalletDelegate
+    //get wallet, which selected at ListWalletVC and than update UI
+    func getWalletAndUpdate(_ wallet: Wallet) {
+        currencyImage.image = UIImage(named: wallet.image)
+        currencyTitleLabel.text = wallet.name
+    }
     //MARK: - UI Event
     
     @IBAction func listWalletButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToListWalletVC", sender: nil)
     }
     @IBAction func addressListWalletWasPressed(_ sender: Any) {
     }
@@ -44,6 +51,13 @@ class SendViewController: UIViewController {
     }
     
     @IBAction func sendButtonWasPressed(_ sender: Any) {
+    }
+    //MARK: UI NavigationController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToListWalletVC"{
+            let dest = segue.destination as! ListWalletViewController
+            dest.delegate = self
+        }
     }
     //MARK: Helper method
     @objc func keyboardWillShow(notification:NSNotification){

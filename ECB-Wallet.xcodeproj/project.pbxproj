@@ -36,6 +36,11 @@
 		538B119124EA8403000B65D1 /* WelcomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */; };
 		538DC1EB24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1EA24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift */; };
 		538DC1ED24F36A2C00B12D02 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1EC24F36A2C00B12D02 /* SendViewController.swift */; };
+		538DC1EF24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1EE24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift */; };
+		538DC1F124F37F1400B12D02 /* ListWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1F024F37F1400B12D02 /* ListWalletViewController.swift */; };
+		538DC1F424F395BA00B12D02 /* ListWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1F224F395BA00B12D02 /* ListWalletTableViewCell.swift */; };
+		538DC1F524F395BA00B12D02 /* ListWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */; };
+		538DC1F724F398F500B12D02 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1F624F398F500B12D02 /* Wallet.swift */; };
 		539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */; };
 		539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */; };
 		539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C324ECFADB006A8EF5 /* SignUpViewController.swift */; };
@@ -85,6 +90,11 @@
 		538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		538DC1EA24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundBottomLeftAndBottomRightCornerView.swift; sourceTree = "<group>"; };
 		538DC1EC24F36A2C00B12D02 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		538DC1EE24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundTopLeftAndTopRightCornerView.swift; sourceTree = "<group>"; };
+		538DC1F024F37F1400B12D02 /* ListWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWalletViewController.swift; sourceTree = "<group>"; };
+		538DC1F224F395BA00B12D02 /* ListWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWalletTableViewCell.swift; sourceTree = "<group>"; };
+		538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListWalletTableViewCell.xib; sourceTree = "<group>"; };
+		538DC1F624F398F500B12D02 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setBorderAndRoundCornerButton.swift; sourceTree = "<group>"; };
 		539512C324ECFADB006A8EF5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				537BF8B324EB779500B49C7D /* Page.swift */,
+				538DC1F624F398F500B12D02 /* Wallet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +200,9 @@
 				53ACB20F24EFAE3C00BCC6B4 /* WalletTableViewCell.swift */,
 				53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */,
 				538DC1EA24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift */,
+				538DC1EE24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift */,
+				538DC1F224F395BA00B12D02 /* ListWalletTableViewCell.swift */,
+				538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 				53ACB20924EF765D00BCC6B4 /* DashboardViewController.swift */,
 				53ACB21324EFB1FE00BCC6B4 /* WalletsViewController.swift */,
 				538DC1EC24F36A2C00B12D02 /* SendViewController.swift */,
+				538DC1F024F37F1400B12D02 /* ListWalletViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -283,6 +298,7 @@
 				538B117924EA5FF3000B65D1 /* LaunchScreen.storyboard in Resources */,
 				538B119124EA8403000B65D1 /* WelcomeCollectionViewCell.xib in Resources */,
 				538B118C24EA64B3000B65D1 /* stencil.TTF in Resources */,
+				538DC1F524F395BA00B12D02 /* ListWalletTableViewCell.xib in Resources */,
 				538B117624EA5FF3000B65D1 /* Assets.xcassets in Resources */,
 				53ACB20824EF75B800BCC6B4 /* DashboardCollectionViewCell.xib in Resources */,
 				538B118824EA64A8000B65D1 /* sfprodisplay_light.ttf in Resources */,
@@ -302,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538DC1EF24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift in Sources */,
 				53ACB21124EFAE3C00BCC6B4 /* WalletTableViewCell.swift in Sources */,
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */,
@@ -315,6 +332,8 @@
 				53ACB20A24EF765D00BCC6B4 /* DashboardViewController.swift in Sources */,
 				538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */,
 				53ACB20724EF75B800BCC6B4 /* DashboardCollectionViewCell.swift in Sources */,
+				538DC1F424F395BA00B12D02 /* ListWalletTableViewCell.swift in Sources */,
+				538DC1F724F398F500B12D02 /* Wallet.swift in Sources */,
 				538DC1ED24F36A2C00B12D02 /* SendViewController.swift in Sources */,
 				5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */,
 				530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */,
@@ -322,6 +341,7 @@
 				537BF8BA24EBA82B00B49C7D /* RoundCornerView.swift in Sources */,
 				538B116F24EA5FF1000B65D1 /* SceneDelegate.swift in Sources */,
 				530510D724EE0F18002CDA2E /* ForgotPasswordViewController.swift in Sources */,
+				538DC1F124F37F1400B12D02 /* ListWalletViewController.swift in Sources */,
 				537BF8B424EB779500B49C7D /* Page.swift in Sources */,
 				530510D924EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
