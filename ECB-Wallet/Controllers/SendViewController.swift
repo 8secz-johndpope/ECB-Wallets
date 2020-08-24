@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SendViewController: UIViewController,listWalletDelegate {
+class SendViewController: UIViewController,listWalletDelegate, addressWalletDelegate {
     //MARK: - UI Elements
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -35,12 +35,17 @@ class SendViewController: UIViewController,listWalletDelegate {
         currencyImage.image = UIImage(named: wallet.image)
         currencyTitleLabel.text = wallet.name
     }
+    //get address wallet, which selected at AddressWalletVC and than update UI
+    func getAddressWalletAndUpdate(_ addressWallet: AddressWallet) {
+        addressWalletTextField.text = addressWallet.addressWallet
+    }
     //MARK: - UI Event
     
     @IBAction func listWalletButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "goToListWalletVC", sender: nil)
     }
     @IBAction func addressListWalletWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToAddressWalletVC", sender: nil)
     }
     @IBAction func QRScanButtonWasPressed(_ sender: Any) {
     }
@@ -56,6 +61,10 @@ class SendViewController: UIViewController,listWalletDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToListWalletVC"{
             let dest = segue.destination as! ListWalletViewController
+            dest.delegate = self
+        }
+        if segue.identifier == "goToAddressWalletVC"{
+            let dest = segue.destination as! AddressWalletViewController
             dest.delegate = self
         }
     }

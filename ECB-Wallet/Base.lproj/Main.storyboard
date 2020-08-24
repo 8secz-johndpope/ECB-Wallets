@@ -1082,7 +1082,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-RH-Dao">
-                                                                <rect key="frame" x="247" y="13.333333333333371" width="90" height="29"/>
+                                                                <rect key="frame" x="247.33333333333337" y="13.333333333333371" width="90" height="29"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                                 <state key="normal" title="All transactions">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1092,7 +1092,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olT-qP-R7s">
-                                                                <rect key="frame" x="342" y="16.666666666666629" width="13" height="22"/>
+                                                                <rect key="frame" x="342.33333333333331" y="16.666666666666629" width="12.666666666666686" height="22"/>
                                                                 <state key="normal" image="next"/>
                                                                 <connections>
                                                                     <action selector="allTransactionButtonWasPressed:" destination="RQy-Fe-TxQ" eventType="touchUpInside" id="YWI-yo-69y"/>
@@ -1156,7 +1156,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeI-y4-Ss7">
-                                                        <rect key="frame" x="276" y="13.333333333333314" width="61" height="29"/>
+                                                        <rect key="frame" x="276.33333333333331" y="13.333333333333314" width="61" height="29"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <state key="normal" title="All Wallets">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1166,7 +1166,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0g-qR-w37">
-                                                        <rect key="frame" x="342" y="16.666666666666686" width="13" height="22"/>
+                                                        <rect key="frame" x="342.33333333333331" y="16.666666666666686" width="12.666666666666686" height="22"/>
                                                         <state key="normal" image="next"/>
                                                         <connections>
                                                             <action selector="allWalletsButtonWasPressed:" destination="RQy-Fe-TxQ" eventType="touchUpInside" id="U26-Wk-KUB"/>
@@ -1956,6 +1956,7 @@
                         <outlet property="valueCurencyBTC" destination="DL2-dM-t7k" id="4na-pQ-RWB"/>
                         <outlet property="valueUSDLabel" destination="8mN-VU-vHe" id="wO2-Ye-Fx1"/>
                         <segue destination="l1O-et-u5E" kind="presentation" identifier="goToListWalletVC" modalPresentationStyle="fullScreen" id="stn-oc-xWZ"/>
+                        <segue destination="Q9q-XY-abZ" kind="presentation" identifier="goToAddressWalletVC" modalPresentationStyle="fullScreen" id="pIv-S7-zHC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="89g-RF-Ozx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1986,7 +1987,7 @@
                                                         <rect key="frame" x="15" y="58" width="18" height="22"/>
                                                         <state key="normal" image="closeButton"/>
                                                         <connections>
-                                                            <action selector="closeButtonWasPressed:" destination="l1O-et-u5E" eventType="touchUpInside" id="ae7-Bo-hZc"/>
+                                                            <action selector="closeButtonWasPressed:" destination="l1O-et-u5E" eventType="touchUpInside" id="odL-gn-DnS"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Wallets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f0-gi-rdd">
@@ -2105,13 +2106,163 @@
                     </view>
                     <navigationItem key="navigationItem" id="0SL-6t-Fdm"/>
                     <connections>
-                        <outlet property="searchTextField" destination="Sb0-ds-ubZ" id="taf-iK-IC9"/>
+                        <outlet property="searchTextField" destination="Sb0-ds-ubZ" id="Vwv-a1-4D5"/>
                         <outlet property="tableView" destination="942-CH-tWk" id="5EV-Dr-oJ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fp3-n2-ncQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3600.8000000000002" y="2258.8669950738918"/>
+        </scene>
+        <!--Address Wallet View Controller-->
+        <scene sceneID="gIY-qZ-tA5">
+            <objects>
+                <viewController id="Q9q-XY-abZ" customClass="AddressWalletViewController" customModule="ECB_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z5H-8j-G6W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-7d-0vG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srL-25-7vY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juM-Cp-Auv">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 10" translatesAutoresizingMaskIntoConstraints="NO" id="i5A-gO-piO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4i-VH-S3P">
+                                                        <rect key="frame" x="15" y="58" width="18" height="22"/>
+                                                        <state key="normal" image="closeButton"/>
+                                                        <connections>
+                                                            <action selector="closeButtonWasPressed:" destination="Q9q-XY-abZ" eventType="touchUpInside" id="zEq-ad-jpL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3n-4c-lsA">
+                                                        <rect key="frame" x="132.66666666666666" y="58" width="117" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.058823529409999999" green="0.31764705879999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="K4i-VH-S3P" firstAttribute="top" secondItem="juM-Cp-Auv" secondAttribute="top" constant="58" id="21Z-R0-YTJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="i5A-gO-piO" secondAttribute="bottom" id="ARC-AP-Yyo"/>
+                                                    <constraint firstItem="K4i-VH-S3P" firstAttribute="leading" secondItem="juM-Cp-Auv" secondAttribute="leading" constant="15" id="BWA-z9-N6Y"/>
+                                                    <constraint firstItem="i5A-gO-piO" firstAttribute="top" secondItem="juM-Cp-Auv" secondAttribute="top" id="HaT-Ky-BQb"/>
+                                                    <constraint firstItem="a3n-4c-lsA" firstAttribute="centerY" secondItem="K4i-VH-S3P" secondAttribute="centerY" id="O1J-hX-1la"/>
+                                                    <constraint firstItem="i5A-gO-piO" firstAttribute="leading" secondItem="juM-Cp-Auv" secondAttribute="leading" id="oLk-gd-wBK"/>
+                                                    <constraint firstItem="a3n-4c-lsA" firstAttribute="centerX" secondItem="i5A-gO-piO" secondAttribute="centerX" constant="3.6666666666665151" id="oRe-qV-AIU"/>
+                                                    <constraint firstAttribute="height" constant="210" id="qs5-eh-lBN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i5A-gO-piO" secondAttribute="trailing" id="w0a-ZI-RvI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSf-Y4-jGe" customClass="BoundTopLeftAndTopRightCornerView" customModule="ECB_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="110" width="375" height="702"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Sq-xs-pHV" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="15" width="345" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAD-Og-ACC">
+                                                                <rect key="frame" x="300" y="5" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="3We-9L-koT"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="UnT-E1-csm"/>
+                                                                </constraints>
+                                                                <state key="normal" image="searchButton"/>
+                                                                <connections>
+                                                                    <action selector="searchButtonWasPressed:" destination="Q9q-XY-abZ" eventType="touchUpInside" id="bkm-Eo-BsW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search wallet address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XX-R1-fcL">
+                                                                <rect key="frame" x="8" y="0.0" width="284" height="50"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="4XX-R1-fcL" firstAttribute="leading" secondItem="9Sq-xs-pHV" secondAttribute="leading" constant="8" id="2cs-vn-NWs"/>
+                                                            <constraint firstItem="4XX-R1-fcL" firstAttribute="top" secondItem="9Sq-xs-pHV" secondAttribute="top" id="62Z-dC-Qma"/>
+                                                            <constraint firstAttribute="bottom" secondItem="4XX-R1-fcL" secondAttribute="bottom" id="cOc-Po-iT3"/>
+                                                            <constraint firstItem="JAD-Og-ACC" firstAttribute="centerY" secondItem="9Sq-xs-pHV" secondAttribute="centerY" id="kdK-hf-UY0"/>
+                                                            <constraint firstAttribute="height" constant="50" id="qcD-4Y-Rha"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JAD-Og-ACC" secondAttribute="trailing" constant="5" id="tWv-mq-tT8"/>
+                                                            <constraint firstItem="JAD-Og-ACC" firstAttribute="leading" secondItem="4XX-R1-fcL" secondAttribute="trailing" constant="8" id="tzg-gq-aaC"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B7H-Vv-Z0c">
+                                                        <rect key="frame" x="0.0" y="80" width="375" height="622"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </tableView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="B7H-Vv-Z0c" secondAttribute="bottom" id="3bq-hx-ZQn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9Sq-xs-pHV" secondAttribute="trailing" constant="15" id="5Mb-sL-o5d"/>
+                                                    <constraint firstItem="B7H-Vv-Z0c" firstAttribute="top" secondItem="9Sq-xs-pHV" secondAttribute="bottom" constant="15" id="LoY-Dv-Lla"/>
+                                                    <constraint firstItem="9Sq-xs-pHV" firstAttribute="leading" secondItem="SSf-Y4-jGe" secondAttribute="leading" constant="15" id="T7E-8P-mlu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="B7H-Vv-Z0c" secondAttribute="trailing" id="i26-4u-Yxm"/>
+                                                    <constraint firstItem="B7H-Vv-Z0c" firstAttribute="leading" secondItem="SSf-Y4-jGe" secondAttribute="leading" id="ivh-7y-TCM"/>
+                                                    <constraint firstItem="9Sq-xs-pHV" firstAttribute="top" secondItem="SSf-Y4-jGe" secondAttribute="top" constant="15" id="pCw-OC-6pU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="juM-Cp-Auv" firstAttribute="top" secondItem="srL-25-7vY" secondAttribute="top" id="ZOH-lo-lo1"/>
+                                            <constraint firstAttribute="bottom" secondItem="SSf-Y4-jGe" secondAttribute="bottom" id="a6h-5c-2OA"/>
+                                            <constraint firstAttribute="trailing" secondItem="juM-Cp-Auv" secondAttribute="trailing" id="kE6-N3-G8g"/>
+                                            <constraint firstItem="SSf-Y4-jGe" firstAttribute="top" secondItem="srL-25-7vY" secondAttribute="top" constant="110" id="p2F-Rb-mP9"/>
+                                            <constraint firstAttribute="trailing" secondItem="SSf-Y4-jGe" secondAttribute="trailing" id="shz-cT-K5S"/>
+                                            <constraint firstItem="SSf-Y4-jGe" firstAttribute="leading" secondItem="srL-25-7vY" secondAttribute="leading" id="tWf-Rg-v1i"/>
+                                            <constraint firstItem="juM-Cp-Auv" firstAttribute="leading" secondItem="srL-25-7vY" secondAttribute="leading" id="x1Y-ET-6Jb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="srL-25-7vY" firstAttribute="top" secondItem="VIP-7d-0vG" secondAttribute="top" id="90C-ux-inW"/>
+                                    <constraint firstItem="srL-25-7vY" firstAttribute="leading" secondItem="VIP-7d-0vG" secondAttribute="leading" id="Bcl-Ro-fyO"/>
+                                    <constraint firstAttribute="trailing" secondItem="srL-25-7vY" secondAttribute="trailing" id="QRP-Wr-SJr"/>
+                                    <constraint firstAttribute="bottom" secondItem="srL-25-7vY" secondAttribute="bottom" id="dTF-q4-LpO"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="PUE-zM-2zT"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Vc4-6R-wma"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="srL-25-7vY" firstAttribute="height" secondItem="z5H-8j-G6W" secondAttribute="height" id="5dn-7R-6SM"/>
+                            <constraint firstItem="VIP-7d-0vG" firstAttribute="leading" secondItem="z5H-8j-G6W" secondAttribute="leading" id="GSk-eq-z43"/>
+                            <constraint firstAttribute="bottom" secondItem="VIP-7d-0vG" secondAttribute="bottom" id="LwF-IL-X3L"/>
+                            <constraint firstItem="VIP-7d-0vG" firstAttribute="top" secondItem="z5H-8j-G6W" secondAttribute="top" id="MdA-Bq-cSA"/>
+                            <constraint firstItem="srL-25-7vY" firstAttribute="width" secondItem="z5H-8j-G6W" secondAttribute="width" id="dS0-bt-681"/>
+                            <constraint firstAttribute="trailing" secondItem="VIP-7d-0vG" secondAttribute="trailing" id="nLR-kr-pSL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6zM-6v-eBq"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="4XX-R1-fcL" id="Nvf-6p-dYa"/>
+                        <outlet property="tableView" destination="B7H-Vv-Z0c" id="QR0-dv-Xf5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Isl-wH-cAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4420" y="2262.5615763546798"/>
         </scene>
         <!--Wallets View Controller-->
         <scene sceneID="nuH-hq-mqg">
