@@ -8,6 +8,9 @@
 
 import UIKit
 import AVFoundation
+protocol scanQRDelegate:class {
+    func getInfoQRCode(_ infoQR:String)
+}
 class ScanQRViewController: UIViewController {
     //MARK: - UI element
     @IBOutlet weak var scanQRView: UIView!
@@ -15,6 +18,10 @@ class ScanQRViewController: UIViewController {
     var captureSession = AVCaptureSession()
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
+    
+    var infoQRCode:String?
+    
+    weak var delegate:scanQRDelegate?
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +60,10 @@ class ScanQRViewController: UIViewController {
         //Start video capture
         captureSession.startRunning()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        // Stop Scan QR code when this will dismiss
+        self.stopScanQRCode()
+    }
     
     //MARK: - UI Event
     @IBAction func closeButtomWasPressed(_ sender: Any) {
@@ -61,10 +72,61 @@ class ScanQRViewController: UIViewController {
     }
     
     @IBAction func selectButtonWasPressed(_ sender: Any) {
+        var pickerImage = UIImagePickerController()
+        pickerImage.sourceType = .photoLibrary
+        pickerImage.allowsEditing = true
+        pickerImage.delegate = self
+        self.present(pickerImage, animated: true, completion: nil)
+    }
+    //MARK: - Helper Method
+    func stopScanQRCode(){
+        if captureSession.isRunning == true {
+            captureSession.stopRunning()
+        }
+    }
+    func startScanQRCode(){
+        if captureSession.isRunning == false {
+            captureSession.startRunning()
+        }
     }
     
 }
-//
+//MARK: AVCaptureMetadataOutputObjectsDelegate
 extension ScanQRViewController: AVCaptureMetadataOutputObjectsDelegate{
-    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        //When get output we will stop scan QR code
+        self.stopScanQRCode()
+        //Get result and convert to stringValue and pass into getInfoQRCode function
+        if let metadataObject = metadataObjects.first {
+            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else {return}
+            guard let stringValue = readableObject.stringValue else {return}
+            infoQRCode = stringValue
+            self.delegate?.getInfoQRCode(infoQRCode!)
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+}
+//MARK: UIImagePickerControllerDelegate
+extension ScanQRViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let qrCodeImage = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        let detector:CIDetector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh])!
+        let ciImg:CIImage = CIImage(image: qrCodeImage)!
+        let features = detector.features(in: ciImg)
+        for feature in features as! [CIQRCodeFeature] {
+            guard let stringValue = feature.messageString else {return}
+            infoQRCode = stringValue
+            self.delegate?.getInfoQRCode(infoQRCode!)
+            print(infoQRCode)
+        }
+        self.dismiss(animated: true, completion: nil)
+        let delayInSecond = 1.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + delayInSecond) {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
 }

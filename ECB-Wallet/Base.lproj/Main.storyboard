@@ -1498,7 +1498,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-wA-UDb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcX-Eo-COq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="799.33333333333337"/>
@@ -2401,6 +2401,7 @@
                     <navigationItem key="navigationItem" id="Nvk-AT-N59"/>
                     <connections>
                         <outlet property="scanQRView" destination="V4s-ka-6AG" id="YGF-tK-09d"/>
+                        <segue destination="Jnt-K2-30O" kind="presentation" identifier="goBackSendVC" modalPresentationStyle="fullScreen" id="4pX-HF-VjU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FY-Dp-1vK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3215,6 +3216,7 @@ sent you on your email address.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kzo-P8-O2p"/>
+        <segue reference="4pX-HF-VjU"/>
         <segue reference="LzM-hW-Wz2"/>
     </inferredMetricsTieBreakers>
     <resources>

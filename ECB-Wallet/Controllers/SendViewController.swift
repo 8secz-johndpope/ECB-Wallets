@@ -71,6 +71,10 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
             let dest = segue.destination as! AddressWalletViewController
             dest.delegate = self
         }
+        if segue.identifier == "goToScanQRVC"{
+            let dest = segue.destination as! ScanQRViewController
+            dest.delegate = self
+        }
     }
     //MARK: Helper method
     @objc func keyboardWillShow(notification:NSNotification){
@@ -85,6 +89,13 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     }
     @objc func handleTapToHideKeyboard() {
         self.view.endEditing(true)
+    }
+    
+}
+//MARK: scanQRDelegate
+extension SendViewController:scanQRDelegate{
+    func getInfoQRCode(_ infoQR: String) {
+        self.addressWalletTextField.text = infoQR
     }
     
 }
