@@ -24,11 +24,4 @@ class RoundCornerView: UIView {
     }
 
 }
-extension UIView {
-    func roundCornerView(_ cornes: CACornerMask, radius: CGFloat){
-        self.layer.cornerRadius = radius
-        if #available(iOS 11.0, *) {
-            self.layer.maskedCorners = cornes
-        }
-    }
-}
+

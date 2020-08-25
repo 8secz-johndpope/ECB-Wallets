@@ -42,12 +42,16 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     //MARK: - UI Event
     
     @IBAction func listWalletButtonWasPressed(_ sender: Any) {
+        //Jump to ListWalletVC
         self.performSegue(withIdentifier: "goToListWalletVC", sender: nil)
     }
     @IBAction func addressListWalletWasPressed(_ sender: Any) {
+        //Jump to AddressWalletVC
         self.performSegue(withIdentifier: "goToAddressWalletVC", sender: nil)
     }
     @IBAction func QRScanButtonWasPressed(_ sender: Any) {
+        //Jump to ScanQRVC
+        self.performSegue(withIdentifier: "goToScanQRVC", sender: nil)
     }
     @IBAction func resetButtonWasPressed(_ sender: Any) {
         addressWalletTextField.text = ""

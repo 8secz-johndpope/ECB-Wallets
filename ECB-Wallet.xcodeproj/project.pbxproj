@@ -14,6 +14,8 @@
 		5305110324EE6D7A002CDA2E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110224EE6D7A002CDA2E /* TabBarViewController.swift */; };
 		5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110424EE7664002CDA2E /* BoundTopRightView.swift */; };
 		5305110724EE78A2002CDA2E /* BoundBottomLeftCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */; };
+		53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD524F4A45900FF6C32 /* UIViewExtension.swift */; };
+		53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */; };
 		537BF8B424EB779500B49C7D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B324EB779500B49C7D /* Page.swift */; };
 		537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B524EB893A00B49C7D /* StartViewController.swift */; };
 		537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B724EBA73300B49C7D /* SignInViewController.swift */; };
@@ -70,6 +72,8 @@
 		5305110224EE6D7A002CDA2E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5305110424EE7664002CDA2E /* BoundTopRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundTopRightView.swift; sourceTree = "<group>"; };
 		5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundBottomLeftCorner.swift; sourceTree = "<group>"; };
+		53364AD524F4A45900FF6C32 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		537BF8B324EB779500B49C7D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		537BF8B524EB893A00B49C7D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		537BF8B724EBA73300B49C7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53364AD724F4A52600FF6C32 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */,
+				53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */,
+				53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */,
+				53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */,
+				538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */,
+				538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
 		537BF8B224EB776F00B49C7D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +177,7 @@
 		538B116B24EA5FF1000B65D1 /* ECB-Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				53364AD724F4A52600FF6C32 /* XIB */,
 				539512BE24ECBB87006A8EF5 /* Extensions */,
 				537BF8B224EB776F00B49C7D /* Models */,
 				538B119224EA8962000B65D1 /* Controllers */,
@@ -192,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				538B118E24EA8403000B65D1 /* WelcomeCollectionViewCell.swift */,
-				538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */,
 				537BF8B924EBA82B00B49C7D /* RoundCornerView.swift */,
 				537BF8BB24EBAE2100B49C7D /* ChangeColorImageView.swift */,
 				537BF8BD24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift */,
@@ -203,17 +220,12 @@
 				5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */,
 				53ACB20324EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift */,
 				53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */,
-				53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */,
 				53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */,
-				53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */,
 				53ACB20F24EFAE3C00BCC6B4 /* WalletTableViewCell.swift */,
-				53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */,
 				538DC1EA24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift */,
 				538DC1EE24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift */,
 				538DC1F224F395BA00B12D02 /* ListWalletTableViewCell.swift */,
-				538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */,
 				538DC1FA24F3B34C00B12D02 /* AddressWalletTableViewCell.swift */,
-				538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +248,7 @@
 				538DC1EC24F36A2C00B12D02 /* SendViewController.swift */,
 				538DC1F024F37F1400B12D02 /* ListWalletViewController.swift */,
 				538DC1F824F3B0B800B12D02 /* AddressWalletViewController.swift */,
+				53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */,
+				53364AD524F4A45900FF6C32 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,11 +349,13 @@
 				53ACB21124EFAE3C00BCC6B4 /* WalletTableViewCell.swift in Sources */,
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */,
+				53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */,
 				539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */,
 				538DC1EB24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift in Sources */,
 				539512CA24ED246E006A8EF5 /* FinishSignUpViewController.swift in Sources */,
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
+				53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
 				539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */,
 				53ACB20A24EF765D00BCC6B4 /* DashboardViewController.swift in Sources */,

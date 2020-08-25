@@ -69,5 +69,7 @@
 		<string>sfprodisplay_regular.ttf</string>
 		<string>stencil.TTF</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to use camera for scaning QR code</string>
 </dict>
 </plist>
