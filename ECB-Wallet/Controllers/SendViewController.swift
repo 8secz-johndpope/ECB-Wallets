@@ -60,6 +60,8 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     }
     
     @IBAction func sendButtonWasPressed(_ sender: Any) {
+        //Jump to ConfirmSendVC
+        self.performSegue(withIdentifier: "goToConfrmSendVC", sender: nil)
     }
     //MARK: UI NavigationController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
