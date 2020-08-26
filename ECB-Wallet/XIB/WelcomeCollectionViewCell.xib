@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="432" height="843"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-ov-NjW">
-                                <rect key="frame" x="0.0" y="0.0" width="432" height="739.33333333333337"/>
+                                <rect key="frame" x="0.0" y="0.0" width="432" height="701"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-su-RXB">
                                         <rect key="frame" x="0.0" y="0.0" width="432" height="390"/>
@@ -52,10 +52,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-Ck-Kyn">
-                                        <rect key="frame" x="30" y="489.99999999999994" width="315" height="229.33333333333331"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="315" id="Gwf-lI-v6g"/>
-                                        </constraints>
+                                        <rect key="frame" x="30" y="490" width="372" height="191"/>
                                         <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. /// Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </string>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                         <nil key="textColor"/>
@@ -72,6 +69,7 @@
                                     <constraint firstItem="dBu-Ck-Kyn" firstAttribute="top" secondItem="Ond-oY-ccq" secondAttribute="bottom" constant="8" id="WzR-K7-4C5"/>
                                     <constraint firstItem="QkO-su-RXB" firstAttribute="top" secondItem="QIL-ov-NjW" secondAttribute="top" id="X5P-qa-wGb"/>
                                     <constraint firstItem="KsL-RO-WJh" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" constant="30" id="XFo-md-Vls"/>
+                                    <constraint firstAttribute="trailing" secondItem="dBu-Ck-Kyn" secondAttribute="trailing" constant="30" id="qTV-hJ-ppF"/>
                                     <constraint firstItem="QkO-su-RXB" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" id="uJL-Hq-D3u"/>
                                     <constraint firstItem="Ond-oY-ccq" firstAttribute="leading" secondItem="QIL-ov-NjW" secondAttribute="leading" constant="30" id="zZ1-Bx-Mhg"/>
                                 </constraints>
