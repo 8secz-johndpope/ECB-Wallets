@@ -30,6 +30,9 @@ class ConfirmSendViewController: UIViewController {
     }
     
     @IBAction func confirmButtonWasPressed(_ sender: Any) {
+        //Jump to SendPassVC
+        self.performSegue(withIdentifier: "goToSendPassVC", sender: nil)
+        
     }
     //MARK: - Helper Methods
     func customContainerView(){

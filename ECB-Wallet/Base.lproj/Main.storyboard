@@ -2707,11 +2707,150 @@
                         <outlet property="currencyValueLabel" destination="Dva-4w-4Ji" id="N2Z-Bq-kpg"/>
                         <outlet property="feeLabel" destination="WVU-nk-0OH" id="x01-On-qRK"/>
                         <outlet property="sendToLabel" destination="FoU-wF-fL9" id="19d-d6-AnI"/>
+                        <segue destination="66k-Fk-4Ea" kind="presentation" identifier="goToSendPassVC" modalPresentationStyle="fullScreen" id="3Tp-b0-Ky6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyr-Hb-BkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5940" y="2264.039408866995"/>
+        </scene>
+        <!--Pass Send Confirm View Controller-->
+        <scene sceneID="YdZ-G4-aR8">
+            <objects>
+                <viewController id="66k-Fk-4Ea" customClass="PassSendConfirmViewController" customModule="ECB_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wch-TE-Ej5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVE-iV-10t">
+                                <rect key="frame" x="15" y="58" width="13" height="23"/>
+                                <state key="normal" image="backPurpleButton"/>
+                                <connections>
+                                    <action selector="backButtonWasPressed:" destination="66k-Fk-4Ea" eventType="touchUpInside" id="XLf-Db-Dib"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the password to complete the procedure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct5-qk-h5s">
+                                <rect key="frame" x="45" y="114" width="285" height="43"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqd-eG-kz7">
+                                <rect key="frame" x="40" y="197" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="81p-u5-JHa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CVE-iV-10t" firstAttribute="leading" secondItem="mMH-Hs-uPo" secondAttribute="leading" constant="15" id="3oc-VW-PUG"/>
+                            <constraint firstItem="mMH-Hs-uPo" firstAttribute="trailing" secondItem="pqd-eG-kz7" secondAttribute="trailing" constant="40" id="4bg-rf-GgO"/>
+                            <constraint firstItem="ct5-qk-h5s" firstAttribute="leading" secondItem="mMH-Hs-uPo" secondAttribute="leading" constant="45" id="Mb1-Ax-ZIq"/>
+                            <constraint firstItem="pqd-eG-kz7" firstAttribute="top" secondItem="ct5-qk-h5s" secondAttribute="bottom" constant="40" id="e0h-z5-Hxa"/>
+                            <constraint firstItem="pqd-eG-kz7" firstAttribute="leading" secondItem="mMH-Hs-uPo" secondAttribute="leading" constant="40" id="ifp-nb-LqE"/>
+                            <constraint firstItem="ct5-qk-h5s" firstAttribute="top" secondItem="mMH-Hs-uPo" secondAttribute="top" constant="70" id="jlr-xS-20h"/>
+                            <constraint firstItem="CVE-iV-10t" firstAttribute="top" secondItem="mMH-Hs-uPo" secondAttribute="top" constant="14" id="n1E-HX-fau"/>
+                            <constraint firstItem="mMH-Hs-uPo" firstAttribute="trailing" secondItem="ct5-qk-h5s" secondAttribute="trailing" constant="45" id="tzM-2f-sE7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mMH-Hs-uPo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K9B-1C-elz"/>
+                    <connections>
+                        <outlet property="passcodeView" destination="pqd-eG-kz7" id="Kxi-Bk-afk"/>
+                        <segue destination="AAP-yJ-zhC" kind="presentation" identifier="goToCompleteSendVC" modalPresentationStyle="fullScreen" id="vZT-Qo-ZtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXg-nc-rgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6717.6000000000004" y="2263.3004926108374"/>
+        </scene>
+        <!--Complete Send View Controller-->
+        <scene sceneID="nJA-SP-lgi">
+            <objects>
+                <viewController id="AAP-yJ-zhC" customClass="CompleteSendViewController" customModule="ECB_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4N7-Es-D4S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1848" translatesAutoresizingMaskIntoConstraints="NO" id="Dcv-N2-CK0">
+                                <rect key="frame" x="0.0" y="84" width="355" height="270.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Successful!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDR-cP-yhV">
+                                <rect key="frame" x="97.666666666666686" y="384.66666666666669" width="180" height="20"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.31764705879999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've just made a successful transfer of 0.00001234 BTC to the wallet address bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khC-b7-85L">
+                                <rect key="frame" x="25" y="424.66666666666669" width="325" height="74.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIU-I4-xsB">
+                                <rect key="frame" x="47" y="549.33333333333337" width="281" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eHj-qX-sJ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="Save Wallet Address" backgroundImage="Subtraction 6-1"/>
+                                <connections>
+                                    <action selector="saveWalletAdressWasPressed:" destination="AAP-yJ-zhC" eventType="touchUpInside" id="roD-Ft-Qh6"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-8M-OSd">
+                                <rect key="frame" x="110.66666666666669" y="717" width="154" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-Qc-zyY">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="31"/>
+                                        <state key="normal" image="Group 281"/>
+                                        <connections>
+                                            <action selector="gotoDashboardWasPressed:" destination="AAP-yJ-zhC" eventType="touchUpInside" id="aue-vj-sHa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ym-QSu">
+                                        <rect key="frame" x="30.999999999999986" y="0.0" width="123.00000000000001" height="31"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                        <state key="normal" title="Go to Dashboard">
+                                            <color key="titleColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoDashboardWasPressed:" destination="AAP-yJ-zhC" eventType="touchUpInside" id="27E-wV-5i7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dcv-N2-CK0" firstAttribute="top" secondItem="MtR-Ws-ZTU" secondAttribute="top" constant="40" id="4fe-Jz-0eA"/>
+                            <constraint firstItem="khC-b7-85L" firstAttribute="top" secondItem="YDR-cP-yhV" secondAttribute="bottom" constant="20" id="8Gu-C4-ddW"/>
+                            <constraint firstItem="YDR-cP-yhV" firstAttribute="top" secondItem="Dcv-N2-CK0" secondAttribute="bottom" constant="30" id="9dZ-iq-za0"/>
+                            <constraint firstItem="MtR-Ws-ZTU" firstAttribute="bottom" secondItem="qZr-8M-OSd" secondAttribute="bottom" constant="30" id="DCY-uP-QV6"/>
+                            <constraint firstItem="Dcv-N2-CK0" firstAttribute="height" secondItem="4N7-Es-D4S" secondAttribute="height" multiplier="1/3" id="Mav-NA-xkn"/>
+                            <constraint firstItem="khC-b7-85L" firstAttribute="leading" secondItem="MtR-Ws-ZTU" secondAttribute="leading" constant="25" id="Mv1-Ns-cbM"/>
+                            <constraint firstItem="MtR-Ws-ZTU" firstAttribute="trailing" secondItem="khC-b7-85L" secondAttribute="trailing" constant="25" id="PmE-hF-zqN"/>
+                            <constraint firstItem="Dcv-N2-CK0" firstAttribute="leading" secondItem="MtR-Ws-ZTU" secondAttribute="leading" id="Xe5-z6-VHW"/>
+                            <constraint firstItem="OIU-I4-xsB" firstAttribute="leading" secondItem="MtR-Ws-ZTU" secondAttribute="leading" constant="47" id="cKZ-5I-nRe"/>
+                            <constraint firstAttribute="trailing" secondItem="Dcv-N2-CK0" secondAttribute="trailing" constant="20" id="h7N-Vk-mTy"/>
+                            <constraint firstItem="MtR-Ws-ZTU" firstAttribute="trailing" secondItem="OIU-I4-xsB" secondAttribute="trailing" constant="47" id="hL1-sO-p7G"/>
+                            <constraint firstItem="YDR-cP-yhV" firstAttribute="centerX" secondItem="MtR-Ws-ZTU" secondAttribute="centerX" id="iCT-l5-vSu"/>
+                            <constraint firstItem="OIU-I4-xsB" firstAttribute="top" secondItem="khC-b7-85L" secondAttribute="bottom" constant="50" id="kiN-Af-WXg"/>
+                            <constraint firstItem="qZr-8M-OSd" firstAttribute="centerX" secondItem="MtR-Ws-ZTU" secondAttribute="centerX" id="xa7-sZ-MrF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MtR-Ws-ZTU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dFP-a3-9Q5"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="khC-b7-85L" id="xeP-wb-qT6"/>
+                        <segue destination="6hV-VJ-ZKi" kind="presentation" identifier="backToDashboardVC" modalPresentationStyle="fullScreen" id="CSg-kj-qF4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuZ-8E-L65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7475.625" y="2264.7887323943664"/>
         </scene>
         <!--Wallets View Controller-->
         <scene sceneID="nuH-hq-mqg">
@@ -2967,7 +3106,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVo-S6-Peu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="2463"/>
+            <point key="canvasLocation" x="740" y="2297"/>
         </scene>
         <!--Finish Sign Up View Controller-->
         <scene sceneID="2xf-3b-255">
@@ -3521,6 +3660,7 @@ sent you on your email address.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kzo-P8-O2p"/>
+        <segue reference="CSg-kj-qF4"/>
         <segue reference="LzM-hW-Wz2"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -3533,6 +3673,7 @@ sent you on your email address.</string>
         <image name="Group 2174" width="85" height="85"/>
         <image name="Group 2175" width="165" height="50"/>
         <image name="Group 251" width="30" height="25"/>
+        <image name="Group 281" width="16" height="14.666666984558105"/>
         <image name="Mask Group 10" width="375" height="211"/>
         <image name="Mask Group 18" width="345" height="155"/>
         <image name="Mask Group 19" width="345" height="129"/>
