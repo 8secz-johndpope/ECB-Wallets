@@ -32,7 +32,7 @@ class CompleteSendViewController: UIViewController {
     }
     //MARK: - UI Events
     @IBAction func saveWalletAdressWasPressed(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "gotoSaveWalletVC", sender: nil)
     }
     
     @IBAction func gotoDashboardWasPressed(_ sender: Any) {

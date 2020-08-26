@@ -21,6 +21,8 @@
 		53534F6424F60FBE009A8964 /* Passcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6224F60FBE009A8964 /* Passcode.swift */; };
 		53534F6524F60FBE009A8964 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6324F60FBE009A8964 /* Pin.swift */; };
 		53534F6724F61EE7009A8964 /* CompleteSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */; };
+		53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6824F648E0009A8964 /* SaveWalletViewController.swift */; };
+		53534F6B24F65D70009A8964 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */; };
 		537BF8B424EB779500B49C7D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B324EB779500B49C7D /* Page.swift */; };
 		537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B524EB893A00B49C7D /* StartViewController.swift */; };
 		537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B724EBA73300B49C7D /* SignInViewController.swift */; };
@@ -52,7 +54,6 @@
 		538DC1FC24F3B34C00B12D02 /* AddressWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1FA24F3B34C00B12D02 /* AddressWalletTableViewCell.swift */; };
 		538DC1FD24F3B34C00B12D02 /* AddressWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */; };
 		538DC1FF24F3BBBD00B12D02 /* AddressWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC1FE24F3BBBD00B12D02 /* AddressWallet.swift */; };
-		539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */; };
 		539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */; };
 		539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C324ECFADB006A8EF5 /* SignUpViewController.swift */; };
 		539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */; };
@@ -84,6 +85,8 @@
 		53534F6224F60FBE009A8964 /* Passcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Passcode.swift; sourceTree = "<group>"; };
 		53534F6324F60FBE009A8964 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSendViewController.swift; sourceTree = "<group>"; };
+		53534F6824F648E0009A8964 /* SaveWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWalletViewController.swift; sourceTree = "<group>"; };
+		53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		537BF8B324EB779500B49C7D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		537BF8B524EB893A00B49C7D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		537BF8B724EBA73300B49C7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +120,6 @@
 		538DC1FA24F3B34C00B12D02 /* AddressWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressWalletTableViewCell.swift; sourceTree = "<group>"; };
 		538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressWalletTableViewCell.xib; sourceTree = "<group>"; };
 		538DC1FE24F3BBBD00B12D02 /* AddressWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressWallet.swift; sourceTree = "<group>"; };
-		539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		539512C124ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setBorderAndRoundCornerButton.swift; sourceTree = "<group>"; };
 		539512C324ECFADB006A8EF5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		539512C524ED0FBB006A8EF5 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */,
 				53534F6024F60EB1009A8964 /* PassSendConfirmViewController.swift */,
 				53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */,
+				53534F6824F648E0009A8964 /* SaveWalletViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,8 +274,8 @@
 		539512BE24ECBB87006A8EF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				539512BF24ECBBAD006A8EF5 /* KeyboardBoundView.swift */,
 				53364AD524F4A45900FF6C32 /* UIViewExtension.swift */,
+				53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -365,7 +368,6 @@
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */,
 				53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */,
-				539512C024ECBBAD006A8EF5 /* KeyboardBoundView.swift in Sources */,
 				538DC1EB24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift in Sources */,
 				539512CA24ED246E006A8EF5 /* FinishSignUpViewController.swift in Sources */,
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
@@ -400,10 +402,12 @@
 				538DC1F924F3B0B800B12D02 /* AddressWalletViewController.swift in Sources */,
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
+				53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */,
 				53ACB20D24EF828600BCC6B4 /* DashboardTableViewCell.swift in Sources */,
 				53534F6424F60FBE009A8964 /* Passcode.swift in Sources */,
 				538DC1FC24F3B34C00B12D02 /* AddressWalletTableViewCell.swift in Sources */,
 				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,
+				53534F6B24F65D70009A8964 /* UIScrollViewExtension.swift in Sources */,
 				537BF8BE24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
