@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardTableViewCell: UITableViewCell {
+class TransactionTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

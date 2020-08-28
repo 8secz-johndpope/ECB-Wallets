@@ -63,11 +63,19 @@
 		53ACB20724EF75B800BCC6B4 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */; };
 		53ACB20824EF75B800BCC6B4 /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */; };
 		53ACB20A24EF765D00BCC6B4 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20924EF765D00BCC6B4 /* DashboardViewController.swift */; };
-		53ACB20D24EF828600BCC6B4 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */; };
-		53ACB20E24EF828600BCC6B4 /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */; };
+		53ACB20D24EF828600BCC6B4 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20B24EF828600BCC6B4 /* TransactionTableViewCell.swift */; };
+		53ACB20E24EF828600BCC6B4 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB20C24EF828600BCC6B4 /* TransactionTableViewCell.xib */; };
 		53ACB21124EFAE3C00BCC6B4 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB20F24EFAE3C00BCC6B4 /* WalletTableViewCell.swift */; };
 		53ACB21224EFAE3C00BCC6B4 /* WalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */; };
 		53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACB21324EFB1FE00BCC6B4 /* WalletsViewController.swift */; };
+		53B13BA224F75635004E54D9 /* RecieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BA124F75635004E54D9 /* RecieveViewController.swift */; };
+		53B13BA524F786EC004E54D9 /* WithdrawalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BA324F786EC004E54D9 /* WithdrawalTableViewCell.swift */; };
+		53B13BA624F786EC004E54D9 /* WithdrawalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B13BA424F786EC004E54D9 /* WithdrawalTableViewCell.xib */; };
+		53B13BA824F78C28004E54D9 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BA724F78C28004E54D9 /* WithdrawalViewController.swift */; };
+		53B13BAA24F79D51004E54D9 /* FinishWithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BA924F79D51004E54D9 /* FinishWithdrawalViewController.swift */; };
+		53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */; };
+		53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */; };
+		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,11 +137,19 @@
 		53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
 		53ACB20924EF765D00BCC6B4 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
-		53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		53ACB20B24EF828600BCC6B4 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		53ACB20C24EF828600BCC6B4 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
 		53ACB20F24EFAE3C00BCC6B4 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
 		53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTableViewCell.xib; sourceTree = "<group>"; };
 		53ACB21324EFB1FE00BCC6B4 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		53B13BA124F75635004E54D9 /* RecieveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveViewController.swift; sourceTree = "<group>"; };
+		53B13BA324F786EC004E54D9 /* WithdrawalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalTableViewCell.swift; sourceTree = "<group>"; };
+		53B13BA424F786EC004E54D9 /* WithdrawalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithdrawalTableViewCell.xib; sourceTree = "<group>"; };
+		53B13BA724F78C28004E54D9 /* WithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalViewController.swift; sourceTree = "<group>"; };
+		53B13BA924F79D51004E54D9 /* FinishWithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishWithdrawalViewController.swift; sourceTree = "<group>"; };
+		53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +168,12 @@
 			children = (
 				538B118F24EA8403000B65D1 /* WelcomeCollectionViewCell.xib */,
 				53ACB20624EF75B800BCC6B4 /* DashboardCollectionViewCell.xib */,
-				53ACB20C24EF828600BCC6B4 /* DashboardTableViewCell.xib */,
+				53ACB20C24EF828600BCC6B4 /* TransactionTableViewCell.xib */,
 				53ACB21024EFAE3C00BCC6B4 /* WalletTableViewCell.xib */,
 				538DC1F324F395BA00B12D02 /* ListWalletTableViewCell.xib */,
 				538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */,
+				53B13BA424F786EC004E54D9 /* WithdrawalTableViewCell.xib */,
+				53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -234,12 +252,14 @@
 				5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */,
 				53ACB20324EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift */,
 				53ACB20524EF75B800BCC6B4 /* DashboardCollectionViewCell.swift */,
-				53ACB20B24EF828600BCC6B4 /* DashboardTableViewCell.swift */,
+				53ACB20B24EF828600BCC6B4 /* TransactionTableViewCell.swift */,
 				53ACB20F24EFAE3C00BCC6B4 /* WalletTableViewCell.swift */,
 				538DC1EA24F353D000B12D02 /* BoundBottomLeftAndBottomRightCornerView.swift */,
 				538DC1EE24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift */,
 				538DC1F224F395BA00B12D02 /* ListWalletTableViewCell.swift */,
 				538DC1FA24F3B34C00B12D02 /* AddressWalletTableViewCell.swift */,
+				53B13BA324F786EC004E54D9 /* WithdrawalTableViewCell.swift */,
+				53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +287,10 @@
 				53534F6024F60EB1009A8964 /* PassSendConfirmViewController.swift */,
 				53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */,
 				53534F6824F648E0009A8964 /* SaveWalletViewController.swift */,
+				53B13BA124F75635004E54D9 /* RecieveViewController.swift */,
+				53B13BA724F78C28004E54D9 /* WithdrawalViewController.swift */,
+				53B13BA924F79D51004E54D9 /* FinishWithdrawalViewController.swift */,
+				53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +368,7 @@
 				538B118C24EA64B3000B65D1 /* stencil.TTF in Resources */,
 				538DC1F524F395BA00B12D02 /* ListWalletTableViewCell.xib in Resources */,
 				538B117624EA5FF3000B65D1 /* Assets.xcassets in Resources */,
+				53B13BA624F786EC004E54D9 /* WithdrawalTableViewCell.xib in Resources */,
 				53ACB20824EF75B800BCC6B4 /* DashboardCollectionViewCell.xib in Resources */,
 				538B118824EA64A8000B65D1 /* sfprodisplay_light.ttf in Resources */,
 				538B118924EA64AB000B65D1 /* sfprodisplay_medium.ttf in Resources */,
@@ -351,8 +376,9 @@
 				538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */,
 				538B118B24EA64B0000B65D1 /* sfprodisplay_regular.ttf in Resources */,
 				538B118A24EA64AE000B65D1 /* sfprodisplay_regular_italic.ttf in Resources */,
-				53ACB20E24EF828600BCC6B4 /* DashboardTableViewCell.xib in Resources */,
+				53ACB20E24EF828600BCC6B4 /* TransactionTableViewCell.xib in Resources */,
 				538B117424EA5FF1000B65D1 /* Main.storyboard in Resources */,
+				53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +391,7 @@
 			files = (
 				538DC1EF24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift in Sources */,
 				53ACB21124EFAE3C00BCC6B4 /* WalletTableViewCell.swift in Sources */,
+				53B13BA524F786EC004E54D9 /* WithdrawalTableViewCell.swift in Sources */,
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */,
 				53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */,
@@ -383,9 +410,13 @@
 				538DC1F724F398F500B12D02 /* Wallet.swift in Sources */,
 				53534F6124F60EB1009A8964 /* PassSendConfirmViewController.swift in Sources */,
 				538DC1ED24F36A2C00B12D02 /* SendViewController.swift in Sources */,
+				53B13BA824F78C28004E54D9 /* WithdrawalViewController.swift in Sources */,
+				53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */,
 				53364ADB24F50E9400FF6C32 /* ConfirmSendViewController.swift in Sources */,
 				5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */,
+				53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */,
 				530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */,
+				53B13BA224F75635004E54D9 /* RecieveViewController.swift in Sources */,
 				53534F6524F60FBE009A8964 /* Pin.swift in Sources */,
 				538DC1FF24F3BBBD00B12D02 /* AddressWallet.swift in Sources */,
 				538B116D24EA5FF1000B65D1 /* AppDelegate.swift in Sources */,
@@ -403,7 +434,8 @@
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
 				53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */,
-				53ACB20D24EF828600BCC6B4 /* DashboardTableViewCell.swift in Sources */,
+				53ACB20D24EF828600BCC6B4 /* TransactionTableViewCell.swift in Sources */,
+				53B13BAA24F79D51004E54D9 /* FinishWithdrawalViewController.swift in Sources */,
 				53534F6424F60FBE009A8964 /* Passcode.swift in Sources */,
 				538DC1FC24F3B34C00B12D02 /* AddressWalletTableViewCell.swift in Sources */,
 				539512C424ECFADB006A8EF5 /* SignUpViewController.swift in Sources */,

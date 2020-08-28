@@ -31,8 +31,8 @@ class DashboardViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         //Register Cell for tableView
-        let nibTableCell = UINib(nibName: "DashboardTableViewCell", bundle: nil)
-        tableView.register(nibTableCell, forCellReuseIdentifier: "DashboardTableViewCell")
+        let nibTableCell = UINib(nibName: "TransactionTableViewCell", bundle: nil)
+        tableView.register(nibTableCell, forCellReuseIdentifier: "TransactionTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         //Get height of tableView and set height constaint for purpleView
@@ -44,6 +44,9 @@ class DashboardViewController: UIViewController {
         heightPurpleView.constant = tableViewHeight
     }
     //MARK: - UI Event
+    @IBAction func notificationButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoNotificationVC", sender: nil)
+    }
     @IBAction func refreshButtonWasPressed(_ sender: Any) {
     }
     @IBAction func sendButtonWasPressed(_ sender: Any) {
@@ -53,6 +56,7 @@ class DashboardViewController: UIViewController {
     @IBAction func buyButtonWasPressed(_ sender: Any) {
     }
     @IBAction func withdrawButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoWithdrawalVC", sender: nil)
     }
     @IBAction func allWalletsButtonWasPressed(_ sender: Any) {
     }
@@ -81,7 +85,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
         return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DashboardTableViewCell", for: indexPath) as! DashboardTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell", for: indexPath) as! TransactionTableViewCell
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
