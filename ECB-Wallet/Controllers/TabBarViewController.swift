@@ -11,8 +11,9 @@ import UIKit
 class TabBarViewController: UITabBarController {
     let homeButton:UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.setImage(UIImage(named: "homeButton"), for: UIControl.State.normal)
+        button.setBackgroundImage(UIImage(named: "homeButton"), for: UIControl.State.normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleHomeButton), for: UIControl.Event.touchUpInside)
         return button
     }()
     override func viewDidLoad() {
@@ -20,13 +21,24 @@ class TabBarViewController: UITabBarController {
         //Default tab
         self.selectedIndex = 2
         self.view.addSubview(homeButton)
+        var height:CGFloat = self.tabBar.frame.size.height
+        //Check safe view is available or not
+        if view.safeAreaInsets.bottom > 0 {
+            height = height + 20
+        }else {
+            height -= 10
+        }
         // set x,y,width, height for homeButton
         homeButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         homeButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         homeButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
-        homeButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -(self.tabBar.frame.size.height/2 + 20)).isActive = true
+        homeButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -(height/2)).isActive = true
     }
-    
+    //MARK: - Hepler Method
+    @objc func handleHomeButton(){
+        //Jump to DashboardVC
+        self.selectedIndex = 2
+    }
 
 
 

@@ -78,6 +78,7 @@
 		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
 		53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */; };
 		53EC8EB224F8FBB900744B80 /* BoundCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */; };
+		53EC8EB424F9097900744B80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB324F9097900744B80 /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,7 @@
 		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotificationViewController.swift; sourceTree = "<group>"; };
 		53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundCornerImage.swift; sourceTree = "<group>"; };
+		53EC8EB324F9097900744B80 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +299,7 @@
 				53B13BA924F79D51004E54D9 /* FinishWithdrawalViewController.swift */,
 				53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */,
 				53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */,
+				53EC8EB324F9097900744B80 /* AccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				53ACB20724EF75B800BCC6B4 /* DashboardCollectionViewCell.swift in Sources */,
 				538DC1F424F395BA00B12D02 /* ListWalletTableViewCell.swift in Sources */,
 				538DC1F724F398F500B12D02 /* Wallet.swift in Sources */,
+				53EC8EB424F9097900744B80 /* AccountViewController.swift in Sources */,
 				53534F6124F60EB1009A8964 /* PassSendConfirmViewController.swift in Sources */,
 				538DC1ED24F36A2C00B12D02 /* SendViewController.swift in Sources */,
 				53B13BA824F78C28004E54D9 /* WithdrawalViewController.swift in Sources */,
