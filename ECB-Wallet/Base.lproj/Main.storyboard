@@ -1855,7 +1855,7 @@ We will notify you when it is completed.</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q5P-UT-epD">
-                                <rect key="frame" x="0.0" y="116" width="375" height="662"/>
+                                <rect key="frame" x="0.0" y="116" width="360" height="662"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-7X-4JL">
@@ -1869,7 +1869,7 @@ We will notify you when it is completed.</string>
                         <constraints>
                             <constraint firstItem="cUk-vf-Io2" firstAttribute="bottom" secondItem="q5P-UT-epD" secondAttribute="bottom" id="8tk-UG-r0p"/>
                             <constraint firstItem="q5P-UT-epD" firstAttribute="top" secondItem="eT9-z9-xXm" secondAttribute="bottom" constant="35" id="Ce6-dw-pIu"/>
-                            <constraint firstItem="cUk-vf-Io2" firstAttribute="trailing" secondItem="q5P-UT-epD" secondAttribute="trailing" id="QQb-Xy-Ev9"/>
+                            <constraint firstItem="cUk-vf-Io2" firstAttribute="trailing" secondItem="q5P-UT-epD" secondAttribute="trailing" constant="15" id="QQb-Xy-Ev9"/>
                             <constraint firstItem="eT9-z9-xXm" firstAttribute="leading" secondItem="cUk-vf-Io2" secondAttribute="leading" constant="15" id="iKM-ZR-bxQ"/>
                             <constraint firstItem="eT9-z9-xXm" firstAttribute="top" secondItem="cUk-vf-Io2" secondAttribute="top" constant="14" id="nYL-me-RmW"/>
                             <constraint firstItem="jOO-7X-4JL" firstAttribute="centerY" secondItem="eT9-z9-xXm" secondAttribute="centerY" id="nqY-PG-hIN"/>
@@ -4246,7 +4246,7 @@ We will notify you when it is completed.</string>
                                 <rect key="frame" x="0.0" y="128.99999999999997" width="375" height="292.33333333333326"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2En-9a-4vX">
-                                <rect key="frame" x="12" y="477.33333333333331" width="351" height="37.333333333333314"/>
+                                <rect key="frame" x="12" y="477.33333333333331" width="351" height="38.333333333333314"/>
                                 <string key="text">You have successfully registered.
 Please login to continue using our services.</string>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
@@ -4254,7 +4254,7 @@ Please login to continue using our services.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iek-xC-1U6">
-                                <rect key="frame" x="47" y="568.66666666666663" width="281" height="50"/>
+                                <rect key="frame" x="47" y="569.66666666666663" width="281" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GCu-C1-hqT"/>
                                 </constraints>
@@ -4267,7 +4267,7 @@ Please login to continue using our services.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87t-4J-X7C">
-                                <rect key="frame" x="143.33333333333334" y="436.33333333333331" width="88.333333333333343" height="21"/>
+                                <rect key="frame" x="144.66666666666666" y="436.33333333333331" width="86" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
