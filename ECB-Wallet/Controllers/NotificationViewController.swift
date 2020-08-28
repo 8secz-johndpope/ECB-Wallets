@@ -48,6 +48,9 @@ extension NotificationViewController:UITableViewDataSource, UITableViewDelegate{
         gestureSession[value] = indexPath.section
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "gotoDetailNotification", sender: nil)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110

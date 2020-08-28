@@ -76,6 +76,7 @@
 		53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */; };
 		53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */; };
 		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
+		53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 				53B13BA724F78C28004E54D9 /* WithdrawalViewController.swift */,
 				53B13BA924F79D51004E54D9 /* FinishWithdrawalViewController.swift */,
 				53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */,
+				53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			files = (
 				538DC1EF24F377F200B12D02 /* BoundTopLeftAndTopRightCornerView.swift in Sources */,
 				53ACB21124EFAE3C00BCC6B4 /* WalletTableViewCell.swift in Sources */,
+				53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */,
 				53B13BA524F786EC004E54D9 /* WithdrawalTableViewCell.swift in Sources */,
 				539512C824ED1316006A8EF5 /* BoundFourCornersView.swift in Sources */,
 				53ACB21424EFB1FE00BCC6B4 /* WalletsViewController.swift in Sources */,
