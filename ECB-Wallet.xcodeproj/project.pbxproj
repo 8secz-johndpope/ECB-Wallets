@@ -23,6 +23,7 @@
 		53534F6724F61EE7009A8964 /* CompleteSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */; };
 		53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6824F648E0009A8964 /* SaveWalletViewController.swift */; };
 		53534F6B24F65D70009A8964 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */; };
+		535406DC24F9F50E00F2B9BE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535406DB24F9F50E00F2B9BE /* EditProfileViewController.swift */; };
 		537BF8B424EB779500B49C7D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B324EB779500B49C7D /* Page.swift */; };
 		537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B524EB893A00B49C7D /* StartViewController.swift */; };
 		537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B724EBA73300B49C7D /* SignInViewController.swift */; };
@@ -98,6 +99,7 @@
 		53534F6624F61EE7009A8964 /* CompleteSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSendViewController.swift; sourceTree = "<group>"; };
 		53534F6824F648E0009A8964 /* SaveWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWalletViewController.swift; sourceTree = "<group>"; };
 		53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		535406DB24F9F50E00F2B9BE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		537BF8B324EB779500B49C7D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		537BF8B524EB893A00B49C7D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		537BF8B724EBA73300B49C7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */,
 				53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */,
 				53EC8EB324F9097900744B80 /* AccountViewController.swift */,
+				535406DB24F9F50E00F2B9BE /* EditProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
 				53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */,
+				535406DC24F9F50E00F2B9BE /* EditProfileViewController.swift in Sources */,
 				53ACB20D24EF828600BCC6B4 /* TransactionTableViewCell.swift in Sources */,
 				53B13BAA24F79D51004E54D9 /* FinishWithdrawalViewController.swift in Sources */,
 				53534F6424F60FBE009A8964 /* Passcode.swift in Sources */,

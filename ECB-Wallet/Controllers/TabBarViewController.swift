@@ -24,7 +24,7 @@ class TabBarViewController: UITabBarController {
         var height:CGFloat = self.tabBar.frame.size.height
         //Check safe view is available or not
         if view.safeAreaInsets.bottom > 0 {
-            height = height + 20
+            height = height + 30
         }else {
             height -= 10
         }

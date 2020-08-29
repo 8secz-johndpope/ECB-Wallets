@@ -28,4 +28,15 @@ class AccountViewController: UIViewController {
         
     }
     
+    @IBAction func editProfileButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoEditProfileVC", sender: nil)
+    }
+    @IBAction func changePasswordWasPressed(_ sender: Any) {
+    }
+    @IBAction func manageWalletButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func transactionButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func supportButtonWasPressed(_ sender: Any) {
+    }
 }
