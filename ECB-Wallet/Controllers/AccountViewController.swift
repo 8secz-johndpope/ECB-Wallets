@@ -22,7 +22,7 @@ class AccountViewController: UIViewController {
     //MARK: - UI Event
 
     @IBAction func settingButtonWasPressed(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "gotoSettingVC", sender: nil)
     }
     @IBAction func signOutButtonwasPressed(_ sender: Any) {
         

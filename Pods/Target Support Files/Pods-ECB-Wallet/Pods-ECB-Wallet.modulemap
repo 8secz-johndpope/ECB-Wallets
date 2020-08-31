@@ -1,0 +1,6 @@
+framework module Pods_ECB_Wallet {
+  umbrella header "Pods-ECB-Wallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

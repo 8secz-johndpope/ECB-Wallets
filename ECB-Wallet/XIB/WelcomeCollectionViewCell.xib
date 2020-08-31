@@ -6,11 +6,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="sfprodisplay_regular.ttf">
-            <string>SFProDisplay-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="432" height="843"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-ov-NjW">
-                                <rect key="frame" x="0.0" y="0.0" width="432" height="773"/>
+                                <rect key="frame" x="0.0" y="0.0" width="432" height="780"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 36" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-su-RXB">
                                         <rect key="frame" x="0.0" y="0.0" width="432" height="390"/>
@@ -33,18 +28,25 @@
                                             <constraint firstAttribute="height" constant="390" id="Xgg-nl-rwl"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, ECB Wallets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsL-RO-WJh">
-                                        <rect key="frame" x="30" y="390" width="168" height="73"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsL-RO-WJh">
+                                        <rect key="frame" x="30" y="390" width="168" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="73" id="BCh-Hd-Yru"/>
+                                            <constraint firstAttribute="height" constant="80" id="BCh-Hd-Yru"/>
                                             <constraint firstAttribute="width" constant="168" id="g1M-ZL-57b"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="28"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.0078431372550000003" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Welcome, ECB Wallets">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.062745098040000002" green="0.0078431372550000003" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="28" name="SFProDisplay-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-oY-ccq">
-                                        <rect key="frame" x="30" y="476" width="62" height="6"/>
+                                        <rect key="frame" x="30" y="483" width="62" height="6"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.27843137254901962" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="6" id="Urk-qU-d1h"/>
@@ -52,7 +54,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-Ck-Kyn">
-                                        <rect key="frame" x="30" y="490" width="372" height="263"/>
+                                        <rect key="frame" x="30" y="497" width="372" height="263"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. /// Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </string>
