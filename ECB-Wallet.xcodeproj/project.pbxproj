@@ -78,6 +78,9 @@
 		53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */; };
 		53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */; };
 		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
+		53BC5C7024FC93EB0000E112 /* ManageWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC5C6E24FC93EB0000E112 /* ManageWalletTableViewCell.swift */; };
+		53BC5C7124FC93EB0000E112 /* ManageWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53BC5C6F24FC93EB0000E112 /* ManageWalletTableViewCell.xib */; };
+		53BC5C7324FC97760000E112 /* ManageWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC5C7224FC97760000E112 /* ManageWalletViewController.swift */; };
 		53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */; };
 		53EC8EB224F8FBB900744B80 /* BoundCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */; };
 		53EC8EB424F9097900744B80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB324F9097900744B80 /* AccountViewController.swift */; };
@@ -157,6 +160,9 @@
 		53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		53BC5C6E24FC93EB0000E112 /* ManageWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageWalletTableViewCell.swift; sourceTree = "<group>"; };
+		53BC5C6F24FC93EB0000E112 /* ManageWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageWalletTableViewCell.xib; sourceTree = "<group>"; };
+		53BC5C7224FC97760000E112 /* ManageWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageWalletViewController.swift; sourceTree = "<group>"; };
 		53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotificationViewController.swift; sourceTree = "<group>"; };
 		53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundCornerImage.swift; sourceTree = "<group>"; };
 		53EC8EB324F9097900744B80 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 				538DC1FB24F3B34C00B12D02 /* AddressWalletTableViewCell.xib */,
 				53B13BA424F786EC004E54D9 /* WithdrawalTableViewCell.xib */,
 				53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */,
+				53BC5C6F24FC93EB0000E112 /* ManageWalletTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 				53B13BA324F786EC004E54D9 /* WithdrawalTableViewCell.swift */,
 				53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */,
 				53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */,
+				53BC5C6E24FC93EB0000E112 /* ManageWalletTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 				53EC8EB324F9097900744B80 /* AccountViewController.swift */,
 				535406DB24F9F50E00F2B9BE /* EditProfileViewController.swift */,
 				535406DD24FA164100F2B9BE /* ChangePasswordViewController.swift */,
+				53BC5C7224FC97760000E112 /* ManageWalletViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -394,6 +403,7 @@
 				53ACB20E24EF828600BCC6B4 /* TransactionTableViewCell.xib in Resources */,
 				538B117424EA5FF1000B65D1 /* Main.storyboard in Resources */,
 				53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */,
+				53BC5C7124FC93EB0000E112 /* ManageWalletTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +445,7 @@
 				5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */,
 				53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */,
 				530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */,
+				53BC5C7024FC93EB0000E112 /* ManageWalletTableViewCell.swift in Sources */,
 				53B13BA224F75635004E54D9 /* RecieveViewController.swift in Sources */,
 				53534F6524F60FBE009A8964 /* Pin.swift in Sources */,
 				538DC1FF24F3BBBD00B12D02 /* AddressWallet.swift in Sources */,
@@ -444,6 +455,7 @@
 				530510D724EE0F18002CDA2E /* ForgotPasswordViewController.swift in Sources */,
 				538DC1F124F37F1400B12D02 /* ListWalletViewController.swift in Sources */,
 				537BF8B424EB779500B49C7D /* Page.swift in Sources */,
+				53BC5C7324FC97760000E112 /* ManageWalletViewController.swift in Sources */,
 				530510D924EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
 				5305110124EE69F3002CDA2E /* CustomUITabBar.swift in Sources */,
