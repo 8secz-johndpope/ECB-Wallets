@@ -40,5 +40,6 @@ class AccountViewController: UIViewController {
     @IBAction func transactionButtonWasPressed(_ sender: Any) {
     }
     @IBAction func supportButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoSupportCenter", sender: nil)
     }
 }
