@@ -26,7 +26,7 @@ class TabBarViewController: UITabBarController {
         if view.safeAreaInsets.bottom > 0 {
             height = height + 30
         }else {
-            height -= 10
+            height += 20
         }
         // set x,y,width, height for homeButton
         homeButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true

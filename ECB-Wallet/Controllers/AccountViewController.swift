@@ -32,6 +32,7 @@ class AccountViewController: UIViewController {
         self.performSegue(withIdentifier: "gotoEditProfileVC", sender: nil)
     }
     @IBAction func changePasswordWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "changePasswordVC", sender: nil)
     }
     @IBAction func manageWalletButtonWasPressed(_ sender: Any) {
     }

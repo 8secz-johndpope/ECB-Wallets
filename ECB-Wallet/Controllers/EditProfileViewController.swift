@@ -18,8 +18,13 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var phoneNumberTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //
         self.scrollView.bindToKeyboard()
+        // set textField Delegate
+        userNameTextField.delegate = self
+        emailTextField.delegate = self
+        phoneNumberTextField.delegate = self
+        //
     }
     
     @IBAction func backButtonWasPressed(_ sender: Any) {
@@ -65,5 +70,17 @@ extension EditProfileViewController:UINavigationControllerDelegate, UIImagePicke
         //Update image for profileImage
         self.profileImage.image = image
         self.dismiss(animated: true, completion: nil)
+    }
+}
+extension EditProfileViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTextField{
+            emailTextField.becomeFirstResponder()
+        }else if textField == emailTextField{
+            phoneNumberTextField.becomeFirstResponder()
+        }else{
+            phoneNumberTextField.resignFirstResponder()
+        }
+        return true
     }
 }
