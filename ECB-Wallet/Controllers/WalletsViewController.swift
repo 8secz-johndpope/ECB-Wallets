@@ -53,6 +53,6 @@ extension WalletsViewController: UITableViewDataSource, UITableViewDelegate{
         return 85
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        self.performSegue(withIdentifier: "gotoDetailWalletVC", sender: nil)
     }
 }

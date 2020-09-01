@@ -14,6 +14,9 @@
 		5305110324EE6D7A002CDA2E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110224EE6D7A002CDA2E /* TabBarViewController.swift */; };
 		5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110424EE7664002CDA2E /* BoundTopRightView.swift */; };
 		5305110724EE78A2002CDA2E /* BoundBottomLeftCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */; };
+		530AE73D24FE01CD0040EF4E /* DetailWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE73B24FE01CD0040EF4E /* DetailWalletTableViewCell.swift */; };
+		530AE73E24FE01CD0040EF4E /* DetailWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */; };
+		530AE74024FE05440040EF4E /* DetailWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */; };
 		53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD524F4A45900FF6C32 /* UIViewExtension.swift */; };
 		53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */; };
 		53364ADB24F50E9400FF6C32 /* ConfirmSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */; };
@@ -103,6 +106,9 @@
 		5305110224EE6D7A002CDA2E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5305110424EE7664002CDA2E /* BoundTopRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundTopRightView.swift; sourceTree = "<group>"; };
 		5305110624EE78A2002CDA2E /* BoundBottomLeftCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundBottomLeftCorner.swift; sourceTree = "<group>"; };
+		530AE73B24FE01CD0040EF4E /* DetailWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWalletTableViewCell.swift; sourceTree = "<group>"; };
+		530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWalletTableViewCell.xib; sourceTree = "<group>"; };
+		530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWalletViewController.swift; sourceTree = "<group>"; };
 		53364AD524F4A45900FF6C32 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSendViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +232,7 @@
 				53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */,
 				53BC5C6F24FC93EB0000E112 /* ManageWalletTableViewCell.xib */,
 				53BC5C7524FCA17F0000E112 /* SupportCenterTableViewCell.xib */,
+				530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -317,6 +324,7 @@
 				53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */,
 				53BC5C6E24FC93EB0000E112 /* ManageWalletTableViewCell.swift */,
 				53BC5C7424FCA17F0000E112 /* SupportCenterTableViewCell.swift */,
+				530AE73B24FE01CD0040EF4E /* DetailWalletTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,6 +365,7 @@
 				53BC5C7A24FCB9C00000E112 /* ContactVCViewController.swift */,
 				53BC5C7C24FCD2800000E112 /* FinishSupportViewController.swift */,
 				53654A3524FCFAC4004E82B2 /* SettingViewController.swift */,
+				530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -443,6 +452,7 @@
 				538DC1FD24F3B34C00B12D02 /* AddressWalletTableViewCell.xib in Resources */,
 				538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */,
 				53BC5C7724FCA17F0000E112 /* SupportCenterTableViewCell.xib in Resources */,
+				530AE73E24FE01CD0040EF4E /* DetailWalletTableViewCell.xib in Resources */,
 				538B118B24EA64B0000B65D1 /* sfprodisplay_regular.ttf in Resources */,
 				538B118A24EA64AE000B65D1 /* sfprodisplay_regular_italic.ttf in Resources */,
 				53ACB20E24EF828600BCC6B4 /* TransactionTableViewCell.xib in Resources */,
@@ -517,6 +527,7 @@
 				53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
 				539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */,
+				530AE74024FE05440040EF4E /* DetailWalletViewController.swift in Sources */,
 				53ACB20A24EF765D00BCC6B4 /* DashboardViewController.swift in Sources */,
 				53534F6724F61EE7009A8964 /* CompleteSendViewController.swift in Sources */,
 				538B119024EA8403000B65D1 /* WelcomeCollectionViewCell.swift in Sources */,
@@ -537,6 +548,7 @@
 				530510DB24EE25E4002CDA2E /* CreateNewPasswordViewController.swift in Sources */,
 				53BC5C7024FC93EB0000E112 /* ManageWalletTableViewCell.swift in Sources */,
 				53B13BA224F75635004E54D9 /* RecieveViewController.swift in Sources */,
+				530AE73D24FE01CD0040EF4E /* DetailWalletTableViewCell.swift in Sources */,
 				53534F6524F60FBE009A8964 /* Pin.swift in Sources */,
 				538DC1FF24F3BBBD00B12D02 /* AddressWallet.swift in Sources */,
 				538B116D24EA5FF1000B65D1 /* AppDelegate.swift in Sources */,

@@ -9,6 +9,8 @@
 import UIKit
 
 class SendViewController: UIViewController,listWalletDelegate, addressWalletDelegate {
+    let listCurrency = ["USD", "VND"]
+    var yPickerView:CGFloat = 0.0
     //MARK: - UI Elements
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -20,6 +22,15 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     @IBOutlet weak var addressWalletTextField: UITextField!
     @IBOutlet weak var valueCurencyBTC: UILabel!
     @IBOutlet weak var contentTextField: UITextField!
+    @IBOutlet weak var unitAmountLabel: UILabel!
+    @IBOutlet weak var valueAmountTextField: UITextField!
+    
+    //
+    let pickerViewCurrency:UIPickerView = {
+        let pickerView = UIPickerView()
+        pickerView.backgroundColor = UIColor.white
+        return pickerView
+    }()
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +38,18 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
         // setup keyboard events
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        //
         
+    }
+    //get height of safeView and set yPickerView for pickerViewCurrency
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if view.safeAreaInsets.top == 44 {
+            yPickerView = 530
+        }else{
+            yPickerView = 530 - view.safeAreaInsets.top
+        }
+        print(yPickerView)
     }
     //MARK: - ListWalletDelegate
     //get wallet, which selected at ListWalletVC and than update UI
@@ -52,6 +74,13 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     @IBAction func QRScanButtonWasPressed(_ sender: Any) {
         //Jump to ScanQRVC
         self.performSegue(withIdentifier: "goToScanQRVC", sender: nil)
+    }
+    @IBAction func listUnitAmountButtonWasPressed(_ sender: Any) {
+        pickerViewCurrency.delegate = self
+        pickerViewCurrency.dataSource = self
+        pickerViewCurrency.frame = CGRect(x: self.view.frame.width - 15 - 80, y: yPickerView, width: 80, height: 100)
+        pickerViewCurrency.isHidden = false
+        self.view.addSubview(pickerViewCurrency)
     }
     @IBAction func resetButtonWasPressed(_ sender: Any) {
         addressWalletTextField.text = ""
@@ -99,5 +128,26 @@ extension SendViewController:scanQRDelegate{
     func getInfoQRCode(_ infoQR: String) {
         self.addressWalletTextField.text = infoQR
     }
+    
+}
+extension SendViewController:UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)
+        -> Int {
+        return listCurrency.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return listCurrency[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.unitAmountLabel.text = listCurrency[row]
+        pickerView.isHidden = true
+        
+    }
+    
+    
     
 }
