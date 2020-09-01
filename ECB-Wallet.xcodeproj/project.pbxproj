@@ -17,6 +17,7 @@
 		530AE73D24FE01CD0040EF4E /* DetailWalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE73B24FE01CD0040EF4E /* DetailWalletTableViewCell.swift */; };
 		530AE73E24FE01CD0040EF4E /* DetailWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */; };
 		530AE74024FE05440040EF4E /* DetailWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */; };
+		530AE74224FE499D0040EF4E /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE74124FE499D0040EF4E /* BalloonMarker.swift */; };
 		53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD524F4A45900FF6C32 /* UIViewExtension.swift */; };
 		53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */; };
 		53364ADB24F50E9400FF6C32 /* ConfirmSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */; };
@@ -109,6 +110,7 @@
 		530AE73B24FE01CD0040EF4E /* DetailWalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWalletTableViewCell.swift; sourceTree = "<group>"; };
 		530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWalletTableViewCell.xib; sourceTree = "<group>"; };
 		530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWalletViewController.swift; sourceTree = "<group>"; };
+		530AE74124FE499D0040EF4E /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		53364AD524F4A45900FF6C32 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSendViewController.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 			children = (
 				53364AD524F4A45900FF6C32 /* UIViewExtension.swift */,
 				53534F6A24F65D70009A8964 /* UIScrollViewExtension.swift */,
+				530AE74124FE499D0040EF4E /* BalloonMarker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				5305110724EE78A2002CDA2E /* BoundBottomLeftCorner.swift in Sources */,
 				5305110324EE6D7A002CDA2E /* TabBarViewController.swift in Sources */,
 				538DC1F924F3B0B800B12D02 /* AddressWalletViewController.swift in Sources */,
+				530AE74224FE499D0040EF4E /* BalloonMarker.swift in Sources */,
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
 				53BC5C7B24FCB9C00000E112 /* ContactVCViewController.swift in Sources */,
