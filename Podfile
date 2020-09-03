@@ -7,5 +7,5 @@ target 'ECB-Wallet' do
 
   # Pods for ECB-Wallet
 pod 'Charts'
-
+pod 'FSCalendar'
 end

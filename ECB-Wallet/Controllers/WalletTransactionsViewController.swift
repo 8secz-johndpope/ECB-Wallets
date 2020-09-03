@@ -109,6 +109,7 @@ class WalletTransactionsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func calenderButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoSearchTransactionVC", sender: nil)
     }
     @IBAction func weekButtonWasPressed(_ sender: UIButton) {
         weekButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)

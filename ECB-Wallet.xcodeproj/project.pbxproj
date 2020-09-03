@@ -94,6 +94,7 @@
 		53D2946D25009832000A797F /* WalletTransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D2946C25009832000A797F /* WalletTransactionsViewController.swift */; };
 		53D29470250098A5000A797F /* WalletTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D2946E250098A5000A797F /* WalletTransactionTableViewCell.swift */; };
 		53D29471250098A5000A797F /* WalletTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D2946F250098A5000A797F /* WalletTransactionTableViewCell.xib */; };
+		53D294732500C98B000A797F /* SearchTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D294722500C98A000A797F /* SearchTransactionViewController.swift */; };
 		53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */; };
 		53EC8EB224F8FBB900744B80 /* BoundCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */; };
 		53EC8EB424F9097900744B80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB324F9097900744B80 /* AccountViewController.swift */; };
@@ -192,6 +193,7 @@
 		53D2946C25009832000A797F /* WalletTransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionsViewController.swift; sourceTree = "<group>"; };
 		53D2946E250098A5000A797F /* WalletTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		53D2946F250098A5000A797F /* WalletTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTransactionTableViewCell.xib; sourceTree = "<group>"; };
+		53D294722500C98A000A797F /* SearchTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTransactionViewController.swift; sourceTree = "<group>"; };
 		53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotificationViewController.swift; sourceTree = "<group>"; };
 		53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundCornerImage.swift; sourceTree = "<group>"; };
 		53EC8EB324F9097900744B80 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 				53654A3524FCFAC4004E82B2 /* SettingViewController.swift */,
 				530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */,
 				53D2946C25009832000A797F /* WalletTransactionsViewController.swift */,
+				53D294722500C98A000A797F /* SearchTransactionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */,
 				538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */,
 				53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */,
+				53D294732500C98B000A797F /* SearchTransactionViewController.swift in Sources */,
 				537BF8BC24EBAE2100B49C7D /* ChangeColorImageView.swift in Sources */,
 				539512C224ECD541006A8EF5 /* setBorderAndRoundCornerButton.swift in Sources */,
 				530AE74024FE05440040EF4E /* DetailWalletViewController.swift in Sources */,
