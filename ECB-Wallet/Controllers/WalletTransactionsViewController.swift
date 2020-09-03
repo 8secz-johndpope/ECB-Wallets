@@ -1,15 +1,14 @@
 //
-//  DetailWalletViewController.swift
+//  WalletTransactionsViewController.swift
 //  ECB-Wallet
 //
-//  Created by NGUYENLONGTIEN on 9/1/20.
+//  Created by NGUYENLONGTIEN on 9/3/20.
 //  Copyright © 2020 NGUYENLONGTIEN. All rights reserved.
 //
 
 import UIKit
 import Charts
-
-class DetailWalletViewController: UIViewController {
+class WalletTransactionsViewController: UIViewController {
     //MARK: Models
     let yValueSent:[ChartDataEntry] = [
         ChartDataEntry(x: 0.0, y: 2.4),
@@ -41,23 +40,18 @@ class DetailWalletViewController: UIViewController {
            ChartDataEntry(x: 11.0, y: 3.7),
            ChartDataEntry(x: 12.0, y: 6.3),
        ]
-    let listDuration = ["Day", "Week", "Month"]
-    //MARK: UI Element
-    @IBOutlet weak var whiteView: BoundTopLeftAndTopRightCornerView!
     @IBOutlet weak var heightLightBlueView: NSLayoutConstraint!
-    @IBOutlet weak var currencyImage: UIImageView!
-    @IBOutlet weak var currencyLabel: UILabel!
-    @IBOutlet weak var currencyValueLabel: UILabel!
-    @IBOutlet weak var currencyUnitLabel: UILabel!
-    @IBOutlet weak var valueUSDCurrencyLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var weekButton: setBorderAndRoundCornerButton!
+    @IBOutlet weak var yearButton: setBorderAndRoundCornerButton!
+    @IBOutlet weak var monthButton: setBorderAndRoundCornerButton!
     @IBOutlet weak var chartView: UIView!
-    @IBOutlet weak var segmentControll: UISegmentedControl!
+    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentControll: UISegmentedControl!
     //
     lazy var lineChatView:LineChartView = {
         let chartView = LineChartView()
-        chartView.backgroundColor = UIColor.white
+        chartView.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
         chartView.translatesAutoresizingMaskIntoConstraints = false
         
         chartView.rightAxis.enabled = false
@@ -69,7 +63,7 @@ class DetailWalletViewController: UIViewController {
         chartView.leftAxis.gridLineDashLengths = [4,4]
         
         chartView.xAxis.labelPosition = .bottom
-        chartView.xAxis.labelTextColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        chartView.xAxis.labelTextColor = UIColor(red: 154/255, green: 145/255, blue: 174/255, alpha: 1)
         chartView.xAxis.setLabelCount(12, force: false)
         chartView.xAxis.gridColor = .clear
         chartView.animate(xAxisDuration: 2.0)
@@ -78,17 +72,12 @@ class DetailWalletViewController: UIViewController {
         
         return chartView
     }()
-    
-    let pickerViewDurarion:UIPickerView = {
-        let pickerView = UIPickerView()
-        pickerView.backgroundColor = UIColor.white
-        return pickerView
-    }()
     override func viewDidLoad() {
         super.viewDidLoad()
+
         //Register cell for tableView
-        let nibName = UINib(nibName: "DetailWalletTableViewCell", bundle: nil)
-        tableView.register(nibName, forCellReuseIdentifier: "DetailWalletTableViewCell")
+        let nibName = UINib(nibName: "WalletTransactionTableViewCell", bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: "WalletTransactionTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         //Get height of tableView and set height constaint for lightBlueView
@@ -96,7 +85,7 @@ class DetailWalletViewController: UIViewController {
             tableView.layoutIfNeeded()
             return tableView.contentSize.height
         }
-        heightLightBlueView.constant = tableViewHeight
+        heightLightBlueView.constant = tableViewHeight + 50
         // Custom segmentControl
         let titleTextAttibuteNormal =  [NSAttributedString.Key.foregroundColor:UIColor(red: 16/255, green: 0/255, blue: 54/55, alpha: 1)]
         let titleTextAttibuteSelected = [NSAttributedString.Key.foregroundColor:UIColor.white]
@@ -112,32 +101,38 @@ class DetailWalletViewController: UIViewController {
         lineChatView.bottomAnchor.constraint(equalTo: self.chartView.bottomAnchor, constant: 0).isActive = true
         //Import data for lineChartView
         setData()
-        
+        //Default sellected Button
+        weekButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)
     }
-    //MARK: - UI Events
+    
     @IBAction func backButtonWasPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func buyButtonWasPressed(_ sender: Any) {
+    @IBAction func calenderButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func weekButtonWasPressed(_ sender: UIButton) {
+        weekButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)
+        monthButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        yearButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
     }
     
-    @IBAction func withdrawalButtonWasPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "gotoWithdrawalVC", sender: nil)
+    @IBAction func monthButtonWasPressed(_ sender: UIButton) {
+        monthButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)
+        weekButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        yearButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
     }
     
-    @IBAction func sendButtonWasPressed(_ sender: Any) {
+    @IBAction func yearButtonWasPressed(_ sender: UIButton) {
+        yearButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)
+        weekButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        monthButton.backgroundColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
     }
-    @IBAction func receiveButtonWasPressed(_ sender: Any) {
-    }
-    @IBAction func chooseDurationTimeButtonWasPressed(_ sender: Any) {
-        pickerViewDurarion.delegate = self
-        pickerViewDurarion.dataSource = self
-        pickerViewDurarion.frame = CGRect(x: self.view.frame.width - 15 - 80, y: 182, width: 80, height: 120)
-        pickerViewDurarion.isHidden = false
-        self.whiteView.addSubview(pickerViewDurarion)
+    
+    @IBAction func refreshButtonWasPressed(_ sender: Any) {
+        
     }
     @IBAction func segmentControllTransactionWasPressed(_ sender: Any) {
+        
     }
     //MARK: - Helper method
     func setData(){
@@ -155,21 +150,19 @@ class DetailWalletViewController: UIViewController {
         data.setDrawValues(false)
         lineChatView.data = data
     }
+    
 }
-//MARK: UITableView Delegate and DataSource
-extension DetailWalletViewController:UITableViewDelegate, UITableViewDataSource{
+
+extension WalletTransactionsViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailWalletTableViewCell", for: indexPath) as! DetailWalletTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WalletTransactionTableViewCell", for: indexPath) as! WalletTransactionTableViewCell
         return cell
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
-    }
 }
-extension DetailWalletViewController:ChartViewDelegate{
+extension WalletTransactionsViewController:ChartViewDelegate{
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         //create markerView
         let marker:BalloonMarker = BalloonMarker(color: UIColor(red: 234/255, green: 246/255, blue: 255/255, alpha: 1), font: UIFont(name: "Helvetica", size: 12)!, textColor: UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1), insets: UIEdgeInsets(top: 7.0, left: 7.0, bottom: 25.0, right: 7.0))
@@ -177,26 +170,5 @@ extension DetailWalletViewController:ChartViewDelegate{
         chartView.marker = marker
         
     }
-    
-}
-extension DetailWalletViewController:UIPickerViewDelegate, UIPickerViewDataSource{
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int)
-        -> Int {
-        return listDuration.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return listDuration[row]
-    }
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.durationLabel.text = listDuration[row]
-        pickerView.isHidden = true
-        
-    }
-    
-    
     
 }

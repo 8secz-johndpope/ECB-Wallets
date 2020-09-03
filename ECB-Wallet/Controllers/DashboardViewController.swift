@@ -61,6 +61,7 @@ class DashboardViewController: UIViewController {
     @IBAction func allWalletsButtonWasPressed(_ sender: Any) {
     }
     @IBAction func allTransactionButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoWalletTransactionVC", sender: nil)
     }
     
     

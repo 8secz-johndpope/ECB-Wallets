@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sfprodisplay_medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="sfprodisplay_regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WalletTransactionTableViewCell" customModule="ECB_Wallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tW-xP-wd0" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="5" width="375" height="65"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sendTransactions" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-xE-Xgp">
+                                <rect key="frame" x="15" y="15" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="fO5-r6-Y9l"/>
+                                    <constraint firstAttribute="width" constant="35" id="jyv-k1-bVF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afL-hv-GrG">
+                                <rect key="frame" x="65" y="15" width="29" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:38 - 12/06/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX2-IF-ZXa">
+                                <rect key="frame" x="65" y="36" width="102" height="15"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6623.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLE-0V-kQF">
+                                <rect key="frame" x="290" y="36" width="45" height="15"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wia-9p-Lt8">
+                                <rect key="frame" x="340" y="39" width="20" height="12"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64C-4c-Qip">
+                                <rect key="frame" x="337.5" y="17" width="22.5" height="15"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.29411764709999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 0.70974536" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xub-G1-Wcz">
+                                <rect key="frame" x="245.5" y="15" width="87" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.29411764709999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pending" translatesAutoresizingMaskIntoConstraints="NO" id="Im4-5p-sZQ">
+                                <rect key="frame" x="202.5" y="15" width="35" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="9Tf-oc-lux"/>
+                                    <constraint firstAttribute="height" constant="16" id="LO6-D0-XUA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xub-G1-Wcz" firstAttribute="centerY" secondItem="afL-hv-GrG" secondAttribute="centerY" id="0uf-MU-i1E"/>
+                            <constraint firstAttribute="bottom" secondItem="s0f-xE-Xgp" secondAttribute="bottom" constant="15" id="19n-vt-BRd"/>
+                            <constraint firstItem="GX2-IF-ZXa" firstAttribute="leading" secondItem="s0f-xE-Xgp" secondAttribute="trailing" constant="15" id="2lx-1Z-vRa"/>
+                            <constraint firstItem="64C-4c-Qip" firstAttribute="leading" secondItem="Xub-G1-Wcz" secondAttribute="trailing" constant="5" id="3Pi-aB-7eH"/>
+                            <constraint firstItem="s0f-xE-Xgp" firstAttribute="leading" secondItem="5tW-xP-wd0" secondAttribute="leading" constant="15" id="8Lm-Lf-RLP"/>
+                            <constraint firstItem="GX2-IF-ZXa" firstAttribute="top" secondItem="afL-hv-GrG" secondAttribute="bottom" constant="4" id="EcU-kr-rZg"/>
+                            <constraint firstAttribute="trailing" secondItem="64C-4c-Qip" secondAttribute="trailing" constant="15" id="FRp-3b-dND"/>
+                            <constraint firstItem="afL-hv-GrG" firstAttribute="leading" secondItem="s0f-xE-Xgp" secondAttribute="trailing" constant="15" id="Fgd-ii-00C"/>
+                            <constraint firstItem="afL-hv-GrG" firstAttribute="top" secondItem="5tW-xP-wd0" secondAttribute="top" constant="15" id="ODz-zi-RXR"/>
+                            <constraint firstItem="sLE-0V-kQF" firstAttribute="centerY" secondItem="GX2-IF-ZXa" secondAttribute="centerY" id="RMH-Py-eM2"/>
+                            <constraint firstItem="wia-9p-Lt8" firstAttribute="bottom" secondItem="GX2-IF-ZXa" secondAttribute="bottom" id="RRI-mI-sqI"/>
+                            <constraint firstItem="Xub-G1-Wcz" firstAttribute="leading" secondItem="Im4-5p-sZQ" secondAttribute="trailing" constant="8" id="SqO-BM-L91"/>
+                            <constraint firstItem="s0f-xE-Xgp" firstAttribute="top" secondItem="5tW-xP-wd0" secondAttribute="top" constant="15" id="hcF-l7-T9H"/>
+                            <constraint firstItem="Im4-5p-sZQ" firstAttribute="top" secondItem="5tW-xP-wd0" secondAttribute="top" constant="15" id="ilJ-4f-xIC"/>
+                            <constraint firstItem="64C-4c-Qip" firstAttribute="bottom" secondItem="afL-hv-GrG" secondAttribute="bottom" id="jUB-kM-qYT"/>
+                            <constraint firstItem="wia-9p-Lt8" firstAttribute="leading" secondItem="sLE-0V-kQF" secondAttribute="trailing" constant="5" id="nOJ-eC-vXo"/>
+                            <constraint firstAttribute="trailing" secondItem="wia-9p-Lt8" secondAttribute="trailing" constant="15" id="uuo-d1-VYg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117649999999" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5tW-xP-wd0" secondAttribute="bottom" constant="5" id="Oxn-JG-pbJ"/>
+                    <constraint firstItem="5tW-xP-wd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oQM-uJ-44v"/>
+                    <constraint firstItem="5tW-xP-wd0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="w9q-XM-iWc"/>
+                    <constraint firstAttribute="trailing" secondItem="5tW-xP-wd0" secondAttribute="trailing" id="xnL-RJ-0nl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.15942028985509" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pending" width="35" height="16"/>
+        <image name="sendTransactions" width="35" height="35"/>
+    </resources>
+</document>
