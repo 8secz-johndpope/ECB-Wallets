@@ -95,6 +95,7 @@
 		53D29470250098A5000A797F /* WalletTransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D2946E250098A5000A797F /* WalletTransactionTableViewCell.swift */; };
 		53D29471250098A5000A797F /* WalletTransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D2946F250098A5000A797F /* WalletTransactionTableViewCell.xib */; };
 		53D294732500C98B000A797F /* SearchTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D294722500C98A000A797F /* SearchTransactionViewController.swift */; };
+		53D294752500EC5F000A797F /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D294742500EC5F000A797F /* TransactionDetailViewController.swift */; };
 		53EC8EAE24F8EDE100744B80 /* DetailNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */; };
 		53EC8EB224F8FBB900744B80 /* BoundCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */; };
 		53EC8EB424F9097900744B80 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC8EB324F9097900744B80 /* AccountViewController.swift */; };
@@ -194,6 +195,7 @@
 		53D2946E250098A5000A797F /* WalletTransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTransactionTableViewCell.swift; sourceTree = "<group>"; };
 		53D2946F250098A5000A797F /* WalletTransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletTransactionTableViewCell.xib; sourceTree = "<group>"; };
 		53D294722500C98A000A797F /* SearchTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTransactionViewController.swift; sourceTree = "<group>"; };
+		53D294742500EC5F000A797F /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
 		53EC8EAD24F8EDE100744B80 /* DetailNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotificationViewController.swift; sourceTree = "<group>"; };
 		53EC8EB124F8FBB900744B80 /* BoundCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundCornerImage.swift; sourceTree = "<group>"; };
 		53EC8EB324F9097900744B80 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 				530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */,
 				53D2946C25009832000A797F /* WalletTransactionsViewController.swift */,
 				53D294722500C98A000A797F /* SearchTransactionViewController.swift */,
+				53D294742500EC5F000A797F /* TransactionDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				538DC1F924F3B0B800B12D02 /* AddressWalletViewController.swift in Sources */,
 				530AE74224FE499D0040EF4E /* BalloonMarker.swift in Sources */,
 				539512C624ED0FBB006A8EF5 /* VerifyAccountViewController.swift in Sources */,
+				53D294752500EC5F000A797F /* TransactionDetailViewController.swift in Sources */,
 				53ACB20424EF610900BCC6B4 /* BoundBottomLeftAndTopRightCornerView.swift in Sources */,
 				53BC5C7B24FCB9C00000E112 /* ContactVCViewController.swift in Sources */,
 				53534F6924F648E0009A8964 /* SaveWalletViewController.swift in Sources */,

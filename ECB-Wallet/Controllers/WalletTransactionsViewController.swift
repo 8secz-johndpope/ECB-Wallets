@@ -162,6 +162,11 @@ extension WalletTransactionsViewController:UITableViewDelegate, UITableViewDataS
         let cell = tableView.dequeueReusableCell(withIdentifier: "WalletTransactionTableViewCell", for: indexPath) as! WalletTransactionTableViewCell
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        self.present(transactionDetailVC, animated: true, completion: nil)
+    }
 }
 extension WalletTransactionsViewController:ChartViewDelegate{
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {

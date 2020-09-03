@@ -108,6 +108,11 @@ extension SearchTransactionViewController:UITableViewDelegate, UITableViewDataSo
         let cell = tableView.dequeueReusableCell(withIdentifier: "WalletTransactionTableViewCell", for: indexPath) as! WalletTransactionTableViewCell
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        self.present(transactionDetailVC, animated: true, completion: nil)
+    }
 }
 //MARK: - FSCalendarDelegate
 extension SearchTransactionViewController:FSCalendarDelegate{

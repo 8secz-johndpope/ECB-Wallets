@@ -92,4 +92,10 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Jump to transactionDetailVC
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        self.present(transactionDetailVC, animated: true, completion: nil)
+    }
 }
