@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -37,47 +38,57 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 0.70974536" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PW-Vb-8yV">
-                        <rect key="frame" x="247.5" y="10" width="83.5" height="17"/>
+                        <rect key="frame" x="246" y="10" width="86.5" height="17"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHc-xy-hXQ">
-                        <rect key="frame" x="336" y="13" width="24" height="14"/>
+                        <rect key="frame" x="337.5" y="13" width="22.5" height="14"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="12"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:38 - 12/06/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2W-pk-YrO">
-                        <rect key="frame" x="62" y="32" width="103" height="14"/>
+                        <rect key="frame" x="62" y="32" width="102" height="14"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6621.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3I-cc-B31">
-                        <rect key="frame" x="290" y="32" width="44" height="14"/>
+                        <rect key="frame" x="291" y="32" width="44" height="14"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHQ-6s-sQ3">
-                        <rect key="frame" x="339" y="34" width="21" height="12"/>
+                        <rect key="frame" x="340" y="34" width="20" height="12"/>
                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="10"/>
                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um6-7d-VKM">
+                        <rect key="frame" x="15" y="54" width="345" height="1"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.11764705882352941" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ttf-yP-tZG"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="tHQ-6s-sQ3" firstAttribute="bottom" secondItem="k2W-pk-YrO" secondAttribute="bottom" id="5g7-9H-B2g"/>
+                    <constraint firstAttribute="trailing" secondItem="Um6-7d-VKM" secondAttribute="trailing" constant="15" id="9tr-Ha-sk3"/>
                     <constraint firstItem="XxC-HH-9JB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Cnz-ae-Ila"/>
                     <constraint firstAttribute="trailing" secondItem="sHc-xy-hXQ" secondAttribute="trailing" constant="15" id="DcT-5N-uej"/>
                     <constraint firstItem="sHc-xy-hXQ" firstAttribute="bottom" secondItem="xtF-SW-fjz" secondAttribute="bottom" id="FjX-Oe-g08"/>
                     <constraint firstItem="k2W-pk-YrO" firstAttribute="top" secondItem="xtF-SW-fjz" secondAttribute="bottom" constant="5" id="IjE-Wz-DeJ"/>
                     <constraint firstItem="4PW-Vb-8yV" firstAttribute="centerY" secondItem="xtF-SW-fjz" secondAttribute="centerY" id="KSw-uL-Xs6"/>
                     <constraint firstItem="k2W-pk-YrO" firstAttribute="leading" secondItem="xtF-SW-fjz" secondAttribute="leading" id="NyM-jK-f8f"/>
+                    <constraint firstAttribute="bottom" secondItem="Um6-7d-VKM" secondAttribute="bottom" id="Opm-Y9-IQQ"/>
                     <constraint firstItem="R3I-cc-B31" firstAttribute="centerY" secondItem="k2W-pk-YrO" secondAttribute="centerY" id="T90-Vm-Ikg"/>
                     <constraint firstItem="tHQ-6s-sQ3" firstAttribute="leading" secondItem="R3I-cc-B31" secondAttribute="trailing" constant="5" id="UMf-zE-aIJ"/>
+                    <constraint firstItem="Um6-7d-VKM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VUa-hL-wg7"/>
                     <constraint firstAttribute="bottom" secondItem="XxC-HH-9JB" secondAttribute="bottom" constant="10" id="WGn-I5-Vi5"/>
                     <constraint firstItem="xtF-SW-fjz" firstAttribute="leading" secondItem="XxC-HH-9JB" secondAttribute="trailing" constant="12" id="WZK-oZ-J9o"/>
                     <constraint firstItem="XxC-HH-9JB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fde-r9-p9s"/>

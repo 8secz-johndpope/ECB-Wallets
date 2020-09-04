@@ -31,7 +31,7 @@ class RecieveViewController: UIViewController {
             tableView.layoutIfNeeded()
             return tableView.contentSize.height
         }
-        heightConstantPurpleView.constant = tableViewHeight + 100
+        heightConstantPurpleView.constant = tableViewHeight + 80
     }
     override func viewDidAppear(_ animated: Bool) {
         //Call generateQRCode to make qrcode image and update for QRCodeImage
@@ -72,7 +72,7 @@ class RecieveViewController: UIViewController {
 //MARK: - UITableViewDelegate and UITableViewDataSource
 extension RecieveViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell", for: indexPath) as! TransactionTableViewCell

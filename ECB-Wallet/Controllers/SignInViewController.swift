@@ -18,8 +18,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // setup keyboard events
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        scrollView.bindToKeyboard()
         // set textField delegate
         emailTextField.delegate = self
         passwordTextField.delegate = self
@@ -29,6 +28,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(tap)
     }
     //MARK: - UI events
+    @IBAction func hidePasswordButtonWasPressed(_ sender: Any) {
+        if passwordTextField.isSecureTextEntry{
+            passwordTextField.isSecureTextEntry = false
+        }else{
+            passwordTextField.isSecureTextEntry = true
+        }
+    }
     @IBAction func signInButtonWasPressed(_ sender: Any) {
         print("Sign In")
         self.performSegue(withIdentifier: "goToDashBoardVC", sender: nil)
@@ -40,7 +46,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func signUpButtonWasPressed(_ sender: Any) {
-        print("sign up")
+        self.performSegue(withIdentifier: "gotoSignUpVC", sender: nil)
     }
     //MARK: - UITextField delegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -52,16 +58,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     //MARK: Helper method
-    @objc func keyboardWillShow(notification:NSNotification){
-        guard let keyboardFrameValue = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
-            return
-        }
-        let keyboardFrame = view.convert(keyboardFrameValue.cgRectValue, from: nil)
-        scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrame.size.height)
-    }
-    @objc func keyboardWillHide(notification:NSNotification){
-        scrollView.contentOffset = .zero
-    }
     @objc func handleTapToHideKeyboard() {
         self.view.endEditing(true)
     }

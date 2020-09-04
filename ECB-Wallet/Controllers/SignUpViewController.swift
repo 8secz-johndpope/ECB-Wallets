@@ -22,20 +22,35 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // setup keyboard events
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        scrollView.bindToKeyboard()
         // set textField Delegate
         userNameTextField.delegate = self
         emailTextField.delegate = self
         phoneCodeTextField.delegate = self
         passwordTextfield.delegate = self
         repeatPasswordTextField.delegate = self
+        passwordTextfield.isSecureTextEntry = true
+        repeatPasswordTextField.isSecureTextEntry = true
         //
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
         self.view.addGestureRecognizer(tap)
     }
     //MARK: - UI events
     @IBAction func phoneCodeButtonWasPressed(_ sender: Any) {
+    }
+    @IBAction func hidePasswordButtonWasPressed(_ sender: Any) {
+        if passwordTextfield.isSecureTextEntry{
+            passwordTextfield.isSecureTextEntry = false
+        }else{
+            passwordTextfield.isSecureTextEntry = true
+        }
+    }
+    @IBAction func hideRepeatPasswordButtonWasPressed(_ sender: Any) {
+        if repeatPasswordTextField.isSecureTextEntry{
+            repeatPasswordTextField.isSecureTextEntry = false
+        }else{
+            repeatPasswordTextField.isSecureTextEntry = true
+        }
     }
     @IBAction func checkButtonWasPressed(_ sender: Any) {
     }
@@ -45,18 +60,9 @@ class SignUpViewController: UIViewController {
         self.performSegue(withIdentifier: "goToVerifyAccountView", sender: nil)
     }
     @IBAction func signInbuttonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "backtoSignInVC", sender: nil)
     }
     //MARK: - Helper methods
-    @objc func keyboardWillShow(notification:NSNotification){
-        guard let keyboardFrameValue = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
-            return
-        }
-        let keyboardFrame = view.convert(keyboardFrameValue.cgRectValue, from: nil)
-        scrollView.contentOffset = CGPoint(x: 0, y: keyboardFrame.size.height)
-    }
-    @objc func keyboardWillHide(notification:NSNotification){
-        scrollView.contentOffset = .zero
-    }
     @objc func handleTapToHideKeyboard(){
         self.view.endEditing(true)
     }

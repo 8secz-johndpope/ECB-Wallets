@@ -41,7 +41,7 @@ class DashboardViewController: UIViewController {
 
             return tableView.contentSize.height
         }
-        heightPurpleView.constant = tableViewHeight
+        heightPurpleView.constant = tableViewHeight + 80
     }
     //MARK: - UI Event
     @IBAction func notificationButtonWasPressed(_ sender: Any) {
@@ -50,15 +50,19 @@ class DashboardViewController: UIViewController {
     @IBAction func refreshButtonWasPressed(_ sender: Any) {
     }
     @IBAction func sendButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoSendVC", sender: nil)
     }
     @IBAction func recieveButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoReceiveVC", sender: nil)
     }
     @IBAction func buyButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoBuyCoinVC", sender: nil)
     }
     @IBAction func withdrawButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "gotoWithdrawalVC", sender: nil)
     }
     @IBAction func allWalletsButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoWalletsVC", sender: nil)
     }
     @IBAction func allTransactionButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "gotoWalletTransactionVC", sender: nil)
@@ -83,7 +87,7 @@ extension DashboardViewController:UICollectionViewDelegate, UICollectionViewData
 //MARK: - UITableView delegate &Datasource
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableViewCell", for: indexPath) as! TransactionTableViewCell
@@ -97,5 +101,6 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
+        
     }
 }

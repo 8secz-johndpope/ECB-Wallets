@@ -34,6 +34,7 @@ class WalletsViewController: UIViewController {
     }
     //MARK: - UI Events
     @IBAction func backButtonWasPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func refreshButtonWasPressed(_ sender: Any) {
     }
