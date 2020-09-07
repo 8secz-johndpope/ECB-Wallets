@@ -220,16 +220,16 @@
                                                 <rect key="frame" x="25" y="247.66666666666669" width="325" height="407.00000000000006"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7IM-qs-0Ka">
-                                                        <rect key="frame" x="40.666666666666671" y="358.33333333333331" width="243.66666666666663" height="30.666666666666686"/>
+                                                        <rect key="frame" x="43.333333333333329" y="357.99999999999994" width="238.66666666666669" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-cx-Anc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="30.666666666666668"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="31"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                                 <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1K-l8-gFc">
-                                                                <rect key="frame" x="178.66666666666669" y="0.0" width="65" height="30.666666666666668"/>
+                                                                <rect key="frame" x="178.66666666666669" y="0.0" width="60" height="31"/>
                                                                 <state key="normal">
                                                                     <attributedString key="attributedTitle">
                                                                         <fragment content="SIGN UP">
@@ -341,7 +341,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-ea-gfw">
-                                                        <rect key="frame" x="119" y="314.66666666666669" width="107" height="29"/>
+                                                        <rect key="frame" x="123.66666666666666" y="314.66666666666669" width="98" height="29"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <state key="normal" title="Forgot Password">
                                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3437,13 +3437,13 @@ Please wait a minute...</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdrawal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iia-sJ-2CO">
-                                                        <rect key="frame" x="142.66666666666666" y="15" width="90" height="21"/>
+                                                        <rect key="frame" x="143.33333333333334" y="15" width="88.333333333333343" height="21"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
                                                         <color key="textColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Wallets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xd4-6o-9Fg">
-                                                        <rect key="frame" x="15" y="65" width="129.66666666666666" height="17"/>
+                                                        <rect key="frame" x="15.000000000000007" y="65" width="120.66666666666669" height="17"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3494,7 +3494,7 @@ Please wait a minute...</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPO-11-IhS">
-                                                        <rect key="frame" x="15" y="162" width="93.666666666666671" height="17"/>
+                                                        <rect key="frame" x="15" y="162" width="87.666666666666671" height="17"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3547,7 +3547,7 @@ Please wait a minute...</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53O-8I-b6T">
-                                                        <rect key="frame" x="15.000000000000004" y="259" width="49.333333333333343" height="17"/>
+                                                        <rect key="frame" x="14.999999999999996" y="259" width="46.666666666666657" height="17"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3737,13 +3737,13 @@ Please wait a minute...</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10R-Kv-ZEr">
-                                                <rect key="frame" x="15" y="528" width="90.666666666666671" height="19.666666666666629"/>
+                                                <rect key="frame" x="15" y="528" width="88.333333333333329" height="19.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-wl-tOv">
-                                                <rect key="frame" x="248" y="523.33333333333337" width="96" height="29"/>
+                                                <rect key="frame" x="254" y="523.33333333333337" width="90" height="29"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                 <state key="normal" title="All transactions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4741,7 +4741,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmU-Ld-mmT">
-                                                        <rect key="frame" x="15" y="14" width="13" height="22.666666666666671"/>
+                                                        <rect key="frame" x="15" y="14.000000000000002" width="13" height="22.666666666666671"/>
                                                         <state key="normal" image="backButton"/>
                                                         <connections>
                                                             <action selector="backButtonWasPressed:" destination="Jnt-K2-30O" eventType="touchUpInside" id="4O0-gw-fnS"/>
@@ -6515,7 +6515,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Wallets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPD-as-2s9">
-                                                        <rect key="frame" x="138" y="15" width="99" height="21"/>
+                                                        <rect key="frame" x="139.66666666666666" y="14.666666666666666" width="95.666666666666657" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -6565,22 +6565,22 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </constraints>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh4-Gj-vtE">
-                                                        <rect key="frame" x="15" y="160" width="90.666666666666671" height="18.666666666666657"/>
+                                                        <rect key="frame" x="15" y="160" width="88.333333333333329" height="19.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
                                                         <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2ak-ax-Jew">
-                                                        <rect key="frame" x="297.33333333333331" y="160" width="57.666666666666686" height="22"/>
+                                                        <rect key="frame" x="298.66666666666669" y="160" width="56.333333333333314" height="22"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZw-2F-HvE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="22"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="33.333333333333336" height="22"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                                 <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="me3-BZ-A0z">
-                                                                <rect key="frame" x="42.666666666666686" y="0.0" width="15" height="22"/>
+                                                                <rect key="frame" x="41.333333333333314" y="0.0" width="15" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="1A0-hA-bVu"/>
                                                                     <constraint firstAttribute="width" constant="15" id="Lmo-Jf-XVA"/>
@@ -6593,20 +6593,20 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZA0-DV-0YQ">
-                                                        <rect key="frame" x="295.66666666666669" y="182" width="57.333333333333314" height="1"/>
+                                                        <rect key="frame" x="297" y="182" width="56" height="1"/>
                                                         <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="psT-3z-Yed"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Upk-12-MWn">
-                                                        <rect key="frame" x="15" y="193.66666666666669" width="80.666666666666671" height="16.333333333333343"/>
+                                                        <rect key="frame" x="15" y="194.33333333333331" width="77.333333333333329" height="17"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="statistic" translatesAutoresizingMaskIntoConstraints="NO" id="lx0-My-Vbf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="16.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="25" height="17"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-f9-hX9">
-                                                                <rect key="frame" x="29.999999999999996" y="0.0" width="50.666666666666657" height="16.333333333333332"/>
+                                                                <rect key="frame" x="30.000000000000004" y="0.0" width="47.333333333333343" height="17"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -6614,10 +6614,10 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-3Y-Zfz">
-                                                        <rect key="frame" x="210" y="197" width="145" height="10"/>
+                                                        <rect key="frame" x="215.33333333333337" y="198" width="139.66666666666663" height="10"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YXh-m5-JSI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="47" height="10"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="10"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX0-BY-DjQ" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -6633,7 +6633,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwX-Jc-5pe">
-                                                                        <rect key="frame" x="18" y="0.0" width="29" height="10"/>
+                                                                        <rect key="frame" x="18" y="0.0" width="27.333333333333329" height="10"/>
                                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -6641,7 +6641,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DGr-rR-4hX">
-                                                                <rect key="frame" x="77" y="0.0" width="68" height="10"/>
+                                                                <rect key="frame" x="75.333333333333343" y="0.0" width="64.333333333333343" height="10"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZT-WW-zLA" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -6657,7 +6657,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recieve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAD-pe-uuw">
-                                                                        <rect key="frame" x="18" y="0.0" width="50" height="10"/>
+                                                                        <rect key="frame" x="18.000000000000004" y="0.0" width="46.333333333333343" height="10"/>
                                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -6667,14 +6667,14 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQs-vo-yMr">
-                                                        <rect key="frame" x="0.0" y="218" width="375" height="230"/>
+                                                        <rect key="frame" x="0.0" y="219.33333333333331" width="375" height="230"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="230" id="Zo6-P8-S3j"/>
                                                         </constraints>
                                                     </view>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dPE-Oa-Osf">
-                                                        <rect key="frame" x="45" y="468" width="285" height="46"/>
+                                                        <rect key="frame" x="45" y="469.33333333333337" width="285" height="46"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="263-2u-IV0"/>
                                                         </constraints>
@@ -6776,22 +6776,22 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nf4-8F-AFX">
-                                                        <rect key="frame" x="80" y="32" width="56" height="21"/>
+                                                        <rect key="frame" x="80" y="31.666666666666657" width="51.666666666666657" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                         <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-F0-KtO">
-                                                        <rect key="frame" x="20" y="80" width="197" height="30.333333333333329"/>
+                                                        <rect key="frame" x="20" y="80" width="200.33333333333334" height="31.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.70974536" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAC-WC-WuV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="137.33333333333334" height="30.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="144" height="31.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvt-dx-Jce">
-                                                                <rect key="frame" x="145.33333333333334" y="0.0" width="51.666666666666657" height="30.333333333333332"/>
+                                                                <rect key="frame" x="152" y="0.0" width="48.333333333333343" height="31.333333333333332"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -6799,16 +6799,16 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3mb-X6-sOf">
-                                                        <rect key="frame" x="20.000000000000007" y="118.33333333333334" width="110.66666666666669" height="21"/>
+                                                        <rect key="frame" x="19.999999999999993" y="119.33333333333336" width="108.33333333333331" height="21.666666666666671"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6621.32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEO-83-Ej3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="65.333333333333329" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="21.666666666666668"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                                 <color key="textColor" red="0.0" green="0.68235294117647061" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgb-zj-kI8">
-                                                                <rect key="frame" x="73.333333333333329" y="0.0" width="37.333333333333329" height="21"/>
+                                                                <rect key="frame" x="72.666666666666671" y="0.0" width="35.666666666666671" height="21.666666666666668"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                                 <color key="textColor" red="0.0" green="0.68235294120000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>

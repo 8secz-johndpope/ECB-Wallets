@@ -7,4 +7,6 @@
 //
 
 import Foundation
+let domain = "http://192.168.1.12:2001/api/"
+
 

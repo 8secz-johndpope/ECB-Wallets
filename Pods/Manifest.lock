@@ -1,22 +1,26 @@
 PODS:
+  - Alamofire (5.1.0)
   - Charts (3.5.0):
     - Charts/Core (= 3.5.0)
   - Charts/Core (3.5.0)
   - FSCalendar (2.8.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Charts
   - FSCalendar
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Charts
     - FSCalendar
 
 SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
   Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
 
-PODFILE CHECKSUM: 8efb5808352f515adb6b2937a4ada5a342b5167e
+PODFILE CHECKSUM: 895b752124a4f5e2b623223352ff4f9ab63392ed
 
 COCOAPODS: 1.8.4

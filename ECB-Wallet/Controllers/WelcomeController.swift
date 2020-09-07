@@ -11,18 +11,14 @@ import UIKit
 class WelcomeController: UIViewController {
     var currentPageNumber = 0
     // MARK: - Model
-    let pages:[Page] = {
-        let page1 = Page(image: "Mask Group 36", title: "Welcome, ECB Wallet", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")
-        let page2 = Page(image: "Mask Group 36", title: "What's on ECB Wallets ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")
-        let page3 = Page(image: "Mask Group 36", title: "Utilities of ECB Wallets ?", content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ")
-        return [page1, page2, page3]
-    }()
+    var pages = [introductionModel]()
     // MARK: - UI elements
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControll: UIPageControl!
     // MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Custom collectionView
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -46,6 +42,11 @@ class WelcomeController: UIViewController {
             let diglogVC = DialogViewController()
             diglogVC.modalPresentationStyle = .custom
             present(diglogVC, animated: true, completion: nil)
+        }
+        //Get introduction pages from API
+        IntroductionService.instant.getIntroductionPage { (introPages) in
+            self.pages = introPages
+            self.collectionView.reloadData()
         }
        
     }

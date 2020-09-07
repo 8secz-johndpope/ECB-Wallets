@@ -51,6 +51,9 @@ class SignUpViewController: UIViewController {
     }
     //MARK: - UI events
     @IBAction func phoneCodeButtonWasPressed(_ sender: Any) {
+        let listFlatVC = ListFlatViewController()
+        listFlatVC.modalPresentationStyle = .custom
+        self.present(listFlatVC, animated: true, completion: nil)
     }
     @IBAction func hidePasswordButtonWasPressed(_ sender: Any) {
         if passwordTextfield.isSecureTextEntry{
