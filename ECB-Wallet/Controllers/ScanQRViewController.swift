@@ -30,6 +30,15 @@ class ScanQRViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        //Check internet are available
+               if CheckInternet.Connection(){
+                   print("Internet is available")
+               }else{
+                   //Show dialogVC
+                   let diglogVC = DialogViewController()
+                   diglogVC.modalPresentationStyle = .custom
+                   present(diglogVC, animated: true, completion: nil)
+               }
         //Get the back-facing camera for capturing videos
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: AVCaptureDevice.Position.back)
         guard let captureDevice = deviceDiscoverySession.devices.first else {

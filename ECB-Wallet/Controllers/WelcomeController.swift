@@ -36,6 +36,19 @@ class WelcomeController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
+    override func viewDidAppear(_ animated: Bool) {
+         super.viewDidAppear(true)
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+       
+    }
     // MARK: - UI Events
     @IBAction func nextButtonWasPressed(_ sender: Any) {
         if pageControll.currentPage == pages.count - 1 {

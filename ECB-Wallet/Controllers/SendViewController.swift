@@ -13,6 +13,7 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     var yPickerView:CGFloat = 0.0
     //MARK: - UI Elements
     
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var currencyImage: UIImageView!
     @IBOutlet weak var currencyTitleLabel: UILabel!
@@ -34,22 +35,34 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // setup keyboard events
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         //
         
     }
+    
     //get height of safeView and set yPickerView for pickerViewCurrency
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if view.safeAreaInsets.top == 44 {
-            yPickerView = 530
+            yPickerView = 520
         }else{
-            yPickerView = 530 - view.safeAreaInsets.top
+            yPickerView = 520 - view.safeAreaInsets.top
         }
         print(yPickerView)
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+        //
+        
     }
     //MARK: - ListWalletDelegate
     //get wallet, which selected at ListWalletVC and than update UI
@@ -63,6 +76,9 @@ class SendViewController: UIViewController,listWalletDelegate, addressWalletDele
     }
     //MARK: - UI Event
     
+    @IBAction func backButtonWasPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func listWalletButtonWasPressed(_ sender: Any) {
         //Jump to ListWalletVC
         self.performSegue(withIdentifier: "goToListWalletVC", sender: nil)

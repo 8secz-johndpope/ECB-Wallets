@@ -30,6 +30,17 @@ class CompleteSendViewController: UIViewController {
         attributedText.append(NSAttributedString(string: self.addressWallet, attributes: [.font: UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular), .foregroundColor:UIColor(red: 123/255, green: 123/255, blue: 123/255, alpha: 1), .paragraphStyle:paragrapStyle]))
         contentLabel.attributedText = attributedText
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
     //MARK: - UI Events
     @IBAction func saveWalletAdressWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "gotoSaveWalletVC", sender: nil)

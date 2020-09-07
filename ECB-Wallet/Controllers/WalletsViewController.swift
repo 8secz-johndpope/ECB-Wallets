@@ -10,6 +10,7 @@ import UIKit
 
 class WalletsViewController: UIViewController {
     //MARK: - UI elements
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var valueCurrencyLabel: UILabel!
     @IBOutlet weak var unitCurrencyLabel: UILabel!
     @IBOutlet weak var valueUSDLabel: UILabel!
@@ -31,6 +32,18 @@ class WalletsViewController: UIViewController {
             return tableView.contentSize.height
         }
         hieghtLightBlueView.constant = tableViewHeight
+    }
+   
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
     }
     //MARK: - UI Events
     @IBAction func backButtonWasPressed(_ sender: Any) {

@@ -45,6 +45,17 @@ class BuyCoinViewController: UIViewController {
         }
         heightPurpleView.constant = tableViewHeight + 80
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
     
     //MARK: UI events
     @IBAction func backButtonWasPressed(_ sender: Any) {
@@ -96,7 +107,7 @@ extension BuyCoinViewController:UITableViewDelegate, UITableViewDataSource{
         tableView.deselectRow(at: indexPath, animated: true)
         //Jump to transactionDetailVC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        let transactionDetailVC = storyboard.instantiateViewController(withIdentifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
     }
 }

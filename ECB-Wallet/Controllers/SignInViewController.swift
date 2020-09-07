@@ -27,6 +27,17 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
         self.view.addGestureRecognizer(tap)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
     //MARK: - UI events
     @IBAction func hidePasswordButtonWasPressed(_ sender: Any) {
         if passwordTextField.isSecureTextEntry{
@@ -42,7 +53,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBAction func forgetPasswordButtonWasPressed(_ sender: Any) {
         print("forget password")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "forgotPasswordVC")
+        let vc = storyboard.instantiateViewController(withIdentifier: "forgotPasswordVC")
         self.present(vc, animated: true, completion: nil)
     }
     @IBAction func signUpButtonWasPressed(_ sender: Any) {

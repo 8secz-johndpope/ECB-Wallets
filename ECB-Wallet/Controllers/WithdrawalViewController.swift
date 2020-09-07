@@ -46,12 +46,22 @@ class WithdrawalViewController: UIViewController {
     //get height of safeView and set yPickerView for pickerViewCurrency
        override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
-           if view.safeAreaInsets.top == 44 {
-               yPickerView = 380
-           }else{
-               yPickerView = 380 - view.safeAreaInsets.top
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+        
+        if view.safeAreaInsets.top == 44 {
+            yPickerView = 380
+        }else{
+            yPickerView = 380 - view.safeAreaInsets.top
            }
-           print(yPickerView)
+        print(yPickerView)
        }
     
     //MARK: - UI Events
@@ -81,6 +91,7 @@ class WithdrawalViewController: UIViewController {
         self.performSegue(withIdentifier: "gotoFinishWithdrawalVC", sender: nil)
     }
     @IBAction func allTransactionButtonWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoWalletTransaction", sender: nil)
     }
 }
 extension WithdrawalViewController:UITableViewDelegate, UITableViewDataSource{

@@ -51,7 +51,11 @@ class SearchTransactionViewController: UIViewController {
         let titleTextAttibuteSelected = [NSAttributedString.Key.foregroundColor:UIColor.white]
         segmentControl.setTitleTextAttributes(titleTextAttibuteNormal, for: UIControl.State.normal)
         segmentControl.setTitleTextAttributes(titleTextAttibuteSelected, for: UIControl.State.selected)
-        segmentControl.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        if #available(iOS 13.0, *) {
+            segmentControl.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
         //
         let tapFromView = UITapGestureRecognizer(target: self, action: #selector(handleTapFromView))
         self.fromView.addGestureRecognizer(tapFromView)
@@ -60,6 +64,18 @@ class SearchTransactionViewController: UIViewController {
         self.toView.addGestureRecognizer(tapToView)
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
+    //MARK: - UI Events
     
     @IBAction func backButtonWasPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -110,7 +126,7 @@ extension SearchTransactionViewController:UITableViewDelegate, UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        let transactionDetailVC = storyboard.instantiateViewController(withIdentifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
     }
 }

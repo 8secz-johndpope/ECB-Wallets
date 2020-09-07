@@ -43,6 +43,17 @@ class DashboardViewController: UIViewController {
         }
         heightPurpleView.constant = tableViewHeight + 80
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
     //MARK: - UI Event
     @IBAction func notificationButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "gotoNotificationVC", sender: nil)
@@ -99,7 +110,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Jump to transactionDetailVC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        let transactionDetailVC = storyboard.instantiateViewController(withIdentifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
         
     }

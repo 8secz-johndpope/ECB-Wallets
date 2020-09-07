@@ -24,6 +24,17 @@ class SupportCenterViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapContactView))
         contactView.addGestureRecognizer(tap)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func backButtonwasPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)

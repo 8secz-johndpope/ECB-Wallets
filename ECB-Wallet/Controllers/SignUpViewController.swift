@@ -9,6 +9,8 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    //MARK: - Models
+    var isAgreeTeams = false
     //MARK: - UI elements
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var userNameTextField: UITextField!
@@ -18,6 +20,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var phoneCodeTextField: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
+    @IBOutlet weak var checkButton: setBorderAndRoundCornerButton!
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,17 @@ class SignUpViewController: UIViewController {
         //
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
         self.view.addGestureRecognizer(tap)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
     }
     //MARK: - UI events
     @IBAction func phoneCodeButtonWasPressed(_ sender: Any) {
@@ -53,6 +67,14 @@ class SignUpViewController: UIViewController {
         }
     }
     @IBAction func checkButtonWasPressed(_ sender: Any) {
+        if isAgreeTeams{
+            checkButton.setBackgroundImage(UIImage(named: "checkButton"), for: UIControl.State.normal)
+            isAgreeTeams = false
+        }else{
+            isAgreeTeams = true
+            checkButton.setBackgroundImage(UIImage(named: ""), for: UIControl.State.normal)
+            return
+        }
     }
     @IBAction func termAndConditionButtonWasPressed(_ sender: Any) {
     }

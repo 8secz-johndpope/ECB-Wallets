@@ -102,7 +102,11 @@ class DetailWalletViewController: UIViewController {
         let titleTextAttibuteSelected = [NSAttributedString.Key.foregroundColor:UIColor.white]
         segmentControll.setTitleTextAttributes(titleTextAttibuteNormal, for: UIControl.State.normal)
         segmentControll.setTitleTextAttributes(titleTextAttibuteSelected, for: UIControl.State.selected)
-        segmentControll.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        if #available(iOS 13.0, *) {
+            segmentControll.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
         //Add lineChartView into chartView
         lineChatView.delegate = self
         chartView.addSubview(lineChatView)
@@ -113,6 +117,17 @@ class DetailWalletViewController: UIViewController {
         //Import data for lineChartView
         setData()
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
     }
     //MARK: - UI Events
     @IBAction func backButtonWasPressed(_ sender: Any) {
@@ -171,7 +186,7 @@ extension DetailWalletViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Jump to transactionDetailVC
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        let transactionDetailVC = storyboard.instantiateViewController(withIdentifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
     }
 }

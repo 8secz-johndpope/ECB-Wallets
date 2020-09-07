@@ -20,7 +20,7 @@ class CustomUITabBar: UITabBar {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.lightGray.cgColor
-        shapeLayer.fillColor = #colorLiteral(red: 0.9782002568, green: 0.9782230258, blue: 0.9782107472, alpha: 1)
+        shapeLayer.fillColor = #colorLiteral(red: 0.9529411765, green: 0.9647058824, blue: 1, alpha: 1)
         shapeLayer.lineWidth = 0.5
         shapeLayer.shadowOffset = CGSize(width:0, height:0)
         shapeLayer.shadowRadius = 10
@@ -42,6 +42,7 @@ class CustomUITabBar: UITabBar {
                 let centerWidth = self.frame.width / 2
 
                 path.move(to: CGPoint(x: 0, y: 0)) // start top left
+                
                 path.addLine(to: CGPoint(x: (centerWidth - height * 1), y: 0)) // the beginning of the trough
 
                 // first curve down

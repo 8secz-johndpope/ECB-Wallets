@@ -91,7 +91,11 @@ class WalletTransactionsViewController: UIViewController {
         let titleTextAttibuteSelected = [NSAttributedString.Key.foregroundColor:UIColor.white]
         segmentControll.setTitleTextAttributes(titleTextAttibuteNormal, for: UIControl.State.normal)
         segmentControll.setTitleTextAttributes(titleTextAttibuteSelected, for: UIControl.State.selected)
-        segmentControll.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        if #available(iOS 13.0, *) {
+            segmentControll.selectedSegmentTintColor = UIColor(red: 16/255, green: 0/255, blue: 54/255, alpha: 1)
+        } else {
+            // Fallback on earlier versions
+        }
         //Add lineChartView into chartView
         lineChatView.delegate = self
         chartView.addSubview(lineChatView)
@@ -104,6 +108,18 @@ class WalletTransactionsViewController: UIViewController {
         //Default sellected Button
         weekButton.backgroundColor = UIColor(red: 0/255, green: 81/255, blue: 255/255, alpha: 1)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
+    }
+    //MARK: - UI Events
     
     @IBAction func backButtonWasPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -164,7 +180,7 @@ extension WalletTransactionsViewController:UITableViewDelegate, UITableViewDataS
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let transactionDetailVC = storyboard.instantiateViewController(identifier: "transactionDetailVC") as! TransactionDetailViewController
+        let transactionDetailVC = storyboard.instantiateViewController(withIdentifier: "transactionDetailVC") as! TransactionDetailViewController
         self.present(transactionDetailVC, animated: true, completion: nil)
     }
 }

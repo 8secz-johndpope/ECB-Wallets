@@ -11,6 +11,7 @@ import UIKit
 class RecieveViewController: UIViewController {
     //MARK: - UI Elements
     
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var currencyImage: UIImageView!
     @IBOutlet weak var currencyNameLabel: UILabel!
     @IBOutlet weak var QRCodeImage: UIImageView!
@@ -37,9 +38,21 @@ class RecieveViewController: UIViewController {
         //Call generateQRCode to make qrcode image and update for QRCodeImage
         let qrImage = generateQRCode(from: "test generate QR code")
         QRCodeImage.image = qrImage
+        //Check internet are available
+        if CheckInternet.Connection(){
+            print("Internet is available")
+        }else{
+            //Show dialogVC
+            let diglogVC = DialogViewController()
+            diglogVC.modalPresentationStyle = .custom
+            present(diglogVC, animated: true, completion: nil)
+        }
     }
     //MARK: - UI Events
 
+    @IBAction func backButtonWasPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func chooseWalletWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "goToListWallet", sender: nil)
         
@@ -53,6 +66,7 @@ class RecieveViewController: UIViewController {
         self.present(ac, animated: true, completion: nil)
     }
     @IBAction func allTransactionsWasPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoWalletTransactionVC", sender: nil)
     }
     //MARK: - Helper Method
     //This is aa function to make a QRCode Image
