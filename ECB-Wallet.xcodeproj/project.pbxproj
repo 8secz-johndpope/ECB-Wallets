@@ -81,6 +81,8 @@
 		53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */; };
 		53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */; };
 		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
+		53B2A2FE250723BB00E39513 /* FlatCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A2FD250723BB00E39513 /* FlatCountryService.swift */; };
+		53B2A300250723F900E39513 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A2FF250723F900E39513 /* LocationModel.swift */; };
 		53B472A12505CB3100A2E92F /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4729F2505CB3100A2E92F /* DialogViewController.swift */; };
 		53B472A22505CB3100A2E92F /* DialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B472A02505CB3100A2E92F /* DialogViewController.xib */; };
 		53B472A52505D2F600A2E92F /* CheckInternetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B472A42505D2F600A2E92F /* CheckInternetStatus.swift */; };
@@ -196,6 +198,8 @@
 		53B13BAB24F7A5EC004E54D9 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		53B13BAC24F7A5EC004E54D9 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		53B2A2FD250723BB00E39513 /* FlatCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCountryService.swift; sourceTree = "<group>"; };
+		53B2A2FF250723F900E39513 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		53B4729F2505CB3100A2E92F /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		53B472A02505CB3100A2E92F /* DialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogViewController.xib; sourceTree = "<group>"; };
 		53B472A42505D2F600A2E92F /* CheckInternetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternetStatus.swift; sourceTree = "<group>"; };
@@ -292,6 +296,7 @@
 				53EC22E12501F56500F41505 /* PaymentMethod.swift */,
 				53B472AA2506054900A2E92F /* IntroductionModel.swift */,
 				53B472B625062F7E00A2E92F /* FlatModel.swift */,
+				53B2A2FF250723F900E39513 /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				53B472AC2506066A00A2E92F /* IntroductionService.swift */,
+				53B2A2FD250723BB00E39513 /* FlatCountryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -635,6 +641,7 @@
 				53B472A72505E88300A2E92F /* Constant.swift in Sources */,
 				53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */,
 				53364ADB24F50E9400FF6C32 /* ConfirmSendViewController.swift in Sources */,
+				53B2A300250723F900E39513 /* LocationModel.swift in Sources */,
 				5305110524EE7664002CDA2E /* BoundTopRightView.swift in Sources */,
 				53EC22E02501F43B00F41505 /* SelectPaymentViewController.swift in Sources */,
 				53B13BAD24F7A5EC004E54D9 /* NotificationTableViewCell.swift in Sources */,
@@ -655,6 +662,7 @@
 				530510D924EE1E3C002CDA2E /* VerifyForgotPasswordViewController.swift in Sources */,
 				537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */,
 				53BC5C7D24FCD2800000E112 /* FinishSupportViewController.swift in Sources */,
+				53B2A2FE250723BB00E39513 /* FlatCountryService.swift in Sources */,
 				5305110124EE69F3002CDA2E /* CustomUITabBar.swift in Sources */,
 				5305110724EE78A2002CDA2E /* BoundBottomLeftCorner.swift in Sources */,
 				5305110324EE6D7A002CDA2E /* TabBarViewController.swift in Sources */,

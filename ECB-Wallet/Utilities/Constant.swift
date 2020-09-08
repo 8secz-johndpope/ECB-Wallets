@@ -7,6 +7,11 @@
 //
 
 import Foundation
-let domain = "http://192.168.1.12:2001/api/"
+let domain = "http://45.32.125.91:2001/"
+let defaults = UserDefaults.standard
+let errorCode = "errorCode"
+
+//
+let NOTIF_LIST_FLAG_COUNTRY_DATA_DID_CHANGE = Notification.Name("notifListFlagCountryDataDidChange")
 
 

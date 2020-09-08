@@ -615,20 +615,20 @@
                                                                 <rect key="frame" x="0.0" y="199" width="305" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUm-cU-qJh">
-                                                                        <rect key="frame" x="5" y="0.0" width="42" height="50"/>
+                                                                        <rect key="frame" x="5" y="10" width="42" height="30"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="42" id="L5W-bb-nC1"/>
-                                                                            <constraint firstAttribute="height" constant="50" id="uIo-gn-d2L"/>
+                                                                            <constraint firstAttribute="height" constant="30" id="uIo-gn-d2L"/>
                                                                         </constraints>
                                                                         <state key="normal" image="Mask Group 23"/>
                                                                         <connections>
                                                                             <action selector="phoneCodeButtonWasPressed:" destination="ERp-Cb-IU6" eventType="touchUpInside" id="dnt-Iz-m1A"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+84" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L5-OR-1K3">
-                                                                        <rect key="frame" x="57" y="0.0" width="34" height="50"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+84" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L5-OR-1K3">
+                                                                        <rect key="frame" x="52" y="0.0" width="40" height="50"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="34" id="1cx-ie-QyY"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="1cx-ie-QyY"/>
                                                                             <constraint firstAttribute="height" constant="50" id="r7Y-lW-50V"/>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
@@ -636,7 +636,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNw-KK-aIo">
-                                                                        <rect key="frame" x="91" y="0.0" width="214" height="50"/>
+                                                                        <rect key="frame" x="97" y="0.0" width="208" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -644,9 +644,9 @@
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="hNw-KK-aIo" secondAttribute="trailing" id="7oZ-aG-Pw6"/>
-                                                                    <constraint firstItem="hNw-KK-aIo" firstAttribute="leading" secondItem="6L5-OR-1K3" secondAttribute="trailing" id="7wz-da-glw"/>
+                                                                    <constraint firstItem="hNw-KK-aIo" firstAttribute="leading" secondItem="6L5-OR-1K3" secondAttribute="trailing" constant="5" id="7wz-da-glw"/>
                                                                     <constraint firstAttribute="bottom" secondItem="hNw-KK-aIo" secondAttribute="bottom" id="9Zv-zb-bJs"/>
-                                                                    <constraint firstItem="6L5-OR-1K3" firstAttribute="leading" secondItem="uUm-cU-qJh" secondAttribute="trailing" constant="10" id="A0e-6g-0RQ"/>
+                                                                    <constraint firstItem="6L5-OR-1K3" firstAttribute="leading" secondItem="uUm-cU-qJh" secondAttribute="trailing" constant="5" id="A0e-6g-0RQ"/>
                                                                     <constraint firstItem="hNw-KK-aIo" firstAttribute="top" secondItem="Xpo-HK-lHk" secondAttribute="top" id="M31-Tr-YwU"/>
                                                                     <constraint firstItem="uUm-cU-qJh" firstAttribute="centerY" secondItem="Xpo-HK-lHk" secondAttribute="centerY" id="Pzs-hE-9ez"/>
                                                                     <constraint firstAttribute="height" constant="50" id="SBK-ED-YYx"/>
@@ -5893,13 +5893,13 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 <rect key="frame" x="0.0" y="84" width="355" height="270.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Successful!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDR-cP-yhV">
-                                <rect key="frame" x="100.33333333333333" y="384.66666666666669" width="174.66666666666669" height="20.333333333333314"/>
+                                <rect key="frame" x="97.666666666666686" y="384.66666666666669" width="180" height="20"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" red="0.058823529409999999" green="0.31764705879999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khC-b7-85L">
-                                <rect key="frame" x="25" y="425" width="325" height="100.66666666666663"/>
+                                <rect key="frame" x="25" y="424.66666666666669" width="325" height="98.666666666666686"/>
                                 <attributedString key="attributedText">
                                     <fragment content="You've just made a successful transfer of 0.00001234 BTC to the wallet address bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh">
                                         <attributes>
@@ -5911,7 +5911,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIU-I4-xsB">
-                                <rect key="frame" x="47" y="636" width="281" height="50"/>
+                                <rect key="frame" x="47" y="637" width="281" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eHj-qX-sJ2"/>
                                 </constraints>
@@ -5922,17 +5922,17 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-8M-OSd">
-                                <rect key="frame" x="113.66666666666669" y="726" width="148" height="32"/>
+                                <rect key="frame" x="110.66666666666669" y="727" width="154" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-Qc-zyY">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="31"/>
                                         <state key="normal" image="Group 281"/>
                                         <connections>
                                             <action selector="gotoDashboardWasPressed:" destination="AAP-yJ-zhC" eventType="touchUpInside" id="aue-vj-sHa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ym-QSu">
-                                        <rect key="frame" x="30.999999999999986" y="0.0" width="117.00000000000001" height="32"/>
+                                        <rect key="frame" x="30.999999999999986" y="0.0" width="123.00000000000001" height="31"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
                                         <state key="normal" title="Go to Dashboard">
                                             <color key="titleColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

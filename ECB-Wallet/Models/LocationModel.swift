@@ -1,13 +1,13 @@
 //
-//  FlatModel.swift
+//  LocationModel.swift
 //  ECB-Wallet
 //
-//  Created by NGUYENLONGTIEN on 9/7/20.
+//  Created by NGUYENLONGTIEN on 9/8/20.
 //  Copyright © 2020 NGUYENLONGTIEN. All rights reserved.
 //
 
 import Foundation
-struct flag{
+struct location {
     public private(set) var imageUrl:String?
     public private(set) var countryName:String?
     public private(set) var phoneCode:String?
