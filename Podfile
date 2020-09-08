@@ -9,4 +9,6 @@ target 'ECB-Wallet' do
 pod 'Charts'
 pod 'FSCalendar'
 pod 'Alamofire'
+pod 'Firebase/Analytics'
+pod 'Firebase/Messaging'
 end

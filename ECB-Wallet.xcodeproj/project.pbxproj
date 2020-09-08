@@ -83,6 +83,7 @@
 		53B13BB024F7AC35004E54D9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */; };
 		53B2A2FE250723BB00E39513 /* FlatCountryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A2FD250723BB00E39513 /* FlatCountryService.swift */; };
 		53B2A300250723F900E39513 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B2A2FF250723F900E39513 /* LocationModel.swift */; };
+		53B2A3042507763200E39513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53B2A3032507763200E39513 /* GoogleService-Info.plist */; };
 		53B472A12505CB3100A2E92F /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4729F2505CB3100A2E92F /* DialogViewController.swift */; };
 		53B472A22505CB3100A2E92F /* DialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B472A02505CB3100A2E92F /* DialogViewController.xib */; };
 		53B472A52505D2F600A2E92F /* CheckInternetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B472A42505D2F600A2E92F /* CheckInternetStatus.swift */; };
@@ -200,6 +201,8 @@
 		53B13BAF24F7AC35004E54D9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		53B2A2FD250723BB00E39513 /* FlatCountryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCountryService.swift; sourceTree = "<group>"; };
 		53B2A2FF250723F900E39513 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		53B2A3032507763200E39513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53B2A305250781EA00E39513 /* ECB-Wallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ECB-Wallet.entitlements"; sourceTree = "<group>"; };
 		53B4729F2505CB3100A2E92F /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
 		53B472A02505CB3100A2E92F /* DialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogViewController.xib; sourceTree = "<group>"; };
 		53B472A42505D2F600A2E92F /* CheckInternetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternetStatus.swift; sourceTree = "<group>"; };
@@ -322,6 +325,7 @@
 		538B116B24EA5FF1000B65D1 /* ECB-Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				53B2A305250781EA00E39513 /* ECB-Wallet.entitlements */,
 				53B472A9250604AC00A2E92F /* Services */,
 				53B472A32505D27D00A2E92F /* Utilities */,
 				53364AD724F4A52600FF6C32 /* XIB */,
@@ -335,6 +339,7 @@
 				538B117524EA5FF3000B65D1 /* Assets.xcassets */,
 				538B117724EA5FF3000B65D1 /* LaunchScreen.storyboard */,
 				538B117A24EA5FF3000B65D1 /* Info.plist */,
+				53B2A3032507763200E39513 /* GoogleService-Info.plist */,
 			);
 			path = "ECB-Wallet";
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				538B118824EA64A8000B65D1 /* sfprodisplay_light.ttf in Resources */,
 				538B118924EA64AB000B65D1 /* sfprodisplay_medium.ttf in Resources */,
 				538DC1FD24F3B34C00B12D02 /* AddressWalletTableViewCell.xib in Resources */,
+				53B2A3042507763200E39513 /* GoogleService-Info.plist in Resources */,
 				538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */,
 				53D29471250098A5000A797F /* WalletTransactionTableViewCell.xib in Resources */,
 				53BC5C7724FCA17F0000E112 /* SupportCenterTableViewCell.xib in Resources */,
@@ -829,15 +835,16 @@
 			baseConfigurationReference = DD9B38A44A019FBEC41F440E /* Pods-ECB-Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ECB-Wallet/ECB-Wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K5ZMABR8MY;
+				DEVELOPMENT_TEAM = N6JU23XB7A;
 				INFOPLIST_FILE = "ECB-Wallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nhatlongtien.ECB-Wallet1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eplus.ECB-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -849,8 +856,9 @@
 			baseConfigurationReference = 159A1BE3A4B586A2FB32282D /* Pods-ECB-Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ECB-Wallet/ECB-Wallet.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RRJMKAXD2H;
+				DEVELOPMENT_TEAM = N6JU23XB7A;
 				INFOPLIST_FILE = "ECB-Wallet/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
