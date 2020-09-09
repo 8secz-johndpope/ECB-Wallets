@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
           application.registerUserNotificationSettings(settings)
         }
-//        Messaging.messaging().delegate = self
+        Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
 
 
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     // the FCM registration token.
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let token = String(data: deviceToken, encoding: String.Encoding.ascii)
+        guard let token = String(data: deviceToken, encoding: String.Encoding.ascii) else {return}
         print("APNs token retrieved: \(token)")
 
       // With swizzling disabled you must set the APNs token here.
@@ -116,7 +116,31 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
     if let messageID = userInfo[gcmMessageIDKey] {
       print("Message ID: \(messageID)")
     }
-
+    // Get message body from notication
+    if let activity = userInfo["activity"] as? String {
+        if activity == "confirm_code"{
+            if let dataNotif = userInfo["data"] as? String {
+                let data = dataNotif.data(using: .utf8)!
+                do{
+                    let output = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]
+                    if let dataCode = output!["data"] as? Dictionary<String,AnyObject> {
+                        if let code = dataCode["code"] as? Int{
+                            messageCodeFromNotif = code
+                            NotificationCenter.default.post(name: NOTIF_MESSAGE_CODE_DATA_DID_CHANGE, object: nil)
+                            print(code)
+                        }
+                    }
+                }catch{
+                    print(error)
+                }
+            }
+        }
+    }
+    
+        
+    //let code = dataCode["code"] as! String
+//    messageFromNotif = code
+//    print(messageFromNotif)
     // Print full message.
     print(userInfo)
 

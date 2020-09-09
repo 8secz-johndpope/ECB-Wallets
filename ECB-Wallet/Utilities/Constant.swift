@@ -9,9 +9,11 @@
 import Foundation
 let domain = "http://45.32.125.91:2001/"
 let defaults = UserDefaults.standard
+var driveToken = ""
+var messageCodeFromNotif:Int?
 let errorCode = "errorCode"
 
 //
-let NOTIF_LIST_FLAG_COUNTRY_DATA_DID_CHANGE = Notification.Name("notifListFlagCountryDataDidChange")
+let NOTIF_MESSAGE_CODE_DATA_DID_CHANGE = Notification.Name("notifMessageCodeDataDidChange")
 
 

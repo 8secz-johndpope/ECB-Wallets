@@ -91,6 +91,7 @@ PODS:
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.10)
   - Protobuf (3.13.0)
+  - Validator (3.2.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -98,6 +99,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Messaging
   - FSCalendar
+  - Validator
 
 SPEC REPOS:
   trunk:
@@ -120,6 +122,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Protobuf
+    - Validator
 
 SPEC CHECKSUMS:
   Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
@@ -141,7 +144,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
 
-PODFILE CHECKSUM: 56e0433a7805f15ae6ea2e5a5560000270257a8a
+PODFILE CHECKSUM: 0b190817539b2a17163e20dbdd24cdd938d8c04e
 
 COCOAPODS: 1.8.4

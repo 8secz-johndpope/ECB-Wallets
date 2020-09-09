@@ -17,6 +17,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     //MARK: - UI viewController
     override func viewDidLoad() {
         super.viewDidLoad()
+        //
+        print(driveToken)
         // setup keyboard events
         scrollView.bindToKeyboard()
         // set textField delegate

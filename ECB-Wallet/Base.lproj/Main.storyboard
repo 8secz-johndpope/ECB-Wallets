@@ -942,14 +942,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HBU-Kp-CHe">
-                                <rect key="frame" x="15" y="212.66666666666666" width="345" height="44.999999999999972"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HBU-Kp-CHe">
+                                <rect key="frame" x="27.666666666666657" y="212.66666666666666" width="320" height="44.999999999999972"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0L-qJ-FD2" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfh-VD-HTT">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfh-VD-HTT">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -957,17 +958,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="Xfh-VD-HTT" firstAttribute="leading" secondItem="W0L-qJ-FD2" secondAttribute="leading" id="7eO-Yv-ydn"/>
-                                            <constraint firstAttribute="bottom" secondItem="Xfh-VD-HTT" secondAttribute="bottom" id="SC0-F7-vUd"/>
-                                            <constraint firstItem="Xfh-VD-HTT" firstAttribute="top" secondItem="W0L-qJ-FD2" secondAttribute="top" id="jCD-A5-TWU"/>
-                                            <constraint firstAttribute="trailing" secondItem="Xfh-VD-HTT" secondAttribute="trailing" id="qns-xP-nUN"/>
+                                            <constraint firstAttribute="height" constant="45" id="CbN-bJ-QYC"/>
+                                            <constraint firstAttribute="width" constant="45" id="p70-rb-YGd"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYD-pd-nun" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="55" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-hS-yzd">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMc-hS-yzd">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -975,17 +975,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="dMc-hS-yzd" secondAttribute="bottom" id="A9w-LD-UIc"/>
-                                            <constraint firstItem="dMc-hS-yzd" firstAttribute="leading" secondItem="jYD-pd-nun" secondAttribute="leading" id="APz-JN-ZvE"/>
-                                            <constraint firstItem="dMc-hS-yzd" firstAttribute="top" secondItem="jYD-pd-nun" secondAttribute="top" id="awG-1i-UMU"/>
-                                            <constraint firstAttribute="trailing" secondItem="dMc-hS-yzd" secondAttribute="trailing" id="d7s-4z-L8l"/>
+                                            <constraint firstAttribute="height" constant="45" id="Xh1-Gj-TPa"/>
+                                            <constraint firstAttribute="width" constant="45" id="iG6-76-BWe"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-Aj-DgV" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="120" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="110" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h93-gf-m3M">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h93-gf-m3M">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -993,17 +992,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="h93-gf-m3M" firstAttribute="leading" secondItem="KDq-Aj-DgV" secondAttribute="leading" id="1dz-jc-5V6"/>
-                                            <constraint firstItem="h93-gf-m3M" firstAttribute="top" secondItem="KDq-Aj-DgV" secondAttribute="top" id="IsR-k6-IY9"/>
-                                            <constraint firstAttribute="trailing" secondItem="h93-gf-m3M" secondAttribute="trailing" id="KlM-jp-3RL"/>
-                                            <constraint firstAttribute="bottom" secondItem="h93-gf-m3M" secondAttribute="bottom" id="q8j-Bq-4PA"/>
+                                            <constraint firstAttribute="width" constant="45" id="CRf-pa-Xhp"/>
+                                            <constraint firstAttribute="height" constant="45" id="GfL-fz-wru"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JU-6T-czG" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="180" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="165" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCs-xK-gEo">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCs-xK-gEo">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1011,17 +1009,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="vCs-xK-gEo" firstAttribute="leading" secondItem="2JU-6T-czG" secondAttribute="leading" id="98L-kI-3yF"/>
-                                            <constraint firstAttribute="trailing" secondItem="vCs-xK-gEo" secondAttribute="trailing" id="eGB-5O-Jts"/>
-                                            <constraint firstAttribute="bottom" secondItem="vCs-xK-gEo" secondAttribute="bottom" id="ggr-ip-Iia"/>
-                                            <constraint firstItem="vCs-xK-gEo" firstAttribute="top" secondItem="2JU-6T-czG" secondAttribute="top" id="zFF-7E-mOj"/>
+                                            <constraint firstAttribute="width" constant="45" id="QoL-9s-fPp"/>
+                                            <constraint firstAttribute="height" constant="45" id="eGH-lG-BLH"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJq-Qk-UPv" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="240" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="220" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4K-ZG-Ezt">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4K-ZG-Ezt">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1029,17 +1026,16 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="X4K-ZG-Ezt" firstAttribute="top" secondItem="tJq-Qk-UPv" secondAttribute="top" id="0ad-qa-mbJ"/>
-                                            <constraint firstItem="X4K-ZG-Ezt" firstAttribute="leading" secondItem="tJq-Qk-UPv" secondAttribute="leading" id="bfs-U6-SRc"/>
-                                            <constraint firstAttribute="trailing" secondItem="X4K-ZG-Ezt" secondAttribute="trailing" id="fHX-jr-xTR"/>
-                                            <constraint firstAttribute="bottom" secondItem="X4K-ZG-Ezt" secondAttribute="bottom" id="nCE-jV-oAO"/>
+                                            <constraint firstAttribute="height" constant="45" id="9r5-V7-OEf"/>
+                                            <constraint firstAttribute="width" constant="45" id="OX9-8g-PJQ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWb-VR-pG8" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
-                                        <rect key="frame" x="300" y="0.0" width="45" height="45"/>
+                                        <rect key="frame" x="275" y="0.0" width="45" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-rJ-8Mi">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-rJ-8Mi">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.0" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1047,18 +1043,17 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="1ym-rJ-8Mi" firstAttribute="leading" secondItem="wWb-VR-pG8" secondAttribute="leading" id="0WY-yt-FzD"/>
-                                            <constraint firstAttribute="trailing" secondItem="1ym-rJ-8Mi" secondAttribute="trailing" id="Gca-eC-F0I"/>
-                                            <constraint firstItem="1ym-rJ-8Mi" firstAttribute="top" secondItem="wWb-VR-pG8" secondAttribute="top" id="ZCg-bN-Efh"/>
-                                            <constraint firstAttribute="bottom" secondItem="1ym-rJ-8Mi" secondAttribute="bottom" id="vVh-Jc-eo7"/>
+                                            <constraint firstAttribute="height" constant="45" id="1yi-UR-Rdb"/>
+                                            <constraint firstAttribute="width" constant="45" id="3bA-6U-SU2"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="JKn-lQ-2jp"/>
                                     <constraint firstAttribute="height" constant="45" id="N98-tw-e7b"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expried in 30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSi-zw-K9Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expried in 60s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSi-zw-K9Y">
                                 <rect key="frame" x="145.66666666666666" y="277.66666666666669" width="83.666666666666657" height="17"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                 <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -1101,16 +1096,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.0" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="HBU-Kp-CHe" secondAttribute="trailing" constant="15" id="0tP-mN-TaL"/>
                             <constraint firstItem="IFg-9x-6a8" firstAttribute="leading" secondItem="ijk-RZ-1Be" secondAttribute="leading" constant="15" id="4iS-TS-UuF"/>
                             <constraint firstItem="5eW-uW-ATZ" firstAttribute="centerY" secondItem="IFg-9x-6a8" secondAttribute="centerY" id="5Js-VN-F9F"/>
-                            <constraint firstItem="HBU-Kp-CHe" firstAttribute="leading" secondItem="ijk-RZ-1Be" secondAttribute="leading" constant="15" id="CiN-1K-iyd"/>
                             <constraint firstItem="ijk-RZ-1Be" firstAttribute="trailing" secondItem="f8n-Oj-6Hs" secondAttribute="trailing" constant="47" id="FOT-3Q-D71"/>
                             <constraint firstItem="Wde-qw-afD" firstAttribute="leading" secondItem="ijk-RZ-1Be" secondAttribute="leading" constant="35" id="KKY-VC-7sb"/>
                             <constraint firstItem="f8n-Oj-6Hs" firstAttribute="leading" secondItem="ijk-RZ-1Be" secondAttribute="leading" constant="47" id="Lkz-0r-enx"/>
                             <constraint firstItem="ijk-RZ-1Be" firstAttribute="trailing" secondItem="Wde-qw-afD" secondAttribute="trailing" constant="35" id="Ryx-03-qFM"/>
                             <constraint firstItem="IFg-9x-6a8" firstAttribute="top" secondItem="ijk-RZ-1Be" secondAttribute="top" constant="14" id="T2l-ic-fuv"/>
                             <constraint firstItem="eSi-zw-K9Y" firstAttribute="centerX" secondItem="ijk-RZ-1Be" secondAttribute="centerX" id="TRs-NE-8wr"/>
+                            <constraint firstItem="HBU-Kp-CHe" firstAttribute="centerX" secondItem="ijk-RZ-1Be" secondAttribute="centerX" id="Tm8-jR-iGl"/>
                             <constraint firstItem="UVb-xh-9mL" firstAttribute="centerX" secondItem="ijk-RZ-1Be" secondAttribute="centerX" id="a2A-lk-zSQ"/>
                             <constraint firstItem="Wde-qw-afD" firstAttribute="top" secondItem="5eW-uW-ATZ" secondAttribute="bottom" constant="40" id="a4Z-yM-1FS"/>
                             <constraint firstItem="f8n-Oj-6Hs" firstAttribute="top" secondItem="eSi-zw-K9Y" secondAttribute="bottom" constant="80" id="b0c-zd-PYl"/>
@@ -1129,7 +1123,9 @@
                         <outlet property="OTPTextField5" destination="X4K-ZG-Ezt" id="Lce-SS-Sbd"/>
                         <outlet property="OTPTextField6" destination="1ym-rJ-8Mi" id="qKF-7l-36C"/>
                         <outlet property="OTPTextfield4" destination="vCs-xK-gEo" id="B3Y-jw-3QD"/>
+                        <outlet property="confirmButton" destination="f8n-Oj-6Hs" id="dq3-Gd-h7S"/>
                         <outlet property="expriedLabel" destination="eSi-zw-K9Y" id="RUX-J6-ZwW"/>
+                        <outlet property="resendOTPButton" destination="1N4-wR-t44" id="7HD-5c-v6M"/>
                         <segue destination="SNA-I1-cSa" kind="presentation" identifier="goToFinishSignUpVC" modalPresentationStyle="fullScreen" id="kzo-P8-O2p"/>
                     </connections>
                 </viewController>
@@ -5893,13 +5889,13 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 <rect key="frame" x="0.0" y="84" width="355" height="270.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Successful!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDR-cP-yhV">
-                                <rect key="frame" x="97.666666666666686" y="384.66666666666669" width="180" height="20"/>
+                                <rect key="frame" x="100.33333333333333" y="384.66666666666669" width="174.66666666666669" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" red="0.058823529409999999" green="0.31764705879999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khC-b7-85L">
-                                <rect key="frame" x="25" y="424.66666666666669" width="325" height="98.666666666666686"/>
+                                <rect key="frame" x="25" y="425" width="325" height="100.66666666666663"/>
                                 <attributedString key="attributedText">
                                     <fragment content="You've just made a successful transfer of 0.00001234 BTC to the wallet address bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh">
                                         <attributes>
@@ -5911,7 +5907,7 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIU-I4-xsB">
-                                <rect key="frame" x="47" y="637" width="281" height="50"/>
+                                <rect key="frame" x="47" y="636" width="281" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eHj-qX-sJ2"/>
                                 </constraints>
@@ -5922,17 +5918,17 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-8M-OSd">
-                                <rect key="frame" x="110.66666666666669" y="727" width="154" height="31"/>
+                                <rect key="frame" x="113.66666666666669" y="726" width="148" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-Qc-zyY">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="32"/>
                                         <state key="normal" image="Group 281"/>
                                         <connections>
                                             <action selector="gotoDashboardWasPressed:" destination="AAP-yJ-zhC" eventType="touchUpInside" id="aue-vj-sHa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ym-QSu">
-                                        <rect key="frame" x="30.999999999999986" y="0.0" width="123.00000000000001" height="31"/>
+                                        <rect key="frame" x="30.999999999999986" y="0.0" width="117.00000000000001" height="32"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
                                         <state key="normal" title="Go to Dashboard">
                                             <color key="titleColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -9023,13 +9019,13 @@ with your account</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-yZ-MkW">
-                                <rect key="frame" x="143.66666666666666" y="377.66666666666669" width="87.666666666666657" height="21.666666666666686"/>
+                                <rect key="frame" x="143.33333333333334" y="377.66666666666669" width="88.333333333333343" height="21"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoP-3a-VSq">
-                                <rect key="frame" x="25" y="419.33333333333331" width="325" height="46.333333333333314"/>
+                                <rect key="frame" x="25" y="418.66666666666669" width="325" height="45.333333333333314"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Enter the verification code we just
@@ -9044,7 +9040,7 @@ sent you on your email address.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7z6-6a-HOv">
-                                <rect key="frame" x="15" y="500.66666666666674" width="345" height="45"/>
+                                <rect key="frame" x="15" y="499" width="345" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfS-DF-saH" customClass="BoundFourCornersView" customModule="ECB_Wallet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -9190,7 +9186,7 @@ sent you on your email address.</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-Kj-ZC6">
-                                <rect key="frame" x="47" y="602.66666666666663" width="281" height="50"/>
+                                <rect key="frame" x="47" y="600.33333333333337" width="281" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="75j-Jk-moF"/>
                                 </constraints>
@@ -9203,16 +9199,16 @@ sent you on your email address.</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-cI-Elr">
-                                <rect key="frame" x="79.666666666666671" y="657.66666666666663" width="215.66666666666663" height="29"/>
+                                <rect key="frame" x="70.666666666666671" y="655.33333333333337" width="233.66666666666663" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't receive the OTP?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-Z1-E47">
-                                        <rect key="frame" x="0.0" y="0.0" width="133.66666666666666" height="29"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145.66666666666666" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                         <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-YZ-ae8">
-                                        <rect key="frame" x="141.66666666666669" y="0.0" width="74" height="29"/>
+                                        <rect key="frame" x="153.66666666666669" y="0.0" width="80" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" red="0.95294117649999999" green="0.2784313725" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -9224,7 +9220,7 @@ sent you on your email address.</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expried in 30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpV-JX-pNt">
-                                <rect key="frame" x="145.66666666666666" y="560.66666666666663" width="83.666666666666657" height="17"/>
+                                <rect key="frame" x="143" y="559" width="89" height="16.333333333333371"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                 <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class WelcomeController: UIViewController {
     var currentPageNumber = 0
     // MARK: - Model
@@ -18,7 +18,15 @@ class WelcomeController: UIViewController {
     // MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Get fireBase token
+        InstanceID.instanceID().instanceID { (result, error) in
+          if let error = error {
+            print("Error fetching remote instance ID: \(error)")
+          } else if let result = result {
+            driveToken = result.token
+            print("Remote instance ID token: \(result.token)")
+          }
+        }
         //Custom collectionView
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

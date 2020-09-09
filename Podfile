@@ -11,4 +11,5 @@ pod 'FSCalendar'
 pod 'Alamofire'
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
+pod 'Validator'
 end
