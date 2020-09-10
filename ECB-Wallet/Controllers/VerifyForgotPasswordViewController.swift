@@ -70,26 +70,32 @@ class VerifyForgotPasswordViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func confirmButtonwasPressed(_ sender: Any) {
-        let OTP = "\(OTPTextfield1.text!)\(OTPTextField2.text!)\(OTPTextField3.text!)\(OTPTextField4.text!)\(OTPTextField5.text!)\(OTPTextField6.text!)"
-        code = OTP
         //
         self.view.endEditing(true)
-        //Show spiner
-        self.showSpiner()
-        // Sent data to API
-        AuthService.instan.verifyCodeForgotPassword(code: OTP, email: email) { (success, errorCode) in
-            if success{
-                if errorCode == 0 {
-                    self.spinerView.stopAnimating()
-                    self.performSegue(withIdentifier: "goToCreateNewPasswordVC", sender: nil)
+        if counter == 0 {
+            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
+        }else{
+            let OTP = "\(OTPTextfield1.text!)\(OTPTextField2.text!)\(OTPTextField3.text!)\(OTPTextField4.text!)\(OTPTextField5.text!)\(OTPTextField6.text!)"
+            code = OTP
+            
+            //Show spiner
+            self.showSpiner()
+            // Sent data to API
+            AuthService.instan.verifyCodeForgotPassword(code: OTP, email: email) { (success, errorCode) in
+                if success{
+                    if errorCode == 0 {
+                        self.spinerView.stopAnimating()
+                        self.performSegue(withIdentifier: "goToCreateNewPasswordVC", sender: nil)
+                    }else{
+                        self.spinerView.stopAnimating()
+                        self.showAlert(errorCode: errorCode!)
+                    }
                 }else{
-                    self.spinerView.stopAnimating()
-                    self.showAlert(errorCode: errorCode!)
+                    print("cant verify code")
                 }
-            }else{
-                print("cant verify code")
             }
         }
+        
     }
     @IBAction func resendOTPButtonWasPressed(_ sender: Any) {
         //Step 1 call back timer
@@ -128,11 +134,12 @@ class VerifyForgotPasswordViewController: UIViewController {
         counter -= 1
         if counter >= 0 {
             self.expriedLabel.text = "Expried in \(counter)s"
-            self.confirmButton.isEnabled = true
+            //self.confirmButton.isEnabled = true
         }else if counter < 0{
-            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
+            //self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
             expriedTimer?.invalidate()
-            self.confirmButton.isEnabled = false
+            counter = 0
+            //self.confirmButton.isEnabled = false
         }
     }
     //Show Alert

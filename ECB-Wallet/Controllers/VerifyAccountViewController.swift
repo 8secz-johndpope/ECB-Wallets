@@ -78,18 +78,22 @@ class VerifyAccountViewController: UIViewController {
         let OTP = "\(OTPTextField1.text!)\(OTPTextField2.text!)\(OTPTextField3.text!)\(OTPTextfield4.text!)\(OTPTextField5.text!)\(OTPTextField6.text!)"
         //Show spiner
         self.showSpiner()
-        //Send data to API to confirm your account
-        AuthService.instan.confirmAccount(username: fullName, password: password, password_confirm: repeatPassword, email: email, phoneCode: phonCode, phoneNumber: phoneNumber, code: OTP) { (success, errorCode) in
-            if success{
-                if errorCode == 0{
-                    self.spinerView.stopAnimating()
-                    self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
+        if counter == 0 {
+            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
+        }else{
+            //Send data to API to confirm your account
+            AuthService.instan.confirmAccount(username: fullName, password: password, password_confirm: repeatPassword, email: email, phoneCode: phonCode, phoneNumber: phoneNumber, code: OTP) { (success, errorCode) in
+                if success{
+                    if errorCode == 0{
+                        self.spinerView.stopAnimating()
+                        self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
+                    }else{
+                        self.spinerView.stopAnimating()
+                        self.showAlert(errorCode: errorCode!)
+                    }
                 }else{
-                    self.spinerView.stopAnimating()
-                    self.showAlert(errorCode: errorCode!)
+                    print("Cant confirm password")
                 }
-            }else{
-                print("Cant confirm password")
             }
         }
     }
@@ -136,12 +140,13 @@ class VerifyAccountViewController: UIViewController {
         counter -= 1
         if counter >= 0 {
             self.expriedLabel.text = "Expried in \(counter)s"
-            self.confirmButton.isEnabled = true
+            //self.confirmButton.isEnabled = true
             //print(counter)
         }else if counter < 0{
-            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
+//            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
             expriedTimer?.invalidate()
-            self.confirmButton.isEnabled = false
+            //self.confirmButton.isEnabled = false
+            counter = 0
             print(counter)
         }
     }

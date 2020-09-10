@@ -141,5 +141,59 @@ class AuthService {
             }
         }
     }
+    //MARK: Login
+    func login(firebaseToken:String, password:String, email:String, completionHandler:@escaping(_ result:Bool, _ errorCode:Int?) -> Void){
+        let headers:HTTPHeaders = [
+            "content-length": "587",
+            "content-type": "application/json; charset=utf-8"
+        ]
+        let body:[String:Any] = [
+            "firebase_token":firebaseToken,
+            "password":password,
+            "email":email
+        ]
+        AF.request("\(domain)api/auth/login", method: .post, parameters: body, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).validate().responseJSON { (response) in
+            if response.error == nil{
+                guard let json = response.value as? Dictionary<String,AnyObject> else {return}
+                let errorCode = json["code"] as! Int
+                let data = json["data"] as! [Dictionary<String,AnyObject>]
+                for eachData in data{
+                    guard let authToken = eachData["token"] as? String else {return}
+                    defaults.set(authToken, forKey: TOKEN_KEY)
+                }
+                completionHandler(true,errorCode)
+            }else{
+                completionHandler(false, nil)
+            }
+        }
+    }
+    //MARK: Get me
+    func getMe(authToken:String,completionHandler:@escaping(_ result:Bool, _ userInfo:UserInfo?, _ errorCode:Int?) -> Void){
+        let headers:HTTPHeaders = [
+            "content-length": "52",
+            "content-type": "application/json; charset=utf-8",
+            "Authorization": "Bearer \(authToken)"
+        ]
+        AF.request("\(domain)api/auth/me", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers, interceptor: nil, requestModifier: nil).validate().responseJSON { (response) in
+            if response.error == nil{
+                guard let json = response.value as? Dictionary<String,AnyObject> else {return}
+                guard let errorCode = json["code"] as? Int else {return}
+                var userInfo = UserInfo()
+                let data = json["data"] as! [Dictionary<String,AnyObject>]
+                for eachData in data {
+                    guard let userName = eachData["username"] as? String else {return}
+                    guard let email = eachData["email"] as? String else {return}
+                    guard let phoneNumber = eachData["phone"] as? String else {return}
+                    guard let phoneCode = eachData["phone_code"] as? String else {return}
+                    guard let avatar = eachData["avatar"] as? String else {return}
+                    guard let country = eachData["country"] as? Int else {return}
+                    userInfo = UserInfo(userName: userName, email: email, phone: phoneNumber, phoneCode: phoneCode, avatar: avatar, country: country)
+                }
+                completionHandler(true, userInfo, errorCode)
+            }else{
+                completionHandler(false, nil, nil)
+            }
+        }
+    }
 }
 

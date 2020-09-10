@@ -228,6 +228,7 @@ class SignUpViewController: UIViewController {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
+    //Show spiner
     func showSpiner(){
         self.view.addSubview(spinerView)
         spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true

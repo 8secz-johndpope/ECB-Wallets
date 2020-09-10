@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let gcmMessageIDKey = "gcm.message_id"
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        //Firebase
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
           UNUserNotificationCenter.current().delegate = self
@@ -36,6 +36,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         FirebaseApp.configure()
+        
+        //Get fireBase token
+        InstanceID.instanceID().instanceID { (result, error) in
+          if let error = error {
+            print("Error fetching remote instance ID: \(error)")
+          } else if let result = result {
+            driveToken = result.token
+            print("Remote instance ID token: \(result.token)")
+          }
+        }
+        //Check authToken and Remember me
+        let rememberMe = defaults.bool(forKey: REMEMBER_ME_KEY)
+        let authToken = defaults.string(forKey: TOKEN_KEY)
+        if rememberMe == false{
+            let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "welcomeVC") as UIViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+        }else if rememberMe == true{
+            guard let authToken = authToken else {return true}
+            AuthService.instan.getMe(authToken: authToken) { (success, userInfo, errorCode) in
+                if success{
+                    if errorCode == 400 {
+                        let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "signInVC") as UIViewController
+                        self.window = UIWindow(frame: UIScreen.main.bounds)
+                        self.window?.rootViewController = initialViewControlleripad
+                        self.window?.makeKeyAndVisible()
+                    }else{
+                        let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "dashboardVC") as UIViewController
+                        self.window = UIWindow(frame: UIScreen.main.bounds)
+                        self.window?.rootViewController = initialViewControlleripad
+                        self.window?.makeKeyAndVisible()
+                    }
+                }
+            }
+        }
+        
+        
+        
         return true
     }
     // the FCM registration token.
