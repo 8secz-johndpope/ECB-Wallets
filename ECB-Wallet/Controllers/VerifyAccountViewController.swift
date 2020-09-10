@@ -19,7 +19,15 @@ class VerifyAccountViewController: UIViewController {
     @IBOutlet weak var expriedLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var resendOTPButton: UIButton!
-    
+    //
+    var spinerView:UIActivityIndicatorView = {
+        let spiner = UIActivityIndicatorView()
+        spiner.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        spiner.style = .whiteLarge
+        spiner.startAnimating()
+        spiner.translatesAutoresizingMaskIntoConstraints = false
+        return spiner
+    }()
     //
     var counter = 60
     var expriedTimer: Timer?
@@ -44,7 +52,9 @@ class VerifyAccountViewController: UIViewController {
         OTPTextfield4.delegate = self
         OTPTextField5.delegate = self
         OTPTextField6.delegate = self
-        
+        //
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
+        self.view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -64,13 +74,18 @@ class VerifyAccountViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func confirmButtonWasPressed(_ sender: Any) {
+        self.view.endEditing(true)
         let OTP = "\(OTPTextField1.text!)\(OTPTextField2.text!)\(OTPTextField3.text!)\(OTPTextfield4.text!)\(OTPTextField5.text!)\(OTPTextField6.text!)"
+        //Show spiner
+        self.showSpiner()
         //Send data to API to confirm your account
         AuthService.instan.confirmAccount(username: fullName, password: password, password_confirm: repeatPassword, email: email, phoneCode: phonCode, phoneNumber: phoneNumber, code: OTP) { (success, errorCode) in
             if success{
                 if errorCode == 0{
+                    self.spinerView.stopAnimating()
                     self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
                 }else{
+                    self.spinerView.stopAnimating()
                     self.showAlert(errorCode: errorCode!)
                 }
             }else{
@@ -136,6 +151,16 @@ class VerifyAccountViewController: UIViewController {
         let btn_OK = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(btn_OK)
         self.present(alert, animated: true, completion: nil)
+    }
+    //tapToHideKeyboard
+    @objc func tapToHideKeyboard(){
+        self.view.endEditing(true)
+    }
+    //Show spinner
+    func showSpiner(){
+        self.view.addSubview(spinerView)
+        spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        spinerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     
 }

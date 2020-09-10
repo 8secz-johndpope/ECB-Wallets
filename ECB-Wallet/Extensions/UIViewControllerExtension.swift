@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 extension UIViewController{
     func showToast(message:String){
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height/2 - 100 , width: 200, height: 45))
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height - 100 , width: 200, height: 45))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.textAlignment = .center
@@ -21,7 +21,7 @@ extension UIViewController{
         toastLabel.layer.cornerRadius = 10
         toastLabel.clipsToBounds = true
         self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 2.0, delay: 0.1, options: UIView.AnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: 3.0, delay: 0.1, options: UIView.AnimationOptions.curveEaseIn, animations: {
             toastLabel.alpha = 0.0
         }) { (isCompleted) in
             toastLabel.removeFromSuperview()
@@ -32,6 +32,8 @@ extension UIViewController{
         switch errorCode {
         case 201:
             message = "Đã tồn tại email này"
+        case 202:
+            message = "Không tồn tại email này"
         case 203:
             message = "Không tồn tại email này"
         case 204:
@@ -72,5 +74,22 @@ extension UIViewController{
         let btn_OK = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(btn_OK)
         self.present(alert, animated: true, completion: nil)
+    }
+    func showSpiner(option:Bool){
+        var spinerView:UIActivityIndicatorView = {
+            let spiner = UIActivityIndicatorView()
+            spiner.backgroundColor = UIColor(white: 0, alpha: 0.7)
+            spiner.style = .whiteLarge
+            spiner.startAnimating()
+            spiner.translatesAutoresizingMaskIntoConstraints = false
+            return spiner
+        }()
+        if option{
+            self.view.addSubview(spinerView)
+            spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+            spinerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        }else{
+            spinerView.stopAnimating()
+        }
     }
 }

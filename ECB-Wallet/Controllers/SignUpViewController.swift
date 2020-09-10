@@ -31,6 +31,15 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     @IBOutlet weak var checkButton: setBorderAndRoundCornerButton!
+    //
+    var spinerView:UIActivityIndicatorView = {
+        let spiner = UIActivityIndicatorView()
+        spiner.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        spiner.style = .whiteLarge
+        spiner.startAnimating()
+        spiner.translatesAutoresizingMaskIntoConstraints = false
+        return spiner
+    }()
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -129,6 +138,8 @@ class SignUpViewController: UIViewController {
     @IBAction func termAndConditionButtonWasPressed(_ sender: Any) {
     }
     @IBAction func signUpButtonWasPressed(_ sender: Any) {
+        //
+        self.view.endEditing(true)
         //Step1: Valadation user input
         if isValadateFullName(input: userNameTextField.text!){
             errorCount = 0
@@ -166,15 +177,17 @@ class SignUpViewController: UIViewController {
             self.showToast(message: "Full is wrong format")
         }
         if errorCount == 0 && isAgreeTeams == true {
+            //show spiner
+            self.showSpiner()
             //Send thong tin len API
             AuthService.instan.register(username: fullName, email: email, password: password, password_confirm: repeatPassword, firebase_token: driveToken, phoneCode: phonCode, phoneNumber: phoneNumber) { (success, errorCode) in
                 if success{
                     if errorCode == 0 {
+                        self.spinerView.stopAnimating()
                         self.performSegue(withIdentifier: "goToVerifyAccountView", sender: nil)
-                        print(errorCode)
                     }else{
+                        self.spinerView.stopAnimating()
                         self.showAlert(errorCode: errorCode!)
-                        print(errorCode)
                     }
                 }else{
                     print("Fail to register")
@@ -193,8 +206,16 @@ class SignUpViewController: UIViewController {
         self.view.endEditing(true)
     }
     //Validate FullName
-    func isValadateFullName(input:String) -> Bool {
-        return input.range(of: "^[A-Za-z]{6,50}$", options: .regularExpression) != nil
+    func isValadateFullName(input:String) -> Bool{
+        let range = NSRange(location: 0, length: input.utf16.count)
+        let regex = try! NSRegularExpression(pattern:"[@$%^&*!?:<>/()+=-]", options: [.allowCommentsAndWhitespace])
+        let character = regex.matches(in: input, options: [], range: range)
+        
+        if character.isEmpty && input.count >= 6 && input.count <= 50{
+            return true
+        }else{
+            return false
+        }
     }
     func isValadatePasswprd(input:String) -> Bool {
         return input.range(of: "^[0-9]{6,6}$", options: .regularExpression) != nil
@@ -206,6 +227,11 @@ class SignUpViewController: UIViewController {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
+    }
+    func showSpiner(){
+        self.view.addSubview(spinerView)
+        spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        spinerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     //MARK: UI NavigationController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -53,10 +53,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.performSegue(withIdentifier: "goToDashBoardVC", sender: nil)
     }
     @IBAction func forgetPasswordButtonWasPressed(_ sender: Any) {
-        print("forget password")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "forgotPasswordVC")
-        self.present(vc, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "gotoForgotPasswordVC", sender: nil)
     }
     @IBAction func signUpButtonWasPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "gotoSignUpVC", sender: nil)

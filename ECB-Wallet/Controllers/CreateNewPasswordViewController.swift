@@ -12,11 +12,31 @@ class CreateNewPasswordViewController: UIViewController {
     //MARK: - UI Elements
     @IBOutlet weak var newPasswordTextField: UITextField!
     @IBOutlet weak var repeatNewPasswodTextField: UITextField!
+    //
+    var spinerView:UIActivityIndicatorView = {
+        let spiner = UIActivityIndicatorView()
+        spiner.backgroundColor = UIColor(white: 0, alpha: 0.7)
+        spiner.style = .whiteLarge
+        spiner.startAnimating()
+        spiner.translatesAutoresizingMaskIntoConstraints = false
+        return spiner
+    }()
+    //
+    var email = ""
+    var code = ""
+    var isErrorValadate:Bool?
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.bindToKeyboardView()
+        //
+        newPasswordTextField.isSecureTextEntry = true
+        newPasswordTextField.keyboardType = .numberPad
+        repeatNewPasswodTextField.isSecureTextEntry = true
+        repeatNewPasswodTextField.keyboardType = .numberPad
+        //
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
+        self.view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -31,7 +51,53 @@ class CreateNewPasswordViewController: UIViewController {
     }
     //MARK: - UI Events
     @IBAction func createButtonWasPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
+        //
+        self.view.endEditing(true)
+        //Step1 valadate user input
+        guard let password = newPasswordTextField.text else {return}
+        guard let passwordConfirm = repeatNewPasswodTextField.text else {return}
+        if password.isValadatePasswprd(){
+            isErrorValadate = false
+            if passwordConfirm == password{
+                isErrorValadate = false
+            }else{
+                isErrorValadate = true
+                self.showToast(message: "Repeat password must be the same with password")
+            }
+        }else{
+            isErrorValadate = true
+            self.showToast(message: "Password is only containt 6 numbers")
+        }
+        //
+        //Step2 Send data to API
+        if isErrorValadate == false{
+            //show spiner
+            self.showSpiner()
+            //Call to API
+            AuthService.instan.resetPassword(email: email, code: code, password: password, passwordConfirm: passwordConfirm) { (success, errorCode) in
+                if success {
+                    if errorCode == 0 {
+                        self.spinerView.stopAnimating()
+                        self.performSegue(withIdentifier: "goToFinishSignUpVC", sender: nil)
+                    }else{
+                        self.spinerView.stopAnimating()
+                        self.showAlert(errorCode: errorCode!)
+                    }
+                }else{
+                    print("Cant reset password")
+                }
+            }
+        }
+    }
+    //MARK: - Helper Method
+    @objc func tapToHideKeyboard(){
+        self.view.endEditing(true)
+    }
+    //Show spiner
+    func showSpiner(){
+        self.view.addSubview(spinerView)
+        spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        spinerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
     //MARK: - UI NavigationCotroller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
