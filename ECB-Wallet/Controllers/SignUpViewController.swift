@@ -47,8 +47,6 @@ class SignUpViewController: UIViewController {
         //Custom phoneCodeButton
         phoneCodeButton.layer.cornerRadius = 5
         phoneCodeButton.clipsToBounds = true
-        // setup keyboard events
-        scrollView.bindToKeyboard()
         // set textField Delegate
         userNameTextField.delegate = self
         emailTextField.delegate = self
@@ -60,9 +58,6 @@ class SignUpViewController: UIViewController {
         repeatPasswordTextField.isSecureTextEntry = true
         repeatPasswordTextField.keyboardType = .numberPad
         phoneCodeTextField.keyboardType = .numberPad
-        //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -174,7 +169,7 @@ class SignUpViewController: UIViewController {
             }
         }else{
             errorCount += 1
-            self.showToast(message: "Full is wrong format")
+            self.showToast(message: "Full name is wrong format")
         }
         if errorCount == 0 && isAgreeTeams == true {
             //show spiner
@@ -194,7 +189,7 @@ class SignUpViewController: UIViewController {
                 }
             }
         }else{
-            self.showToast(message: "Please check to agree teams and condition")
+            print("Teams and conditions are not check")
         }
         
     }
@@ -202,9 +197,6 @@ class SignUpViewController: UIViewController {
         self.performSegue(withIdentifier: "backtoSignInVC", sender: nil)
     }
     //MARK: - Helper methods
-    @objc func handleTapToHideKeyboard(){
-        self.view.endEditing(true)
-    }
     //Validate FullName
     func isValadateFullName(input:String) -> Bool{
         let range = NSRange(location: 0, length: input.utf16.count)

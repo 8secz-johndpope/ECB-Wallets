@@ -12,4 +12,5 @@ pod 'Alamofire'
 pod 'Firebase/Analytics'
 pod 'Firebase/Messaging'
 pod 'Validator'
+pod 'IQKeyboardManager'
 end

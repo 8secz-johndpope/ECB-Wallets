@@ -28,16 +28,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     //MARK: - UI viewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        // setup keyboard events
-        scrollView.bindToKeyboard()
         // set textField delegate
         emailTextField.delegate = self
         passwordTextField.delegate = self
         passwordTextField.isSecureTextEntry = true
         passwordTextField.keyboardType = .numberPad
-        //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -121,9 +116,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     //MARK: Helper method
-    @objc func handleTapToHideKeyboard() {
-        self.view.endEditing(true)
-    }
     //Show spiner
     func showSpiner(){
         self.view.addSubview(spinerView)

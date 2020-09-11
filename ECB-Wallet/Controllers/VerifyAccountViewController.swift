@@ -42,9 +42,6 @@ class VerifyAccountViewController: UIViewController {
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        //Observer the messageCodeFromNotifDidChange
-        NotificationCenter.default.addObserver(self, selector: #selector(self.messageCodeFromNotifDidChange(_:)), name: NOTIF_MESSAGE_CODE_DATA_DID_CHANGE, object: nil)
-        // Do any additional setup after loading the view.
         // set textField Delegate
         OTPTextField1.delegate = self
         OTPTextField2.delegate = self
@@ -53,8 +50,14 @@ class VerifyAccountViewController: UIViewController {
         OTPTextField5.delegate = self
         OTPTextField6.delegate = self
         //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
+        OTPTextField1.keyboardType = .numberPad
+        OTPTextField2.keyboardType = .numberPad
+        OTPTextField3.keyboardType = .numberPad
+        OTPTextfield4.keyboardType = .numberPad
+        OTPTextField5.keyboardType = .numberPad
+        OTPTextField6.keyboardType = .numberPad
+        //Obser
+        NotificationCenter.default.addObserver(self, selector: #selector(messageCodeFromNotifDidChange(_:)), name: NOTIF_MESSAGE_CODE_DATA_DID_CHANGE, object: nil)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -76,11 +79,12 @@ class VerifyAccountViewController: UIViewController {
     @IBAction func confirmButtonWasPressed(_ sender: Any) {
         self.view.endEditing(true)
         let OTP = "\(OTPTextField1.text!)\(OTPTextField2.text!)\(OTPTextField3.text!)\(OTPTextfield4.text!)\(OTPTextField5.text!)\(OTPTextField6.text!)"
-        //Show spiner
-        self.showSpiner()
+        
         if counter == 0 {
             self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
         }else{
+            //Show spiner
+            self.showSpiner()
             //Send data to API to confirm your account
             AuthService.instan.confirmAccount(username: fullName, password: password, password_confirm: repeatPassword, email: email, phoneCode: phonCode, phoneNumber: phoneNumber, code: OTP) { (success, errorCode) in
                 if success{
@@ -156,10 +160,6 @@ class VerifyAccountViewController: UIViewController {
         let btn_OK = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(btn_OK)
         self.present(alert, animated: true, completion: nil)
-    }
-    //tapToHideKeyboard
-    @objc func tapToHideKeyboard(){
-        self.view.endEditing(true)
     }
     //Show spinner
     func showSpiner(){

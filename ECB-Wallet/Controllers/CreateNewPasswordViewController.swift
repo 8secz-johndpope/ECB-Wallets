@@ -28,15 +28,11 @@ class CreateNewPasswordViewController: UIViewController {
     //MARK: - UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.bindToKeyboardView()
         //
         newPasswordTextField.isSecureTextEntry = true
         newPasswordTextField.keyboardType = .numberPad
         repeatNewPasswodTextField.isSecureTextEntry = true
         repeatNewPasswodTextField.keyboardType = .numberPad
-        //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -90,9 +86,6 @@ class CreateNewPasswordViewController: UIViewController {
         }
     }
     //MARK: - Helper Method
-    @objc func tapToHideKeyboard(){
-        self.view.endEditing(true)
-    }
     //Show spiner
     func showSpiner(){
         self.view.addSubview(spinerView)

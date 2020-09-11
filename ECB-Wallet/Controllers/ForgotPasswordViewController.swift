@@ -24,10 +24,6 @@ class ForgotPasswordViewController: UIViewController {
     //MARK: UI ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.bindToKeyboardView()
-        //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -77,9 +73,6 @@ class ForgotPasswordViewController: UIViewController {
         }
     }
     //MARK: Helper Method
-    @objc func tapToHideKeyboard(){
-        self.view.endEditing(true)
-    }
     func showSpiner(){
         self.view.addSubview(spinerView)
         spinerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true

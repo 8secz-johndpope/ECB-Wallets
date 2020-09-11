@@ -84,6 +84,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.6.0):
     - GoogleUtilities/Logger
+  - IQKeyboardManager (6.5.6)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
     - nanopb/encode (= 0.3.9011)
@@ -99,6 +100,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Messaging
   - FSCalendar
+  - IQKeyboardManager
   - Validator
 
 SPEC REPOS:
@@ -119,6 +121,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - IQKeyboardManager
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -141,11 +144,12 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 061fe7d9b476710e3cd8ea51e8e07d8b67c2b420
   GoogleDataTransportCCTSupport: 0f39025e8cf51f168711bd3fb773938d7e62ddb5
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
   Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
 
-PODFILE CHECKSUM: 0b190817539b2a17163e20dbdd24cdd938d8c04e
+PODFILE CHECKSUM: f4938fb142a643be2a4f4d7b39fa01caf19075a9
 
 COCOAPODS: 1.8.4

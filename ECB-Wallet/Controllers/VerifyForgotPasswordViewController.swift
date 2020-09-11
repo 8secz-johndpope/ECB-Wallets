@@ -39,10 +39,7 @@ class VerifyForgotPasswordViewController: UIViewController {
 
         //Set up expriedTimer
         expriedTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(handleExpriedTimer), userInfo: nil, repeats: true)
-        //
-        self.view.bindToKeyboardView()
         // set textField Delegate
-        //OTPTextfield1.becomeFirstResponder()
         OTPTextfield1.delegate = self
         OTPTextField2.delegate = self
         OTPTextField3.delegate = self
@@ -50,8 +47,12 @@ class VerifyForgotPasswordViewController: UIViewController {
         OTPTextField5.delegate = self
         OTPTextField6.delegate = self
         //
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapToHideKeyboard))
-        self.view.addGestureRecognizer(tap)
+        OTPTextfield1.keyboardType = .numberPad
+        OTPTextField2.keyboardType = .numberPad
+        OTPTextField3.keyboardType = .numberPad
+        OTPTextField4.keyboardType = .numberPad
+        OTPTextField5.keyboardType = .numberPad
+        OTPTextField6.keyboardType = .numberPad
     }
     override func viewDidAppear(_ animated: Bool) {
         //Check internet are available
@@ -126,9 +127,6 @@ class VerifyForgotPasswordViewController: UIViewController {
         }
     }
     //MARK: Helper Method
-    @objc func tapToHideKeyboard(){
-        self.view.endEditing(true)
-    }
     //handle ExpriedTimer
     @objc func handleExpriedTimer(){
         counter -= 1
