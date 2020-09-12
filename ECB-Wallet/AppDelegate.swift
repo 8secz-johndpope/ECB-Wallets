@@ -17,9 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let gcmMessageIDKey = "gcm.message_id"
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        //IQKeyboardManage
-        IQKeyboardManager.shared().isEnabled = true
-        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+        
         //Firebase
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
@@ -52,6 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Check authToken and Remember me
         let rememberMe = defaults.bool(forKey: REMEMBER_ME_KEY)
         let authToken = defaults.string(forKey: TOKEN_KEY)
+        print(rememberMe)
+        print(authToken)
         if rememberMe == false{
             let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "welcomeVC") as UIViewController
@@ -59,26 +59,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewControlleripad
             self.window?.makeKeyAndVisible()
         }else if rememberMe == true{
-            guard let authToken = authToken else {return true}
-            AuthService.instan.getMe(authToken: authToken) { (success, userInfo, errorCode) in
-                if success{
-                    if errorCode == 400 {
-                        let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "signInVC") as UIViewController
-                        self.window = UIWindow(frame: UIScreen.main.bounds)
-                        self.window?.rootViewController = initialViewControlleripad
-                        self.window?.makeKeyAndVisible()
-                    }else{
-                        let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "dashboardVC") as UIViewController
-                        self.window = UIWindow(frame: UIScreen.main.bounds)
-                        self.window?.rootViewController = initialViewControlleripad
-                        self.window?.makeKeyAndVisible()
-                    }
-                }
-            }
+            let mainStoryboardIpad:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewControlleripad = mainStoryboardIpad.instantiateViewController(withIdentifier: "dashboardVC") as UIViewController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewControlleripad
+            self.window?.makeKeyAndVisible()
+            return true
         }
-        
+        //IQKeyboardManage
+        IQKeyboardManager.shared().isEnabled = true
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
         
         return true

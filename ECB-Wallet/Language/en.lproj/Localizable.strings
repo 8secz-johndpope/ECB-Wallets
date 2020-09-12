@@ -1,0 +1,34 @@
+/* 
+  LocaliableEN.strings
+  ECB-Wallet
+
+  Created by NGUYENLONGTIEN on 9/11/20.
+  Copyright © 2020 NGUYENLONGTIEN. All rights reserved.
+*/
+
+"error_code_201_key" = "The email has already exist.";
+"error_code_202_key" = "The email does not exist.";
+"error_code_203_key" = "The phone number has already exist.";
+"error_code_204_key" = "Verify code is incorrect.";
+"error_code_205_key" = "The OTP is incorrect or expired.";
+"error_code_207_key" = "The phone code doest not exist.";
+"error_code_208_key" = "The location doest not exist.";
+"error_code_209_key" = "The current password is incorrect.";
+"error_code_210_key" = "Account has not active";
+"error_code_211_key" = "Verify account code has expired.";
+"error_code_212_key" = "The verify code is incorrect.";
+"error_code_213_key" = "The user name does not contain number and special character";
+"error_code_214_key" = "The new password must be different from current password";
+"error_code_400_key" = "Token is expired.";
+"error_code_401_key" = "User name or password is incorrect.";
+"error_code_800_key" = "The API does not exist.";
+"error_code_808_key" = "Upload fail.";
+"error_code_900_key" = "Validation error.";
+"error_code_1000_key" = "Back end error.";
+"validate_username_key" = "The username can not be greater than 50 digits and can not empty";
+"validate_email_key" = "Please enter your email";
+"validate_phone_number_key" = "The phone can not be less than 6 and greater than 20";
+"time_is_expired_key" = "Time is expired. Please press 'Resend OTP' to get new OTP";
+"validate_repeat_password_key" = "Password and Repeat Password are not match";
+"please_read_term_and_conditions_key" = "Please read Terms and Conditions";
+"validate_password_key" = "The password length is six digits and only contain number";

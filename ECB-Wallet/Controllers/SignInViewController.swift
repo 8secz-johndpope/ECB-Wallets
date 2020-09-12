@@ -73,11 +73,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
                 isErrorValidate = false
             }else{
                 isErrorValidate = true
-                self.showToast(message: "Enter your password")
+                self.showToast(message: NSLocalizedString("validate_password_key", comment: "validate_password"))
             }
         }else{
             isErrorValidate = true
-            self.showToast(message: "Email is not correct format")
+            self.showToast(message: NSLocalizedString("validate_email_key", comment: "validate_email"))
         }
         //Step2: Send data to API to login
         if isErrorValidate == false{

@@ -144,14 +144,11 @@ class VerifyAccountViewController: UIViewController {
         counter -= 1
         if counter >= 0 {
             self.expriedLabel.text = "Expried in \(counter)s"
-            //self.confirmButton.isEnabled = true
-            //print(counter)
+            self.resendOTPButton.isEnabled = false
         }else if counter < 0{
-//            self.showAlert(message: "OTP is over time, please press 'Resend OTP' button")
             expriedTimer?.invalidate()
-            //self.confirmButton.isEnabled = false
+            self.resendOTPButton.isEnabled = true
             counter = 0
-            print(counter)
         }
     }
     //Show Alert

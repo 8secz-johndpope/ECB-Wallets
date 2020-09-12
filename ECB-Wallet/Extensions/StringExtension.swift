@@ -41,4 +41,8 @@ extension String {
     func isValadatePasswprd() -> Bool {
         return self.range(of: "^[0-9]{6,6}$", options: .regularExpression) != nil
     }
+    //Capitalizing First Letter
+    func capitalizingFirstLetter() -> String {
+      return prefix(1).uppercased() + dropFirst()
+    }
 }

@@ -18,6 +18,7 @@
 		530AE73E24FE01CD0040EF4E /* DetailWalletTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */; };
 		530AE74024FE05440040EF4E /* DetailWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */; };
 		530AE74224FE499D0040EF4E /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE74124FE499D0040EF4E /* BalloonMarker.swift */; };
+		532DF23A250B2FC00098E399 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532DF23C250B2FC00098E399 /* Localizable.strings */; };
 		53364AD624F4A45900FF6C32 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD524F4A45900FF6C32 /* UIViewExtension.swift */; };
 		53364AD924F4B62F00FF6C32 /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */; };
 		53364ADB24F50E9400FF6C32 /* ConfirmSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */; };
@@ -36,6 +37,7 @@
 		53654A3624FCFAC4004E82B2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53654A3524FCFAC4004E82B2 /* SettingViewController.swift */; };
 		53739528250A00A900E27EE7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53739527250A00A900E27EE7 /* LaunchScreenViewController.swift */; };
 		5373952A250A273100E27EE7 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53739529250A273100E27EE7 /* UserInfoModel.swift */; };
+		537746EE250B53AC00BA4336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537746F0250B53AC00BA4336 /* Main.storyboard */; };
 		537BF8B624EB893A00B49C7D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B524EB893A00B49C7D /* StartViewController.swift */; };
 		537BF8B824EBA73300B49C7D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B724EBA73300B49C7D /* SignInViewController.swift */; };
 		537BF8BA24EBA82B00B49C7D /* RoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8B924EBA82B00B49C7D /* RoundCornerView.swift */; };
@@ -43,7 +45,6 @@
 		537BF8BE24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BF8BD24EBCE9D00B49C7D /* SetBorderAndRoundCornerView.swift */; };
 		538B116D24EA5FF1000B65D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B116C24EA5FF1000B65D1 /* AppDelegate.swift */; };
 		538B117124EA5FF1000B65D1 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B117024EA5FF1000B65D1 /* WelcomeController.swift */; };
-		538B117424EA5FF1000B65D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538B117224EA5FF1000B65D1 /* Main.storyboard */; };
 		538B117624EA5FF3000B65D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538B117524EA5FF3000B65D1 /* Assets.xcassets */; };
 		538B117924EA5FF3000B65D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538B117724EA5FF3000B65D1 /* LaunchScreen.storyboard */; };
 		538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 538B118424EA627B000B65D1 /* sfprodisplay_black.ttf */; };
@@ -140,6 +141,7 @@
 		530AE73C24FE01CD0040EF4E /* DetailWalletTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWalletTableViewCell.xib; sourceTree = "<group>"; };
 		530AE73F24FE05440040EF4E /* DetailWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWalletViewController.swift; sourceTree = "<group>"; };
 		530AE74124FE499D0040EF4E /* BalloonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		532DF23B250B2FC00098E399 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		53364AD524F4A45900FF6C32 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		53364AD824F4B62F00FF6C32 /* ScanQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
 		53364ADA24F50E9400FF6C32 /* ConfirmSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSendViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,10 @@
 		53654A3524FCFAC4004E82B2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		53739527250A00A900E27EE7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		53739529250A273100E27EE7 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		537746EF250B53AC00BA4336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		537746F5250B545B00BA4336 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		537746F6250B545B00BA4336 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		537746F9250B548500BA4336 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		537BF8B524EB893A00B49C7D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		537BF8B724EBA73300B49C7D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		537BF8B924EBA82B00B49C7D /* RoundCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerView.swift; sourceTree = "<group>"; };
@@ -166,7 +172,6 @@
 		538B116924EA5FF1000B65D1 /* ECB-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ECB-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		538B116C24EA5FF1000B65D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538B117024EA5FF1000B65D1 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
-		538B117324EA5FF1000B65D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		538B117524EA5FF3000B65D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538B117824EA5FF3000B65D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538B117A24EA5FF3000B65D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +285,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		532DF237250B25900098E399 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				532DF23C250B2FC00098E399 /* Localizable.strings */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		53364AD724F4A52600FF6C32 /* XIB */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +352,7 @@
 		538B116B24EA5FF1000B65D1 /* ECB-Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				532DF237250B25900098E399 /* Language */,
 				53B2A305250781EA00E39513 /* ECB-Wallet.entitlements */,
 				53B472A9250604AC00A2E92F /* Services */,
 				53B472A32505D27D00A2E92F /* Utilities */,
@@ -349,7 +363,7 @@
 				538B118D24EA693E000B65D1 /* Views */,
 				538B118024EA61D3000B65D1 /* fonts */,
 				538B116C24EA5FF1000B65D1 /* AppDelegate.swift */,
-				538B117224EA5FF1000B65D1 /* Main.storyboard */,
+				537746F0250B53AC00BA4336 /* Main.storyboard */,
 				538B117524EA5FF3000B65D1 /* Assets.xcassets */,
 				538B117724EA5FF3000B65D1 /* LaunchScreen.storyboard */,
 				538B117A24EA5FF3000B65D1 /* Info.plist */,
@@ -531,6 +545,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 538B116024EA5FF1000B65D1;
 			productRefGroup = 538B116A24EA5FF1000B65D1 /* Products */;
@@ -560,6 +575,7 @@
 				538B118824EA64A8000B65D1 /* sfprodisplay_light.ttf in Resources */,
 				538B118924EA64AB000B65D1 /* sfprodisplay_medium.ttf in Resources */,
 				538DC1FD24F3B34C00B12D02 /* AddressWalletTableViewCell.xib in Resources */,
+				537746EE250B53AC00BA4336 /* Main.storyboard in Resources */,
 				53B2A3042507763200E39513 /* GoogleService-Info.plist in Resources */,
 				538B118724EA64A5000B65D1 /* sfprodisplay_black.ttf in Resources */,
 				53D29471250098A5000A797F /* WalletTransactionTableViewCell.xib in Resources */,
@@ -569,9 +585,9 @@
 				538B118B24EA64B0000B65D1 /* sfprodisplay_regular.ttf in Resources */,
 				538B118A24EA64AE000B65D1 /* sfprodisplay_regular_italic.ttf in Resources */,
 				53ACB20E24EF828600BCC6B4 /* TransactionTableViewCell.xib in Resources */,
-				538B117424EA5FF1000B65D1 /* Main.storyboard in Resources */,
 				53B472B12506255100A2E92F /* ListFlatViewController.xib in Resources */,
 				53B13BAE24F7A5EC004E54D9 /* NotificationTableViewCell.xib in Resources */,
+				532DF23A250B2FC00098E399 /* Localizable.strings in Resources */,
 				53BC5C7124FC93EB0000E112 /* ManageWalletTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,10 +737,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		538B117224EA5FF1000B65D1 /* Main.storyboard */ = {
+		532DF23C250B2FC00098E399 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				538B117324EA5FF1000B65D1 /* Base */,
+				532DF23B250B2FC00098E399 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		537746F0250B53AC00BA4336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537746EF250B53AC00BA4336 /* Base */,
+				537746F5250B545B00BA4336 /* vi */,
+				537746F9250B548500BA4336 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -733,6 +759,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				538B117824EA5FF3000B65D1 /* Base */,
+				537746F6250B545B00BA4336 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -744,6 +771,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -804,6 +832,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

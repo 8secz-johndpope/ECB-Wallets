@@ -58,9 +58,6 @@ class SignUpViewController: UIViewController {
         repeatPasswordTextField.isSecureTextEntry = true
         repeatPasswordTextField.keyboardType = .numberPad
         phoneCodeTextField.keyboardType = .numberPad
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
         //Get CurrentLocation from API and Update UI
         FlatCountryService.instant.getAllFlatCountry { (success, location, flags) in
             if success{
@@ -85,6 +82,10 @@ class SignUpViewController: UIViewController {
                 print("Can not get all Flags and location")
             }
         }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+       
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -169,7 +170,7 @@ class SignUpViewController: UIViewController {
             }
         }else{
             errorCount += 1
-            self.showToast(message: "Full name is wrong format")
+            self.showToast(message: NSLocalizedString("validate_username_key",comment: "validate_username_key"))
         }
         if errorCount == 0 && isAgreeTeams == true {
             //show spiner
@@ -240,6 +241,7 @@ class SignUpViewController: UIViewController {
     }
     
 }
+//MARK: UITextFieldDelegate
 extension SignUpViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField{
@@ -267,6 +269,13 @@ extension SignUpViewController: UITextFieldDelegate{
             })
             
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 50
+        let currentString: NSString = (textField.text ?? "") as NSString
+        let newString: NSString =
+            currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
     }
 }
 extension SignUpViewController:listFlatDelegate{

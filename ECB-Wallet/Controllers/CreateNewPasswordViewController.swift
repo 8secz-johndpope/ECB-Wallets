@@ -58,11 +58,11 @@ class CreateNewPasswordViewController: UIViewController {
                 isErrorValadate = false
             }else{
                 isErrorValadate = true
-                self.showToast(message: "Repeat password must be the same with password")
+                self.showToast(message: NSLocalizedString("validate_repeat_password_key", comment: "validate_repeat_password"))
             }
         }else{
             isErrorValadate = true
-            self.showToast(message: "Password is only containt 6 numbers")
+            self.showToast(message: NSLocalizedString("validate_password_key", comment: "validate_password"))
         }
         //
         //Step2 Send data to API

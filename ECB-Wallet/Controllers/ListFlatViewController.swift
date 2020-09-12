@@ -77,7 +77,7 @@ extension ListFlatViewController:UISearchBarDelegate{
         }else{
             searchResult = listFlats.filter({ (flat) -> Bool in
                 guard let text = searchBar.text else {return false}
-                return (flat.countryName?.contains(text))!
+                return (flat.countryName?.contains(text.capitalizingFirstLetter()))!
             })
         }
         isSearching = true

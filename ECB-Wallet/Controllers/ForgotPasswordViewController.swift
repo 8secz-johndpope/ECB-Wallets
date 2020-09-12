@@ -58,7 +58,7 @@ class ForgotPasswordViewController: UIViewController {
                 }
             }
         }else{
-            self.showToast(message: "Email is not valid")
+            self.showToast(message: NSLocalizedString("validate_email_key", comment: "validate_email"))
         }
     }
     @IBAction func backButtonWasPressed(_ sender: Any) {
